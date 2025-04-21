@@ -146,7 +146,7 @@ const Together = () => {
           <img src={muff} alt="muff" className="w-full h-full object-cover" />
         </div>
         <div className="col-span-1 sm:col-span-1 row-span-2 bg-white m-2 hidden sm:block rounded-lg">
-          <img src={church} alt="church" className="w-full h-full object-cover" />
+          <img src={church} alt="church" className="w-full h-[12.5vw] object-cover" />
         </div>
         <div className="col-span-1 sm:col-span-1 row-span-2 bg-white m-2 hidden sm:block rounded-lg">
           <img src={christ} alt="christ" className="w-full h-full object-cover" />
@@ -166,7 +166,7 @@ const Together = () => {
             4677<span className="-mt-[1vw] sm:-mt-[0.2vw] font-extralight" style={{ fontFamily: "Raleway" }}>+</span>
           </div>
           <div
-            className="text-[3vw] sm:text-[1.2vw] text-black font-medium mt-1"
+            className="text-[3vw] lg:text-[1vw] sm:text-[1.2vw] text-black font-medium mt-1"
             style={{ fontFamily: "Raleway" }}
           >
             Registered Users

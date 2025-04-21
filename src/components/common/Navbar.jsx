@@ -48,11 +48,11 @@ export default function Navbar() {
                         flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 text-red-400 
                         font-[600] text-center md:text-left transition-all duration-300 
                         ${menuOpen ? "block" : "hidden md:flex"}`}>
-          <Link to="/" className="hover:text-red-600">Home</Link>
-          <Link to="/about" className="hover:text-red-600">About</Link>
-          <Link to="/gallery" className="hover:text-red-600">Gallery</Link>
-          <Link to="/blog" className="hover:text-red-600">Blog</Link>
-          <Link to="/pricing" className="hover:text-red-600">Pricing</Link>
+          <Link to="/" className="hover:text-[#C1645C]">Home</Link>
+          <Link to="/about" className="hover:text-[#C1645C]">About</Link>
+          <Link to="/gallery" className="hover:text-[#C1645C]">Gallery</Link>
+          <Link to="/blog" className="hover:text-[#C1645C]">Blog</Link>
+          <Link to="/pricing" className="hover:text-[#C1645C]">Pricing</Link>
           
         </div>
 

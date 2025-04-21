@@ -22,7 +22,10 @@ const Authentication = () => {
           className="w-full h-full object-cover"
         />
         <div className="absolute top-1/2 left-[4vw] md:left-[7.5vw] transform -translate-y-1/2 text-white">
-          <h1 className="text-[8vw] sm:text-[6vw] md:text-[5vw] lg:text-[4vw] font-serif">
+          <h1
+            className="text-[5vw] md:text-[6vw]"
+            style={{ fontFamily: "Rosarivo, serif" }}
+          >
             Login
           </h1>
           <p className="text-[3vw] md:text-[1vw] mt-[1vw] font-light leading-snug">
@@ -38,7 +41,7 @@ const Authentication = () => {
           <h1 className=" text-[7vw] sm:text-5xl text-center">Sign In To Account</h1>
           <p className="  text-[3vw] sm:text-xs  lg:text-[10px] text-center">
             Experience the joy of life and create happiness together with Shadi
-            Muhar
+            Muharat
           </p>
         </div>
 
@@ -46,14 +49,14 @@ const Authentication = () => {
           <div className="">
             <input
               type="name"
-              className=" p-3 sm:p-4 border  border-[#F05A8E]/[0.15] rounded-full w-full"
+              className=" p-3 sm:p-4 border  border-[#F05A8E]/[0.15] rounded-full w-full text-[#C1645CB2]"
               placeholder="Your Mail here"
             />
           </div>
           <div className=" relative w-full">
             <input
               type="password"
-              className="  p-3 sm:p-4 border border-[#F05A8E]/[0.15] rounded-full w-full"
+              className="  p-3 sm:p-4 border border-[#F05A8E]/[0.15] rounded-full w-full text-[#C1645CB2]"
               placeholder="Password"
               />
               <VscEye className="absolute right-5 top-1/2 transform -translate-y-1/2 text-[#C1645C] w-5 h-5 cursor-pointer" />

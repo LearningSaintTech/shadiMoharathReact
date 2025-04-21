@@ -90,7 +90,7 @@ const TrustedCouples = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-[1vw] px-[3vw] mb-8">
         <div className="flex flex-col sm:justify-start sm:items-start justify-center items-center bg-white px-[4vw] py-[3vw] rounded-3xl border border-[#ED1C2426]">
           <h2
-            className="text-[4vw] leading-tight font-medium text-black"
+            className=" text-[9vw]sm:text-[7vw] leading-tight font-medium text-black"
             style={{ fontFamily: "Raleway" }}
           >
             Trusted By{" "}
@@ -98,22 +98,22 @@ const TrustedCouples = () => {
               className="bg-gradient-to-r from-[#F05A8E] to-[#ED1C24] bg-clip-text text-transparent font-medium inline-flex flex-col"
               style={{ fontFamily: "Playfair Display" }}
             >
-              <span className="text-[5.5vw]">
+              <span className=" text-[6vw] sm:text-[5.5vw]">
                 8<span className="text-[3vw] leading-none">+</span>
               </span>
             </span>{" "}
           </h2>
           <span
-            className="text-[4vw] leading-none font-medium"
+            className=" text-[3vw] sm:text-[4vw] leading-none font-medium"
             style={{ fontFamily: "Raleway" }}
           >
             Couples
           </span>
-          <p className="sm:text-[0.9vw] sm:items-start items-center sm:text-start text-center text-[2vw] sm:w-[30vw] w-[60vw] text-gray-500 mt-[1vw]">
+          <p className=" sm:text-[0.9vw] sm:items-start items-center sm:text-start text-center text-[2.8vw] sm:w-[30vw] w-[60vw] text-gray-500 mt-[1vw]">
             Our platform helps partners build meaningful connections and lasting
             relationships.
           </p>
-          <button className="bg-gradient-to-r from-[#F05A8E] to-[#ED1C24] px-[1.6vw] rounded-[2vw] py-[0.6vw] text-white hover:bg-pink-700 mt-[4vw]">
+          <button className="bg-gradient-to-r from-[#F05A8E] to-[#ED1C24] px-[1.6vw]  hidden sm:block rounded-[2vw] py-[0.6vw] text-white hover:bg-pink-700 mt-[4vw]">
             Register Now
           </button>
         </div>

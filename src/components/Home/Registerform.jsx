@@ -30,7 +30,7 @@ export default function ShadiSection() {
       </div>
 
       {/* Right Form */}
-      <div className="relative w-full mt-10 lg:absolute lg:w-[32.063vw] lg:h-[39.115vw] lg:p-[2.93vw] z-10 lg:top-[-8vw] lg:right-10">
+      <div className="relative w-full mt-10 md:w-[50%] md:mx-auto lg:absolute lg:w-[32.063vw] lg:h-[39.115vw] lg:p-[2.93vw] z-10 lg:top-[-8vw] lg:right-10">
         <div className="rounded-xl lg:rounded-[2vw] shadow-lg lg:shadow-[0_0_2vw_rgba(0,0,0,0.15)] bg-[#E3CBBE] px-6 py-8 lg:p-[2vw] border border-[#c59d87]">
           <h3
             className="text-[6vw] lg:text-[2.917vw] font-bold text-center text-[#C1645C]"
@@ -66,7 +66,7 @@ export default function ShadiSection() {
             <input
               type="number"
               placeholder="Age"
-              className="w-full p-3 text-sm text-[#C1645C] bg-white rounded-full focus:outline-none"
+              className="w-full p-3 text-[1vw] text-[#C1645C] bg-white rounded-full focus:outline-none"
             />
 
             {/* Phone */}

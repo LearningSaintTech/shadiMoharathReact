@@ -19,7 +19,7 @@ const AppDownloadBanner = () => {
           </p>
 
           {/* Store buttons - pixel perfect */}
-          <div className="mt-[3.385vw] flex gap-4">
+          <div className="mt-[3.385vw] sm: flex flex-row gap-4">
             {/* Apple Store Button */}
             <a
               href="#"
