@@ -1,0 +1,139 @@
+import React from "react";
+import bow from "../../assets/images/bow.svg";
+import church from "../../assets/images/church.svg";
+import christ from "../../assets/images/christ.svg";
+import muff from "../../assets/images/muff.svg";
+import pink from "../../assets/images/pink.svg";
+import Korean from "../../assets/images/Korean.svg";
+import Hands from "../../assets/images/Hands.svg";
+import Profile from "../../assets/images/Prof.svg";
+import heart from "../../assets/images/heart.svg";
+import { FaUsers, FaMars, FaVenus, FaHeart } from "react-icons/fa";
+import { RiUserHeartFill } from "react-icons/ri";
+import { MdVerified } from "react-icons/md";
+import Pair from "../../assets/images/Pair.svg";
+import People from "../../assets/images/People.svg";
+import Male from "../../assets/images/Male.svg";
+
+const Together = () => {
+  return (
+    <div className=" bg-white m-0 mx-[3.125vw] border overflow-hidden ">
+      {/* Scrolling Banner */}
+      <div className="bg-gradient-to-r from-[#F05A8E] to-[#ED1C24] py-3 relative overflow-hidden">
+        <div className="animate-marquee whitespace-nowrap flex">
+          {[
+            { icon: <FaUsers size={20} />, label: "4677+ Registered Users" },
+            { icon: <FaMars size={20} />, label: "2935+ Mens" },
+            { icon: <FaVenus size={20} />, label: "1742+ Womens" },
+            { icon: <FaHeart size={20} />, label: "547+ Couples Paired" },
+            { icon: <RiUserHeartFill size={20} />, label: "2000+ Weddings" },
+            { icon: <MdVerified size={20} />, label: "Genuine Profiles" },
+          ]
+            .concat([
+              { icon: <FaUsers size={20} />, label: "4677+ Registered Users" },
+              { icon: <FaMars size={20} />, label: "2935+ Mens" },
+              { icon: <FaVenus size={20} />, label: "1742+ Womens" },
+              { icon: <FaHeart size={20} />, label: "547+ Couples Paired" },
+              { icon: <RiUserHeartFill size={20} />, label: "2000+ Weddings" },
+              { icon: <MdVerified size={20} />, label: "Genuine Profiles" },
+            ])
+            .map((item, index) => (
+              <div
+                key={index}
+                className="text-white font-semibold text-lg flex items-center mx-6"
+              >
+                <div className="border border-white rounded-full p-1 mr-2">
+                  {item.icon}
+                </div>
+                {item.label}
+              </div>
+            ))}
+        </div>
+      </div>
+
+      {/* Main Section */}
+      <div className="my-[4.167vw] grid grid-cols-1 sm:grid-cols-2 gap-6 px-6">
+        {/* Left Column */}
+        <div className="flex flex-col justify-between">
+          <div>
+            <p className="text-sm text-red-500 font-semibold mt-[3.438vw]">
+              SHADI MUHARATH
+            </p>
+            <h1 className="mt-[1.25vw] w-3/4 text-3xl md:text-5xl font-bold leading-tight">
+              Together We Stand,
+              <br />
+              Hand In Hand.
+            </h1>
+            <p className="text-gray-600 mt-4 w-5/6">
+              It is a long established fact that a reader will be distracted by
+              the <br /> readable content of a page when looking at its layout.
+            </p>
+            <button className="mt-6 px-6 py-2 bg-gradient-to-r from-[#F05A8E] to-[#ED1C24] text-white rounded-full hover:bg-red-600 transition">
+              Register Now
+            </button>
+          </div>
+
+          {/* Stats Grid */}
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-10">
+            {/* Stat Card 1 */}
+            <div className="border border-red-200 rounded-3xl px-[1.354vw] py-[2.005vw]  flex flex-col">
+              <div className=" rounded-full  flex items-center justify-start">
+                <img src={People} alt="Users" className=" rounded-full w-[3.333vw] h-[3.333vw]" />
+              </div>
+              <div className="mt-[1.25vw]">
+                <div className="text-[3.833vw]  font-Raleway font-medium bg-gradient-to-r from-[#F05A8E] to-[#ED1C24] bg-clip-text text-transparent">
+                  4677+
+                </div>
+                <div className="text-sm text-black  font-medium mt-[1.042vw]">Registered Users</div>
+              </div>
+            </div>
+
+            {/* Stat Card 2 */}
+            <div className="border border-red-200 rounded-3xl px-[1.354vw] py-[2.005vw]   flex flex-col">
+              <div className=" rounded-full  flex items-center justify-start">
+                <img src={People} alt="Users" className=" rounded-full w-[3.333vw] h-[3.333vw]" />
+              </div>
+              <div className="mt-[1.25vw]">
+                <div className="text-[3.833vw]  font-Raleway font-medium bg-gradient-to-r from-[#F05A8E] to-[#ED1C24] bg-clip-text text-transparent">
+                  4677+
+                </div>
+                <div className="text-sm text-black  font-medium mt-[1.042vw]">Registered Users</div>
+              </div>
+            </div>
+
+            {/* Stat Card 3 */}
+            <div className="border border-red-200 rounded-3xl px-[1.354vw] py-[2.005vw]   flex flex-col">
+              <div className=" rounded-full  flex items-center justify-start">
+                <img src={People} alt="Users" className=" rounded-full w-[3.333vw] h-[3.333vw]" />
+              </div>
+              <div className="mt-[0.25vw]">
+                <div className="text-[3.833vw]  font-Raleway font-medium bg-gradient-to-r from-[#F05A8E] to-[#ED1C24] bg-clip-text text-transparent">
+                  4677+
+                </div>
+                <div className="text-[1.042vw] text-black  font-medium mt-[0.25vw]">Registered Users</div>
+              </div>
+            </div>
+
+            
+          </div>
+        </div>
+
+        {/* Right Column - Images Grid */}
+        <div className="grid grid-cols-3 gap-[1.563vw] ">
+          {[bow, pink, heart, muff, church, christ, Profile, Korean, Hands].map(
+            (img, idx) => (
+              <div
+                key={idx}
+                className="bg-white rounded-md overflow-hidden aspect-square"
+              >
+                <img src={img} alt="" className="  object-cover " />
+              </div>
+            )
+          )}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Together;
