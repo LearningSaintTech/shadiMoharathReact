@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import couple22 from "../../assets/images/Couple22.svg";
 import couple23 from "../../assets/images/Couple23.svg";
 import couple24 from "../../assets/images/Couple24.svg";
@@ -7,10 +8,11 @@ import couple26 from "../../assets/images/Couple26.svg";
 import couple27 from "../../assets/images/Couple27.svg";
 import couple28 from "../../assets/images/Couple28.svg";
 import couple29 from "../../assets/images/Couple29.svg";
+import { IoIosArrowForward } from "react-icons/io";
 
 const Anjali = () => {
   return (
-    <div className="px-4 lg:mx-16"> {/* Base padding for all screens, larger margin on lg screens */}
+    <div className="px-4 lg:mx-16">
       {/* Header Section */}
       <div className="text-center mb-6">
         <p className="bg-gradient-to-r from-[#F05A8E] to-[#ED1C24] bg-clip-text text-transparent text-[1.5vw] hidden sm:block md:text-[3vw] lg:text-[0.8vw] font-medium mb-0 md:mb-[0.5vw] lg:mb-[0.3vw]">
@@ -32,11 +34,15 @@ const Anjali = () => {
         <div className="rounded-lg overflow-hidden aspect-square">
           <img src={couple27} alt="Wedding photo 3" className="w-full h-full object-cover" />
         </div>
-        <div className="rounded-lg bg-gradient-to-r from-[#F05A8E] to-[#ED1C24] flex items-center justify-center aspect-square">
-          <div className="text-center">
+        <Link
+          to="/gallery"
+          className="rounded-lg bg-gradient-to-r from-[#F05A8E] to-[#ED1C24] flex items-center justify-center aspect-square"
+        >
+          <div className="flex items-center justify-center gap-2">
             <p className="text-white text-sm">See All</p>
+            <IoIosArrowForward color="white" />
           </div>
-        </div>
+        </Link>
       </div>
 
       {/* Desktop Layout - 3 Column */}
@@ -67,11 +73,15 @@ const Anjali = () => {
           <div className="rounded-lg overflow-hidden">
             <img src={couple25} alt="Wedding" className="w-full h-full object-cover" />
           </div>
-          <div className="rounded-2xl bg-gradient-to-r from-[#F05A8E] to-[#ED1C24] flex items-center justify-center">
-            <div className="text-center">
+          <Link
+            to="/gallery"
+            className="rounded-2xl bg-gradient-to-r from-[#F05A8E] to-[#ED1C24] flex items-center justify-center"
+          >
+            <div className="flex items-center justify-center gap-2">
               <p className="text-white text-sm">See All</p>
+              <IoIosArrowForward color="white" />
             </div>
-          </div>
+          </Link>
           <div className="rounded-lg overflow-hidden">
             <img src={couple26} alt="Wedding" className="w-full h-full object-cover" />
           </div>

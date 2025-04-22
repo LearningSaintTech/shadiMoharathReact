@@ -12,7 +12,8 @@ import Couple14 from "../assets/images/Couple-14.svg";
 import pandal from "../assets/images/Pandal.svg";
 import Christian from "../assets/images/Christian.svg";
 import Couple9 from "../assets/images/Couple 9.svg";
-import { IoSearchCircle } from "react-icons/io5";
+import { IoSearchSharp } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
 const Blog = () => {
   return (
@@ -63,12 +64,13 @@ const Blog = () => {
                   have a backup plan for surprises, so you can relax and enjoy
                   your special day.
                 </p>
-                <a
-                  href="#"
+                <Link
+                  to="/blog/1"
                   className="text-[#EF3B59] font-medium underline text-sm sm:text-base"
                 >
                   Read more
-                </a>
+                </Link>
+                
               </div>
             </div>
 
@@ -90,12 +92,12 @@ const Blog = () => {
                   florists. Ensure your attire is ready and have a backup plan for
                   surprises, so you can relax and enjoy your celebration.
                 </p>
-                <a
-                  href="#"
+                <Link
+                  to="/blog/1"
                   className="text-[#EF3B59] font-medium underline text-sm sm:text-base"
                 >
                   Read more
-                </a>
+                </Link>
               </div>
             </div>
 
@@ -117,12 +119,13 @@ const Blog = () => {
                   florists. Ensure your attire is ready and have a backup plan for
                   surprises, so you can relax and enjoy your celebration.
                 </p>
-                <a
-                  href="#"
+               
+                <Link
+                  to="/blog/1"
                   className="text-[#EF3B59] font-medium underline text-sm sm:text-base"
                 >
                   Read more
-                </a>
+                </Link>
               </div>
             </div>
 
@@ -159,8 +162,8 @@ const Blog = () => {
           <div className="w-full lg:w-80 space-y-6">
             <div className="bg-white rounded-2xl shadow-md p-4 sm:p-6 space-y-6">
               <div className="relative w-full">
-                <span className="absolute inset-y-0 right-2 top-1/2 -translate-y-1/2">
-                  <IoSearchCircle color="pink" size={32} />
+                <span className="absolute inset-y-0 right-2 top-1/2 -translate-y-1/2 bg-gradient-to-r from-[#F05A8E] to-[#ED1C24] rounded-full">
+                  <IoSearchSharp  color="white" size={20} />
                 </span>
                 <input
                   type="text"
@@ -241,7 +244,7 @@ const Blog = () => {
                 >
                   Tags
                 </h3>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-0">
                   {[
                     "Connection",
                     "Match Making",

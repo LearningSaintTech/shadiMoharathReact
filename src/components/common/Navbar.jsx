@@ -1,23 +1,23 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { IoLogoFacebook } from "react-icons/io";
 import { FaLinkedin, FaInstagram, FaYoutube, FaBars, FaTimes } from "react-icons/fa";
 import Logo from "../../assets/images/Logo.svg";
 import Login from "../../assets/images/Frame 29.svg";
-import { ChevronDown} from "lucide-react";
+import { ChevronDown } from "lucide-react";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className="w-full  mt-12">
+    <div className="w-full mt-12">
       {/* 🔴 Top Red Bar - Hidden on Mobile */}
       <div className="hidden sm:flex bg-gradient-to-r from-[#F05A8E] to-[#ED1C24] text-white w-full h-full py-2 px-8 justify-between items-center text-sm">
         {/* Left Side - FAQ & Support */}
         <div className="flex space-x-4">
-          <Link  to="/faq" className="font-[400]">FAQs</Link>
+          <NavLink to="/faq" className="font-[400]">FAQs</NavLink>
           <span>|</span>
-          <Link to="/contact" className="font-[400]" >Help & Support</Link>
+          <NavLink to="/contact" className="font-[400]">Help & Support</NavLink>
         </div>
 
         {/* Right Side - Contact & Social Media */}
@@ -31,14 +31,14 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* 🔵 Main Navigation Bar - Visible on All Screens */}
+      {/* 🔵 Main Navigation Bar */}
       <div className="bg-orange-50 w-full h-[4.01vw] flex justify-between items-center px-4 sm:px-10 relative">
-        {/* Left Side - Logo */}
+        {/* Left - Logo */}
         <div className="flex items-center">
           <img src={Logo} alt="ShadiMuhrat Logo" className="h-10" />
         </div>
 
-        {/* Mobile Menu Button */}
+        {/* Mobile Toggle Button */}
         <button className="md:hidden text-red-500 text-2xl" onClick={() => setMenuOpen(!menuOpen)}>
           {menuOpen ? <FaTimes /> : <FaBars />}
         </button>
@@ -48,28 +48,38 @@ export default function Navbar() {
                         flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 text-red-400 
                         font-[600] text-center md:text-left transition-all duration-300 
                         ${menuOpen ? "block" : "hidden md:flex"}`}>
-          <Link to="/" className="hover:text-[#C1645C]">Home</Link>
-          <Link to="/about" className="hover:text-[#C1645C]">About</Link>
-          <Link to="/gallery" className="hover:text-[#C1645C]">Gallery</Link>
-          <Link to="/blog" className="hover:text-[#C1645C]">Blog</Link>
-          <Link to="/pricing" className="hover:text-[#C1645C]">Pricing</Link>
-          
+
+          {[
+            { to: "/", label: "Home" },
+            { to: "/about", label: "About" },
+            { to: "/gallery", label: "Gallery" },
+            { to: "/blog", label: "Blog" },
+            { to: "/pricing", label: "Pricing" },
+          ].map(({ to, label }) => (
+            <NavLink
+              key={to}
+              to={to}
+              className={({ isActive }) =>
+                isActive
+                  ? "text-[#F05A8E] border-b-2 border-[#F05A8E] pb-1"
+                  : "hover:text-[#C1645C]"
+              }
+            >
+              {label}
+            </NavLink>
+          ))}
         </div>
 
-        {/* Right Side - Login Button */}
-       
-          <Link to="/Authentication">
-
-
-<button
-  type="submit"
-  className=" w-[6.8vw] h-[2.76vw] hidden sm:flex items-center justify-center  gap-[0.6vw] px-[1.25vw] py-[0.52vw] bg-gradient-to-r from-[#F15BB5] to-[#F72C25] hover:opacity-90 text-white rounded-full text-[0.83vw] transition"
->
-  Login
-  <ChevronDown size="1vw" />
-</button>
-
-    </Link>
+        {/* Right - Login Button */}
+        <NavLink to="/Authentication">
+          <button
+            type="button"
+            className="w-[6.8vw] h-[2.76vw] hidden sm:flex items-center justify-center gap-[0.6vw] px-[1.25vw] py-[0.52vw] bg-gradient-to-r from-[#F15BB5] to-[#F72C25] hover:opacity-90 text-white rounded-full text-[0.83vw] transition"
+          >
+            Login
+            <ChevronDown size="1vw" />
+          </button>
+        </NavLink>
       </div>
     </div>
   );
