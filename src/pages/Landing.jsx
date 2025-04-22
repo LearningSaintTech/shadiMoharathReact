@@ -33,13 +33,23 @@ export default function Landing(){
     
     <Stats/>
     
-    <Together/>
+    {/* <Together/> */}
     
     <Wedding/>
     <Plan/>
-    <AppDownloadBanner/>
-    <RecentCouples/>
-    <TestimonialSection/>
+
+
+
+
+    {/* <AppDownloadBanner/> */}
+    {/* <RecentCouples/>
+    <TestimonialSection/> */}
+
+
+
+
+
+
     <Anjali/>
     <Latest/>
     <PerfectMatch/>

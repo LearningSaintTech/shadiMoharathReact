@@ -40,12 +40,12 @@ const Stats = () => {
       <h2 className="text-[3.5vw]   max-sm:text-[10vw] max-md:text-[7vw] font-normal font-Raleway text-black">
         Our Services
       </h2>
-      <p className="text-gray-600 md:max-w-[38vw] m-[4vw]  md:text-[0.9vw] max-sm:text-[5vw] opacity-80 font-normal mt-2">
+      <p className="text-gray-600 md:max-w-[38vw] m-[4vw]  md:text-[2vw] lg:text-[0.9vw]  max-sm:text-[5vw] opacity-80 font-normal mt-2">
         Personalized matchmaking services designed to connect you with your
         ideal life partner, based on compatibility, values, and aspirations.
       </p>
       </div>
-      <div className="grid max-sm:grid-cols-1 md:p-0 max-sm:p-[10vw] sm:grid-cols-2 md:grid-cols-4 md:gap-7 gap-[30vw] mt-8">
+      <div className="grid max-sm:grid-cols-1 md:p-0 max-sm:p-[10vw] sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 md:gap-7 gap-[30vw] mt-8">
         {StatsData.map((service, index) => (
           <div
             key={index}

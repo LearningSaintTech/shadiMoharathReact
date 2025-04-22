@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
 
 import Patel from "../../assets/images/Patel.svg";
@@ -26,9 +26,18 @@ const TrustedCouples = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [slidesPerView, setSlidesPerView] = useState(1);
   const [isAutoPlay, setIsAutoPlay] = useState(true);
+  const [isTransitioning, setIsTransitioning] = useState(true);
+  const carouselRef = useRef(null);
 
   const totalSlides = couples.length;
   const AUTO_PLAY_INTERVAL = 3000; // 3 seconds
+
+  // Create cloned slides for infinite looping
+  const clonedCouples = [
+    ...couples.slice(-slidesPerView), // Prepend last slides
+    ...couples, // Original slides
+    ...couples.slice(0, slidesPerView), // Append first slides
+  ];
 
   // Calculate slides to show based on breakpoints
   const getSlidesPerView = () => {
@@ -41,46 +50,70 @@ const TrustedCouples = () => {
   useEffect(() => {
     const updateSlides = () => {
       setSlidesPerView(getSlidesPerView());
+      setCurrentIndex(0); // Reset to start on resize
     };
     updateSlides();
     window.addEventListener("resize", updateSlides);
     return () => window.removeEventListener("resize", updateSlides);
   }, []);
 
-  const maxIndex = Math.max(0, totalSlides - slidesPerView);
+  const maxIndex = totalSlides - 1;
 
-  // Auto-play logic
+  // Auto-play logic with infinite loop
   useEffect(() => {
     if (!isAutoPlay) return;
 
     const interval = setInterval(() => {
       setCurrentIndex((prev) => {
         if (prev >= maxIndex) {
-          return 0; // Loop back to the first slide
+          // When reaching the last original slide
+          setTimeout(() => {
+            setIsTransitioning(false); // Disable transition for instant reset
+            setCurrentIndex(0); // Reset to first original slide
+            setTimeout(() => setIsTransitioning(true), 0); // Re-enable transition
+          }, 300); // Match transition duration
+          return prev + 1; // Move to first cloned slide
         }
         return prev + 1;
       });
     }, AUTO_PLAY_INTERVAL);
 
-    return () => clearInterval(interval); // Clear interval on unmount
+    return () => clearInterval(interval);
   }, [isAutoPlay, maxIndex]);
 
   // Handle user interaction (pause auto-play)
   const handleUserInteraction = () => {
     setIsAutoPlay(false);
-    // Optionally resume auto-play after 5 seconds of inactivity
-    setTimeout(() => {
-      setIsAutoPlay(true);
-    }, 5000);
+    setTimeout(() => setIsAutoPlay(true), 5000); // Resume after 5 seconds
   };
 
   const handlePrev = () => {
-    setCurrentIndex((prev) => Math.max(0, prev - 1));
+    setCurrentIndex((prev) => {
+      if (prev <= 0) {
+        setTimeout(() => {
+          setIsTransitioning(false);
+          setCurrentIndex(maxIndex);
+          setTimeout(() => setIsTransitioning(true), 0);
+        }, 300);
+        return prev - 1;
+      }
+      return prev - 1;
+    });
     handleUserInteraction();
   };
 
   const handleNext = () => {
-    setCurrentIndex((prev) => Math.min(maxIndex, prev + 1));
+    setCurrentIndex((prev) => {
+      if (prev >= maxIndex) {
+        setTimeout(() => {
+          setIsTransitioning(false);
+          setCurrentIndex(0);
+          setTimeout(() => setIsTransitioning(true), 0);
+        }, 300);
+        return prev + 1;
+      }
+      return prev + 1;
+    });
     handleUserInteraction();
   };
 
@@ -143,12 +176,14 @@ const TrustedCouples = () => {
       <div className="relative overflow-x-hidden">
         <div className="mt-6 relative">
           <div
-            className="flex transition-transform duration-300"
+            ref={carouselRef}
+            className="flex"
             style={{
-              transform: `translateX(-${(currentIndex * 100) / slidesPerView}%)`,
+              transform: `translateX(-${((currentIndex + slidesPerView) * 100) / slidesPerView}%)`,
+              transition: isTransitioning ? "transform 0.3s ease-in-out" : "none",
             }}
           >
-            {couples.map((couple, idx) => (
+            {clonedCouples.map((couple, idx) => (
               <div
                 key={idx}
                 className="flex-shrink-0"

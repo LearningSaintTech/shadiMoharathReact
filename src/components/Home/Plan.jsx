@@ -63,7 +63,7 @@ const Pricing = () => {
       
 
       {/* Pricing Section */}
-      <div className="relative flex flex-col items-center p-[3vw] overflow-hidden min-h-screen">
+      <div className="relative flex flex-col items-center p-[3vw] overflow-hidden ">
         <img
           src={Background}
           alt="Background"

@@ -3,7 +3,7 @@ import bgVideo from "../../assets/images/video.mp4";
 
 const HeroSection = () => {
   return (
-    <div className="relative w-full h-[45.156vw] overflow-hidden">
+    <div className="relative w-full  md:h-[45.156vw] h-[55vw] overflow-hidden">
       {/* Video Background */}
       <video
         autoPlay
@@ -30,7 +30,7 @@ const HeroSection = () => {
         </h1>
 
         {/* Subheading */}
-        <p className=" text-[4vw] sm:text-[2.5vw] md:text-[0.4vw] lg:text-[1vw]  font-extralight  ">
+        <p className=" text-[4vw] sm:text-[2.5vw] md:text-[2vw] lg:text-[1vw]  font-extralight  ">
           Experience the joy of life and create happiness together with Shadi
           Muhurat
         </p>
