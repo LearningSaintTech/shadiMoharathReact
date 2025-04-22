@@ -12,7 +12,7 @@ import { IoIosArrowForward } from "react-icons/io";
 
 const Anjali = () => {
   return (
-    <div className="px-4 lg:mx-16">
+    <div className="px-4 lg:mx-16 md:mx-5"> {/* Base padding for all screens, larger margin on lg screens */}
       {/* Header Section */}
       <div className="text-center mb-6">
         <p className="bg-gradient-to-r from-[#F05A8E] to-[#ED1C24] bg-clip-text text-transparent text-[1.5vw] hidden sm:block md:text-[3vw] lg:text-[0.8vw] font-medium mb-0 md:mb-[0.5vw] lg:mb-[0.3vw]">

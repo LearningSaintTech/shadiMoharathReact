@@ -85,8 +85,8 @@ export default function Latest() {
   };
 
   return (
-    <div className="  ">
-      <div className="flex  flex-col gap-[2vw] items-start mx-[4vw]">
+    <div className=" mt-[7vw]  mb-[10vw]">
+      <div className="flex  flex-col gap-[2vw] items-start mx-[7vw]">
         <div className=" flex  flex-col   md:flex-row items-center justify-between w-full">
           <h2 className=" md:text-[3.5vw] text-[9vw] lg:text-[3.5vw] font-Raleway font-normal  ">
             Latest News & Blog

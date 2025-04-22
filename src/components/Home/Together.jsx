@@ -17,8 +17,8 @@ import User from "../../assets/images/Usercontainer.svg";
 
 const Together = () => {
   return (
-    <div className="bg-[#FFF4EE] 
-    lg:bg-white mx-[3.125vw] rounded-xl overflow-hidden">
+    <div className="
+    sm:bg-white bg-auto mx-[3.125vw] rounded-xl overflow-hidden">
       {/* Scrolling Banner */}
       <div className="bg-gradient-to-r from-[#F05A8E] to-[#ED1C24] rounded-2xl py-4 sm:py-6 relative overflow-hidden hidden sm:block">
         <div className="animate-marquee whitespace-nowrap flex items-center">
@@ -215,8 +215,7 @@ const Together = () => {
           </div>
         </div>
 
-        {/* Info Card - Couples Paired */}
-        <div className="col-span-1 sm:col-span-1 row-span-1 sm:row-span-2 bg-[#FFF4EE] m-2 rounded-2xl px-3 py-4 h-[28vw] lg:h-[12.8vw] border border-[rgba(237,28,36,0.15)] sm:bg-white">
+     <div className="col-span-1 sm:col-span-1 row-span-1 sm:row-span-2 bg-[#FFF4EE] m-2 rounded-2xl px-3 py-4 h-[28vw] lg:h-[12.8vw] border border-[rgba(237,28,36,0.15)] sm:bg-white">
           <img
             src={Coup}
             alt="Couples Paired"
@@ -235,21 +234,13 @@ const Together = () => {
             Couples Paired
           </div>
         </div>
-
-        {/* Info Card - Weddings (Desktop Only) */}
-        
-
-        {/* Info Card - Genuine Profiles (Desktop Only) */}
-        
-
-        {/* Info Card - Korean (Desktop Only) */}
         <div className="bg-white m-2 hidden sm:block rounded-lg">
-          <img src={Korean} alt="Korean" className="w-full h-full object-cover" />
+          <img src={Korean} alt="Korean" className="w-full h-[13vw]" />
         </div>
 
         {/* Last Visual Block */}
         <div className="bg-white m-2 rounded-lg hidden sm:block">
-          <img src={Hands} alt="Hands" className="w-full h-full object-cover" />
+          <img src={Hands} alt="Hands" className="w-full h-[13vw]" />
         </div>
       </div>
     </div>
