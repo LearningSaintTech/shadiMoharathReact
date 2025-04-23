@@ -27,8 +27,8 @@ const Faq = () => {
         />
         <div className="absolute top-1/2 left-[5vw] transform -translate-y-1/2 text-white">
           <h1
-            className="text-[6vw] md:text-[3.5vw] font-serif font-Rosarivo lowercase"
-            style={{ fontVariant: "small-caps" }}
+            className="text-[6.25vw] md:text-[3.5vw] "
+            style={{ fontVariant: "Rosarivo" }}
           >
             frequently asked questions
           </h1>

@@ -12,7 +12,7 @@ export default function Navbar() {
   return (
     <div className="w-full mt-12">
       {/* 🔴 Top Red Bar - Hidden on Mobile */}
-      <div className="hidden sm:flex bg-gradient-to-r from-[#F05A8E] to-[#ED1C24] text-white w-full h-full py-2 px-8 justify-between items-center text-sm">
+      <div className="hidden lg:flex bg-gradient-to-r from-[#F05A8E] to-[#ED1C24] text-white w-full h-full py-2 px-8 justify-between items-center text-sm">
         {/* Left Side - FAQ & Support */}
         <div className="flex space-x-4">
           <NavLink to="/faq" className="font-[400]">FAQs</NavLink>
