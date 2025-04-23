@@ -65,12 +65,13 @@ const TestimonialSection = () => {
   };
 
   return (
-    <div className="relative bg-[#fff5f5]">
+    <div className="relative bg-[#fff4EE]">
       {/* Mobile View (up to 767px) */}
       <div className="md:hidden block py-12 px-4 text-center">
         <h2 className="text-black text-4xl font-medium mb-4 capitalize" style={{ fontFamily: "Raleway" }}>
           What They Say About Us
         </h2>
+        
         <div className="bg-white rounded-xl shadow-md p-6 flex flex-col items-center">
           <div className="flex text-xl gap-1 mb-2 text-yellow-500">
             {Array.from({ length: 5 }, (_, index) => (
@@ -102,6 +103,9 @@ const TestimonialSection = () => {
         <h2 className="text-black text-4xl font-medium mb-4 capitalize" style={{ fontFamily: "Raleway" }}>
           What They Say About Us
         </h2>
+        <p className="text-gray-500 text-[1vw] mb-10">
+            Trusted by thousands, loved by many.
+          </p>
         <div className="bg-white rounded-xl shadow-md p-6 flex flex-col items-center">
           <div className="flex text-xl gap-1 mb-2 text-yellow-500">
             {Array.from({ length: 5 }, (_, index) => (
@@ -137,7 +141,7 @@ const TestimonialSection = () => {
         <h2 className="text-black text-5xl font-medium mb-6 capitalize" style={{ fontFamily: "Raleway" }}>
           What They Say About Us
         </h2>
-        <p className="text-black/70 text-base font-medium mb-8">
+        <p className="text-black/70 text-[1vw] font-medium mb-8">
           Trusted by thousands, loved by many.
         </p>
 
@@ -211,12 +215,12 @@ const TestimonialSection = () => {
         onMouseLeave={handleMouseLeave}
       >
         <h2
-          className="text-black text-7xl font-medium mb-[1vw] capitalize"
+          className="text-black text-[4vw] font-medium mb-[1vw] capitalize"
           style={{ fontFamily: "Raleway" }}
         >
           What They Say About Us
         </h2>
-        <p className="text-black/70 text-[0.8vw] font-medium mb-10">
+        <p className="text-black/70 text-[1vw] font-medium mb-10">
           Trusted by thousands, loved by many.
         </p>
 
@@ -270,9 +274,9 @@ const TestimonialSection = () => {
             </button>
             <button
               onClick={handleNext}
-              className="bg-white shadow-md p-2 rounded-full hover:bg-pink-100 transition ml-4"
+              className="bg-[#ED1C24] shadow-md p-2 rounded-full hover:bg-pink-100 transition ml-4"
             >
-              <FaArrowRight className="text-pink-600" />
+              <FaArrowRight className="text-white" />
             </button>
           </div>
         </div>

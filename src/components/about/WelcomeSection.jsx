@@ -1,6 +1,10 @@
 import React from "react";
 import Cylinder from "../../assets/images/cylinder couple.svg";
 import { FaHeart, FaPhoneSquareAlt, FaEnvelope } from "react-icons/fa";
+import call from "../../assets/images/call.svg";
+import mailss from "../../assets/images/mailss.svg";
+import { IoIosArrowRoundForward } from "react-icons/io";
+import { IoIosArrowRoundBack } from "react-icons/io";
 
 const WelcomeSection = () => {
   return (
@@ -46,14 +50,24 @@ const WelcomeSection = () => {
             {/* Contact Info */}
             <div className="space-y-4 mt-6">
               <div className="flex items-center gap-3 text-pink-600 font-medium">
-                <FaPhoneSquareAlt className="text-[2.5rem] text-[#ED1C24]" />
+                {/* <FaPhoneSquareAlt className="text-[2.5rem] text-[#ED1C24]" /> */}
+                <img
+                                  src={call}
+                                  alt="Get Support"
+                                  className="w-10 h-10 object-contain"
+                                />
                 <div className="flex flex-col">
                   <span className="text-[1.8vw] bg-gradient-to-r from-[#F05A8E] to-[#ED1C24] bg-clip-text text-transparent">Enquiry</span>
                   <span className="text-base mt-1 bg-gradient-to-r from-[#F05A8E] to-[#ED1C24] bg-clip-text text-transparent">+91 966-544-3999</span>
                 </div>
               </div>
               <div className="flex items-center gap-3 text-red-500 font-medium">
-                <FaEnvelope className="text-[2.5rem] text-[#ED1C24]" />
+                {/* <FaEnvelope className="text-[2.5rem] text-[#ED1C24]" /> */}
+                <img
+                                  src={mailss}
+                                  alt="Get Support"
+                                  className="w-10 h-10 object-contain"
+                                />
                 <div className="flex flex-col">
                   <span className="text-[1.8vw] bg-gradient-to-r from-[#F05A8E] to-[#ED1C24] bg-clip-text text-transparent">Get Support</span>
                   <span className="text-base mt-1 text-black">Shadimuhurath@Gmail.Com</span>
@@ -77,13 +91,13 @@ const WelcomeSection = () => {
           <img src={Cylinder} alt="Bride and Groom" className="w-full h-auto rounded-md" />
         </div>
 
-        <div className="z-10 w-72 h-28 p-4 bg-gradient-to-br from-red-500 to-pink-600 rounded-3xl shadow-lg mb-4">
+        <div className="z-10 w-72 h-28 p-4 bg-gradient-to-r from-[#F05A8E] to-[#ED1C24] rounded-3xl shadow-lg mb-4">
           <p className="text-white text-sm font-['Poppins'] text-center">
             Dear Bride-to-be! Excited for your day! Let’s celebrate love! 💖
           </p>
         </div>
 
-        <div className="z-10 w-72 h-28 p-4 bg-gradient-to-br from-pink-500 to-red-600 rounded-3xl shadow-lg mb-6">
+        <div className="z-10 w-72 h-28 p-4 bg-gradient-to-r from-[#F05A8E] to-[#ED1C24] rounded-3xl shadow-lg mb-6">
           <p className="text-white text-sm font-['Poppins'] text-center">
             Hey, my friend! Excited to celebrate your big day and make unforgettable memories!
           </p>
@@ -153,14 +167,14 @@ const WelcomeSection = () => {
 
         <div className="space-y-4 mt-5">
           <div className="flex items-center justify-center gap-3">
-            <FaPhoneSquareAlt className="text-xl text-[#ED1C24]" />
+            <IoIosArrowRoundBack  className="text-xl text-[#ED1C24]" />
             <div>
               <p className="text-base font-semibold">Enquiry</p>
               <p className="text-sm text-pink-600">+91 966-544-3999</p>
             </div>
           </div>
           <div className="flex items-center justify-center gap-3">
-            <FaEnvelope className="text-xl text-[#ED1C24]" />
+            <IoIosArrowRoundForward className="text-xl text-[#ED1C24]" />
             <div>
               <p className="text-base font-semibold">Get Support</p>
               <p className="text-sm text-black">Shadimuhurath@Gmail.Com</p>

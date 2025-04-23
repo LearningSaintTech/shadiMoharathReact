@@ -1,76 +1,77 @@
-import { useRef } from 'react';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/navigation';
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import Couple3 from "../../assets/images/Couple3.svg";
+import Couple22 from "../../assets/images/Couple22.svg";
+import Couple23 from "../../assets/images/Couple23.svg";
+import Couple28 from "../../assets/images/Couple28.svg";
+import { IoChevronBack, IoChevronForward } from "react-icons/io5";
 
-import Couple22 from '../../assets/images/Couple22.svg';
-import Couple23 from '../../assets/images/Couple23.svg';
-import Couple3 from '../../assets/images/Couple3.svg';
-import Couple28 from '../../assets/images/Couple28.svg';
+const TEAM_MEMBERS = [
+  { name: "Shalini Jain", location: "Varanasi", image: Couple3 },
+  { name: "Kailash Chaurasia", location: "Varanasi", image: Couple22 },
+  { name: "Bhavna Goyal", location: "Varanasi", image: Couple23 },
+  { name: "Navjot Kaur", location: "Varanasi", image: Couple28 },
+  { name: "Shalini Jain", location: "Varanasi", image: Couple3 },
+  { name: "Kailash Chaurasia", location: "Varanasi", image: Couple22 },
+  { name: "Bhavna Goyal", location: "Varanasi", image: Couple23 },
+  { name: "Navjot Kaur", location: "Varanasi", image: Couple28 },
+];
 
-const RecentCouples = () => {
-  const prevRef = useRef(null);
-  const nextRef = useRef(null);
-
+const TeamSection = () => {
   return (
-    <div className="hidden lg:block bg-[#fff6f1] py-10 px-4 md:px-20 text-center overflow-hidden">
-      <h2 className="text-3xl md:text-4xl font-medium mb-2" style={{fontFamily:"Raleway"}}>Recent Couples</h2>
-      <p className="text-sm md:text-base max-w-xl mx-auto text-gray-600 mb-8 font-normal font-poppins">
-        Personalized matchmaking services designed to connect you with your ideal life partner,
-        based on compatibility, values, and aspirations.
-      </p>
-
-      <div className="relative w-full px-9">
-        <div
-          ref={prevRef}
-          className="absolute -left-7 top-1/2 -translate-y-1/2 z-20 cursor-pointer bg-[#FCE2C5] rounded-full p-2 shadow-md"
+    <section className="bg-[#FFF4EE] py-6 px-4 sm:py-8 sm:px-6 md:py-10 md:px-8 lg:py-12 lg:px-10 text-center">
+      <div className="flex flex-col justify-center items-center">
+        <h2
+          className="text-2xl sm:text-3xl md:text-4xl lg:text-[3.5vw] font-medium text-gray-800 mb-2"
+          style={{ fontFamily: "Raleway" }}
         >
-          <ChevronLeft className="w-6 h-6 text-[#C1645C]" />
-        </div>
-        <div
-          ref={nextRef}
-          className="absolute -right-3 top-1/2 -translate-y-1/2 z-20 cursor-pointer bg-[#FCE2C5] rounded-full p-2 shadow-md"
-        >
-          <ChevronRight className="w-6 h-6 text-[#C1645C]" />
-        </div>
-
+          Recent Couples
+        </h2>
+        <p className="text-black/70 text-sm sm:text-base md:text-lg font-normal font-['Poppins'] leading-normal w-full sm:w-[80%] md:w-[60%] lg:w-[38vw] text-[0.8vw] min-[320px]:text-[2.5vw] sm:text-[1.5vw] md:text-[1vw]">
+          Personalized matchmaking services designed to connect you with your ideal life partner, based on compatibility, values, and aspirations.
+        </p>
+      </div>
+      <div className="relative w-full max-w-[85vw] mx-auto mt-6 sm:mt-8 overflow-visible">
         <Swiper
           modules={[Navigation]}
+          navigation={{
+            nextEl: ".next-arrow",
+            prevEl: ".prev-arrow",
+          }}
           spaceBetween={10}
           slidesPerView={1.2}
-          onInit={(swiper) => {
-            swiper.params.navigation.prevEl = prevRef.current;
-            swiper.params.navigation.nextEl = nextRef.current;
-            swiper.navigation.init();
-            swiper.navigation.update();
-          }}
           breakpoints={{
-            640: {
-              slidesPerView: 2,
-            },
-            1024: {
-              slidesPerView: 4,
-            },
+            320: { slidesPerView: 1.2, spaceBetween: 10 },
+            480: { slidesPerView: 1.5, spaceBetween: 15 },
+            640: { slidesPerView: 2, spaceBetween: 20 },
+            768: { slidesPerView: 3, spaceBetween: 25 },
+            1024: { slidesPerView: 4, spaceBetween: 30 },
           }}
         >
-          <SwiperSlide>
-            <img src={Couple23} alt="Couple 1" className="rounded-[1.042vw] w-[20.156vw] h-[27.552vw] object-cover" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={Couple3} alt="Couple 2" className="rounded-[1.042vw] w-[20.552vw] h-[27.552vw] object-cover" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={Couple22} alt="Couple 3" className="rounded-[1.042vw] w-[20.552vw] h-[27.552vw] object-cover" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={Couple28} alt="Couple 4" className="rounded-[1.042vw] w-[20.552vw] h-[27.552vw] object-cover" />
-          </SwiperSlide>
+          {TEAM_MEMBERS.map((member, index) => (
+            <SwiperSlide key={index}>
+              <div className="relative rounded-2xl overflow-hidden shadow-lg bg-white aspect-[3/4] sm:aspect-[2/3] md:aspect-[3/4]">
+                <img
+                  src={member.image}
+                  alt={member.name}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </SwiperSlide>
+          ))}
         </Swiper>
+        <button className="prev-arrow absolute -left-4 sm:-left-6 md:-left-10 lg:-left-20 top-1/2 -translate-y-1/2 bg-[#FCE2C5] rounded-full p-2 sm:p-2.5 md:p-3 shadow-lg cursor-pointer z-60 hover:bg-gray-100 transition">
+          <IoChevronBack className="text-[#C1645C] text-lg sm:text-xl md:text-2xl" />
+        </button>
+        <button className="next-arrow absolute -right-4 sm:-right-6 md:-right-10 lg:-right-20 top-1/2 -translate-y-1/2 bg-[#FCE2C5] rounded-full p-2 sm:p-2.5 md:p-3 shadow-lg cursor-pointer z-60 hover:bg-gray-100 transition">
+          <IoChevronForward className="text-[#C1645C] text-lg sm:text-xl md:text-2xl" />
+        </button>
       </div>
-    </div>
+    </section>
   );
 };
 
-export default RecentCouples;
+export default TeamSection;

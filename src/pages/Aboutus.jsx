@@ -9,7 +9,8 @@ import { FaHeart } from "react-icons/fa";
 import { IoStar } from "react-icons/io5";
 import { FaStar, FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import couple3 from "../assets/images/Couple3.svg";
-
+import call from "../../assets/images/call.svg";
+import mailss from "../../assets/images/mailss.svg";
 import User from "../assets/images/Usercontainer.svg";
 import men from "../assets/images/mens.svg";
 import women from "../assets/images/womens.svg";
@@ -22,10 +23,10 @@ import Male from "../assets/images/Male.svg";
 import Coup from "../assets/images/Coup.svg";
 import { FaPhoneSquareAlt } from "react-icons/fa";
 import { FaEnvelope } from "react-icons/fa";
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/navigation';
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
 
 import { IoChevronForward } from "react-icons/io5";
 import { IoChevronBack } from "react-icons/io5";
@@ -53,7 +54,6 @@ const AboutUs = () => {
           </h1>
           <p className="text-[3vw] md:text-[20px] mt-[1vw] font-light leading-snug">
             Most Trusted and premium Matrimony Service in the World.
-
           </p>
         </div>
       </div>
@@ -134,13 +134,11 @@ const AboutUs = () => {
           </div>
         </div>
 
-
         <div className="relative  w-full p-6 md:p-10 lg:p-10 flex flex-col lg:flex-row items-center justify-center overflow-hidden">
           {/* Floating Message Top Right */}
           <div className="absolute top-30 right-4 bg-gradient-to-r from-pink-500 to-red-500 text-white p-3 rounded-xl shadow-lg text-sm max-w-[320px] flex items-center gap-2 z-10">
             <span>
               Dear Bride-to-be! Excited for your day! Let’s celebrate love!
-
               <FaHeart color="red" />
             </span>
           </div>
@@ -149,54 +147,80 @@ const AboutUs = () => {
 
           <div className="absolute bottom-30 right-95 bg-gradient-to-r from-pink-600 to-red-500 text-white p-3 rounded-xl shadow-lg text-[1.2vw] max-w-[300px] flex items-center gap-2 z-10">
             <span>
-              Hey, my friend! Excited to celebrate your big day and make unforgettable memories!
+              Hey, my friend! Excited to celebrate your big day and make
+              unforgettable memories!
             </span>
           </div>
 
           {/* Left Content */}
           <div className="flex-1 text-center lg:text-left space-y-4 max-w-xl z-0">
-
             <h1
               className="text-[3.594vw] font-medium text-black"
               style={{ fontFamily: "Raleway" }}
             >
               Welcome To
               <br />
-              <span
-                className="text-[3.594vw] bg-gradient-to-r from-[#F05A8E] to-[#ED1C24] bg-clip-text text-transparent block"
-              >
+              <span className="text-[3.594vw] bg-gradient-to-r from-[#F05A8E] to-[#ED1C24] bg-clip-text text-transparent block">
                 Shadimuhurath
               </span>
             </h1>
             <p className="text-[#4D4947]">
-              Join ShadiMuhurath today and take the first step toward a beautiful life ahead. With easy-to-use features, advanced search options, and a dedicated support team, we are here to guide you every step of the way. Let’s create a timeless bond for a lifetime of love and happiness.
+              Join ShadiMuhurath today and take the first step toward a
+              beautiful life ahead. With easy-to-use features, advanced search
+              options, and a dedicated support team, we are here to guide you
+              every step of the way. Let’s create a timeless bond for a lifetime
+              of love and happiness.
             </p>
-            <p className=" text-[1.667vw] bg-gradient-to-r from-[#F05A8E] to-[#ED1C24] bg-clip-text text-transparent 
+            <p
+              className=" text-[1.667vw] bg-gradient-to-r from-[#F05A8E] to-[#ED1C24] bg-clip-text text-transparent 
   font-normal cursor-pointer"
-              style={{ fontFamily: "Ramaraja" }}>
-              Click Here To<span className="text-[#4D4947] text-[1.146vw] font-medium"> Start Your Matrimony Service Now.</span>
+              style={{ fontFamily: "Ramaraja" }}
+            >
+              Click Here To
+              <span className="text-[#4D4947] text-[1.146vw] font-medium">
+                {" "}
+                Start Your Matrimony Service Now.
+              </span>
             </p>
             <p className="text-[#4D4947]">
-              At ShadiMuhurath, we believe that every love story is unique, and so is every match. Our platform is designed to connect you with your perfect life partner, combining tradition with the convenience of modern technology.
+              At ShadiMuhurath, we believe that every love story is unique, and
+              so is every match. Our platform is designed to connect you with
+              your perfect life partner, combining tradition with the
+              convenience of modern technology.
             </p>
 
             {/* Contact Info */}
             <div className="space-y-2 mt-4">
               <div className="flex items-center gap-2 text-pink-600 font-medium">
+                <img
+                  src={call}
+                  alt="Get Support"
+                  className="w-10 h-10 object-contain"
+                />
 
-                <FaPhoneSquareAlt className="text-2xl mt-1" size={40} />
                 <div className="flex flex-col">
-                  <span className="text-[1.667vw] bg-gradient-to-r from-[#F05A8E] to-[#ED1C24] bg-clip-text text-transparent ">Enquiry</span>
-                  <span className="text-sm mt-0.5 bg-gradient-to-r from-[#F05A8E] to-[#ED1C24] bg-clip-text text-transparent ">+91 966‑544‑3999</span>
+                  <span className="text-[1.667vw] bg-gradient-to-r from-[#F05A8E] to-[#ED1C24] bg-clip-text text-transparent ">
+                    Enquiry
+                  </span>
+                  <span className="text-sm mt-0.5 bg-gradient-to-r from-[#F05A8E] to-[#ED1C24] bg-clip-text text-transparent ">
+                    +91 966‑544‑3999
+                  </span>
                 </div>
               </div>
               <div className="flex items-center gap-2 text-red-500 font-medium">
-                <FaEnvelope size={40} />
+                <img
+                  src={mailss}
+                  alt="Get Support"
+                  className="w-10 h-10 object-contain"
+                />
                 <div className="flex flex-col">
-                  <span className="text-[1.667vw] bg-gradient-to-r from-[#F05A8E] to-[#ED1C24] bg-clip-text text-transparent ">Get Support</span>
-                  <span className="text-sm text-black ">Shadimuhurath@Gmail.Com</span>
+                  <span className="text-[1.667vw] bg-gradient-to-r from-[#F05A8E] to-[#ED1C24] bg-clip-text text-transparent ">
+                    Get Support
+                  </span>
+                  <span className="text-sm text-black ">
+                    Shadimuhurath@Gmail.Com
+                  </span>
                 </div>
-
               </div>
             </div>
           </div>
@@ -209,12 +233,9 @@ const AboutUs = () => {
                 alt="Bride and Groom"
                 className="object-cover w-full h-full"
               />
-
             </div>
           </div>
         </div>
-
-
 
         {/* Image Grid */}
 
@@ -279,7 +300,13 @@ const AboutUs = () => {
               className="text-[5vw] sm:text-[3.5vw] flex font-medium bg-gradient-to-r from-[#F05A8E] to-[#ED1C24] bg-clip-text text-transparent"
               style={{ fontFamily: "Raleway" }}
             >
-              1742<span className="-mt-[1vw] sm:-mt-[0.2vw] font-extralight" style={{ fontFamily: "Raleway" }}>+</span>
+              1742
+              <span
+                className="-mt-[1vw] sm:-mt-[0.2vw] font-extralight"
+                style={{ fontFamily: "Raleway" }}
+              >
+                +
+              </span>
             </div>
             <div
               className="text-[3.5vw] sm:text-[1vw] text-black font-medium mt-1"
@@ -298,7 +325,13 @@ const AboutUs = () => {
               className="text-[5vw] sm:text-[3.833vw] flex font-medium bg-gradient-to-r from-[#F05A8E] to-[#ED1C24] bg-clip-text text-transparent"
               style={{ fontFamily: "Raleway" }}
             >
-              547<span className="-mt-[1vw] sm:-mt-[0.2vw] font-extralight" style={{ fontFamily: "Raleway" }}>+</span>
+              547
+              <span
+                className="-mt-[1vw] sm:-mt-[0.2vw] font-extralight"
+                style={{ fontFamily: "Raleway" }}
+              >
+                +
+              </span>
             </div>
             <div
               className="text-[3vw] sm:text-[1.2vw] text-black"
@@ -307,17 +340,21 @@ const AboutUs = () => {
               Couples Paired
             </div>
           </div>
-
         </div>
-        <div className=" py-12 px-4 md:px-16 text-center relative">
+        <div className=" py-12 px-4 md:px-10 text-center relative">
           {/* Heading */}
-          <h2 className="text-3xl md:text-4xl font-semibold text-black mb-2">
+
+          <h1
+            className="text-4xl sm:text-[3vw] font-medium text-black mb-2"
+            style={{ fontFamily: "Raleway" }}
+          >
             What They Say About Us
-          </h2>
-          <p className="text-gray-500 text-sm mb-10">Trusted by thousands, loved by many.</p>
+          </h1>
+          <p className="text-gray-500 text-sm mb-10">
+            Trusted by thousands, loved by many.
+          </p>
 
           {/* Arrows */}
-
 
           {/* Testimonial Card */}
           <div className=" relative bg-white rounded-xl shadow-md p-6 md:p-16 flex flex-col md:flex-row items-center gap-6 max-w-full mx-auto">
@@ -332,9 +369,10 @@ const AboutUs = () => {
                 <FaStar />
               </div>
               <p className="text-gray-700 text-sm  text-left leading-relaxed">
-                At Shadi Muhurat, we take pride in helping couples create the wedding of their dreams.
-                But don’t just take our word for it — hear what our happy couples have to say! We
-                believe in making every celebration unique, and it’s our joy to be part of such a
+                At Shadi Muhurat, we take pride in helping couples create the
+                wedding of their dreams. But don’t just take our word for it —
+                hear what our happy couples have to say! We believe in making
+                every celebration unique, and it’s our joy to be part of such a
                 special moment in your lives.
               </p>
             </div>
@@ -349,24 +387,22 @@ const AboutUs = () => {
             </div>
           </div>
           <div className="mt-6 flex items-start justify-start gap-4">
-            <button className="bg-white p-2 rounded-full  s">
+            <button className="bg-yellow-500 p-2 rounded-full ">
               <FaArrowLeft className="text-black" />
             </button>
-            <button className="bg-white shadow-md p-2 rounded-full hover:bg-pink-100 transition">
-              <FaArrowRight className="text-pink-600" />
+            <button className="bg-[#ED1C24] shadow-md p-2 rounded-full  ">
+              <FaArrowRight className="text-white" />
             </button>
           </div>
 
           {/* Footer */}
           <div className="mt-6 flex flex-col items-center gap-1">
-            <span className="font-semibold text-gray-800">Dipak Hilal Patil</span>
+            <span className="font-semibold text-gray-800">
+              Dipak Hilal Patil
+            </span>
             <span className="text-sm text-gray-500">dipakpatil7@gmail.com</span>
           </div>
         </div>
-
-
-
-
 
         {/* Our Team */}
         {/* <section className="bg-transparent py-6 md:py-12 px-4 md:px-6 text-center">
@@ -401,9 +437,12 @@ const AboutUs = () => {
           </div>
         </section> */}
         <section className="bg-[#FFF4EE] py-6 md:py-1 px-4 md:px-6 text-center">
-          <h2 className="text-xl md:text-[3.8vw] font-medium font-Raleway text-gray-800">Our Team</h2>
+          <h2 className="text-xl md:text-[3.8vw] font-medium font-Raleway text-gray-800">
+            Our Team
+          </h2>
           <p className="text-gray-600 text-sm md:text-[0.6vw] max-w-2xl mx-auto mt-2 hidden sm:block">
-            Personalized matchmaking services designed to connect you with your ideal life partner, based on compatibility, values, and aspirations.
+            Personalized matchmaking services designed to connect you with your
+            ideal life partner, based on compatibility, values, and aspirations.
           </p>
 
           <div className="relative max-w-6xl mx-auto px-2 sm:px-0 mt-6 overflow-visible">
@@ -422,25 +461,41 @@ const AboutUs = () => {
             >
               <SwiperSlide>
                 <div className="rounded-lg overflow-hidden shadow">
-                  <img src={Kailash} alt="Team Member 1" className="w-full h-auto object-cover" />
+                  <img
+                    src={Kailash}
+                    alt="Team Member 1"
+                    className="w-full h-auto object-cover"
+                  />
                 </div>
               </SwiperSlide>
 
               <SwiperSlide>
                 <div className="rounded-lg overflow-hidden shadow">
-                  <img src={Jain} alt="Team Member 2" className="w-full h-auto object-cover" />
+                  <img
+                    src={Jain}
+                    alt="Team Member 2"
+                    className="w-full h-auto object-cover"
+                  />
                 </div>
               </SwiperSlide>
 
               <SwiperSlide>
                 <div className="rounded-lg overflow-hidden shadow">
-                  <img src={Goyal} alt="Team Member 3" className="w-full h-auto object-cover" />
+                  <img
+                    src={Goyal}
+                    alt="Team Member 3"
+                    className="w-full h-auto object-cover"
+                  />
                 </div>
               </SwiperSlide>
 
               <SwiperSlide>
                 <div className="rounded-lg overflow-hidden shadow">
-                  <img src={Navjot} alt="Team Member 4" className="w-full h-auto object-cover" />
+                  <img
+                    src={Navjot}
+                    alt="Team Member 4"
+                    className="w-full h-auto object-cover"
+                  />
                 </div>
               </SwiperSlide>
             </Swiper>
@@ -452,7 +507,6 @@ const AboutUs = () => {
             <button className="next-arrow absolute -right-12 top-1/2 -translate-y-1/2 bg-[#FCE2C5] rounded-full p-3 shadow cursor-pointer z-60 ">
               <IoChevronForward className="text-[#C1645C]" />
             </button>
-
           </div>
         </section>
       </div>

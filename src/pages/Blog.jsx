@@ -20,7 +20,7 @@ import gold from "../assets/images/gold.svg";
 
 const Blog = () => {
   return (
-    <div className="bg-[#FCECEC] min-h-screen">
+    <div className="bg-[#FFF4EE] min-h-screen">
       <Navbar />
 
       {/* Hero Section */}
@@ -32,7 +32,7 @@ const Blog = () => {
         />
         <div className="absolute top-1/2 left-4 sm:left-6 md:left-8 lg:left-10 xl:left-[4%] transform -translate-y-1/2 text-white px-4 sm:px-6">
           <h1
-            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl"
+            className="text-2xl sm:text-3xl md:text-4xl lg:text-[7vw] xl:text-[6.25vw]"
             style={{ fontFamily: "Rosarivo, serif" }}
           >
             Blog
@@ -44,10 +44,10 @@ const Blog = () => {
       </div>
 
       {/* Main Content */}
-      <div className="px-4 sm:px-6 md:px-8 lg:px-10 xl:px-16 py-6 sm:py-8 md:py-10 lg:py-12 xl:py-16">
-        <div className="flex flex-col lg:flex-row gap-6 lg:gap-8 xl:gap-10">
+      <div className="px-4 sm:px-6 md:px-8 lg:px-10 xl:px-30 py-6 sm:py-8 md:py-10 lg:py-12 xl:py-25">
+        <div className="flex flex-col lg:flex-row gap-8 xl:gap-18 px-4 sm:px-6 lg:px-12">
           {/* Blog Cards Section */}
-          <div className="flex-1 space-y-8">
+          <div className="flex-1 space-y-8 ">
             <div className="bg-white rounded-2xl shadow-md overflow-hidden">
               <div className="relative w-full aspect-[2.2/1]">
                 <img
@@ -55,18 +55,18 @@ const Blog = () => {
                   alt="6 Things You Need To Prepare For Your Wedding Day"
                   className="w-full h-full object-cover bg-[#FFF4EE]"
                 />
-                <div className="absolute bottom-2 left-4 bg-[#000000]/[0.7] text-white text-xs sm:text-sm px-2 py-1 rounded-full font-poppins">
+                <div className="absolute bottom-7 left-7 bg-[#000000]/[0.4] text-white text-xs sm:text-sm px-2 py-1 rounded-full font-poppins">
                   Aug 12, 2024
                 </div>
               </div>
               <div className="p-4 sm:p-6 md:p-7 lg:p-8">
                 <h2
-                  className="text-base sm:text-lg md:text-xl lg:text-2xl font-medium mb-2"
+                  className="text-[4vw] sm:text-lg md:text-[3vw] lg:text-[1.7vw] font-medium mb-2"
                   style={{ fontFamily: "Raleway" }}
                 >
                   6 Things You Need To Prepare For Your Wedding Day
                 </h2>
-                <p className="text-gray-700 text-sm sm:text-base md:text-lg lg:text-lg font-poppins leading-relaxed font-normal">
+                <p className="text-gray-700 text-[2.8vw] sm:text-base md:text-lg lg:text-[1vw] font-poppins leading-relaxed font-normal">
                   Planning your wedding day means creating a timeline,
                   finalizing your guest list, and choosing trustworthy vendors
                   like photographers and florists. Remember to prepare your
@@ -89,18 +89,18 @@ const Blog = () => {
                   alt="Key Steps To Get Ready For Your Big Day"
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute bottom-2 left-4 bg-[#000000]/[0.7] text-white text-xs sm:text-sm px-2 py-1 rounded-full font-poppins">
+                <div className="absolute bottom-7 left-7 bg-[#000000]/[0.4] text-white text-xs sm:text-sm px-2 py-1 rounded-full font-poppins">
                   Aug 12, 2024
                 </div>
               </div>
               <div className="p-4 sm:p-6 md:p-7 lg:p-8">
                 <h2
-                  className="text-base sm:text-lg md:text-xl lg:text-2xl font-medium mb-2"
+                  className="text-base sm:text-lg md:text-xl lg:text-[2vw] font-medium mb-2"
                   style={{ fontFamily: "Raleway" }}
                 >
                   Key Steps To Get Ready For Your Big Day
                 </h2>
-                <p className="text-gray-700 text-sm sm:text-base md:text-lg lg:text-lg font-poppins leading-relaxed font-normal">
+                <p className="text-gray-700 text-[2.8vw] sm:text-base md:text-lg lg:text-[1vw] font-poppins leading-relaxed font-normal">
                   Prepare for your big day by creating a timeline, finalizing
                   your guest list, and choosing trusted vendors like
                   photographers and florists. Ensure your attire is ready and
@@ -123,18 +123,18 @@ const Blog = () => {
                   alt="How To Choose The Perfect Wedding Dress"
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute bottom-2 left-4 bg-[#000000]/[0.7] text-white text-xs sm:text-sm px-2 py-1 rounded-full font-poppins">
+                <div className="absolute bottom-7 left-7 bg-[#000000]/[0.4] text-white text-xs sm:text-sm px-2 py-1 rounded-full font-poppins">
                   Aug 12, 2024
                 </div>
               </div>
               <div className="p-4 sm:p-6 md:p-7 lg:p-8">
                 <h2
-                  className="text-base sm:text-lg md:text-xl lg:text-2xl font-medium mb-2"
+                  className="text-base sm:text-lg md:text-[2vw] lg:text-[2vw] font-medium mb-2"
                   style={{ fontFamily: "Raleway" }}
                 >
                   How To Choose The Perfect Wedding Dress
                 </h2>
-                <p className="text-gray-700 text-sm sm:text-base md:text-lg lg:text-lg font-poppins leading-relaxed font-normal">
+                <p className="text-gray-700 text-[2.8vw] sm:text-base md:text-lg lg:text-[1vw] font-poppins leading-relaxed font-normal">
                   Prepare for your big day by creating a timeline, finalizing
                   your guest list, and choosing trusted vendors like
                   photographers and florists. Ensure your attire is ready and
@@ -150,58 +150,30 @@ const Blog = () => {
               </div>
             </div>
 
-            {/* Pagination Dots */}
-            <div className="flex justify-center mt-6 gap-2">
-              <button
-                className="w-8 h-8 bg-gradient-to-r from-[#F05A8E] to-[#ED1C24] rounded-full text-white text-sm"
-                aria-label="Page 1"
-              >
-                1
-              </button>
-              <button
-                className="w-8 h-8 bg-white rounded-full border border-gray-300 text-sm"
-                aria-label="Page 2"
-              >
-                2
-              </button>
-              <button
-                className="w-8 h-8 bg-white rounded-full border border-gray-300 text-sm"
-                aria-label="Page 3"
-              >
-                3
-              </button>
-              <button
-                className="w-8 h-8 bg-white rounded-full border border-gray-300 text-sm"
-                aria-label="Page 4"
-              >
-                4
-              </button>
-              <button
-                className="w-8 h-8 bg-white rounded-full border border-gray-300 text-sm"
-                aria-label="Page 5"
-              >
-                5
-              </button>
-            </div>
+            
           </div>
 
-          {/* Sidebar */}
-          {/* <div className="w-full lg:w-1/3 xl:w-1/4 space-y-6 p-0 lg:p-2">
-            <div className="bg-white rounded-2xl shadow-md p-4 sm:p-5 lg:p-6 space-y-8">
-              <div className="relative w-full">
-                <span className="absolute inset-y-0 right-2 top-1/2 -translate-y-1/2 bg-gradient-to-r from-[#F05A8E] to-[#ED1C24] rounded-full p-1">
-                  <IoSearchSharp color="white" size={16} />
-                </span>
+          {/* <div className="w-full lg:w-1/3 xl:w-1/4 space-y-4 p-0 sm:p-2 lg:p-8 "> */}
+          <div className="w-full lg:w-1/3  xl:w-[30%] space-y-4 p-0 sm:p-2 lg:pt-0 lg:pb-8 lg:px-0">
+            <div className="bg-white rounded-2xl shadow-md p-6 sm:p-5   sm:space-y-9">
+              {/* Search Bar */}
+
+              <div className="relative w-full mx-auto mt-5 rounded-full bg-[#FFF4EE] px-5 py-4 flex items-center">
                 <input
                   type="text"
-                  placeholder="Search keyword..."
-                  className="w-full bg-[#FFF4EE] border border-gray-300 rounded-full p-2 pr-10 text-sm sm:text-base"
+                  placeholder="Search Keyword"
+                  className="w-full bg-transparent focus:outline-none text-[#444] placeholder-[#444] text-sm sm:text-base"
+                  style={{ fontFamily: "Raleway" }}
                 />
+                <span className="absolute right-3 top-1/2 -translate-y-1/2 bg-gradient-to-r from-[#F05A8E] to-[#ED1C24] rounded-full w-9 h-9 flex items-center justify-center">
+                  <IoSearchSharp color="white" size={22} />
+                </span>
               </div>
 
+              {/* Recent Posts */}
               <div>
                 <h3
-                  className="text-base sm:text-lg lg:text-lg font-medium mb-2"
+                  className="text-base sm:text-lg lg:text-[1.7vw] font-medium mb-2"
                   style={{ fontFamily: "Raleway" }}
                 >
                   Recent Posts
@@ -211,14 +183,14 @@ const Blog = () => {
                     <img
                       src={garden}
                       alt="Post 1"
-                      className="w-14 h-14 sm:w-14 sm:h-14 lg:w-16 lg:h-16 object-cover rounded-xl"
+                      className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 object-cover rounded-xl"
                     />
                     <div>
-                      <p className="text-xs sm:text-sm lg:text-sm font-medium bg-clip-text text-transparent bg-gradient-to-r from-[#F05A8E] to-[#ED1C24]">
+                      <p className="text-xs sm:text-sm font-medium bg-clip-text text-transparent bg-gradient-to-r from-[#F05A8E] to-[#ED1C24]">
                         26th September, 2024
                       </p>
                       <p
-                        className="text-black font-medium text-xl sm:text-sm lg:text-xl"
+                        className="text-black font-medium text-[4.6vw] sm:text-sm lg:text-base 2xl:text-[1vw]  "
                         style={{ fontFamily: "Raleway" }}
                       >
                         Quisque a sem risus Suspendisse risus.
@@ -229,14 +201,14 @@ const Blog = () => {
                     <img
                       src={shadow}
                       alt="Post 2"
-                      className="w-14 h-14 sm:w-14 sm:h-14 lg:w-16 lg:h-16 object-cover rounded-xl"
+                      className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 object-cover rounded-xl"
                     />
                     <div>
-                      <p className="text-xs sm:text-sm lg:text-sm font-medium bg-clip-text text-transparent bg-gradient-to-r from-[#F05A8E] to-[#ED1C24]">
+                      <p className="text-xs sm:text-sm font-medium bg-clip-text text-transparent bg-gradient-to-r from-[#F05A8E] to-[#ED1C24]">
                         26th September, 2024
                       </p>
                       <p
-                        className="text-black font-medium text-xl sm:text-sm lg:text-xl"
+                        className="text-black font-medium text-[4.6vw] sm:text-sm lg:text-base 2xl:text-[1vw] "
                         style={{ fontFamily: "Raleway" }}
                       >
                         Quisque a sem risus Suspendisse risus.
@@ -247,14 +219,14 @@ const Blog = () => {
                     <img
                       src={gold}
                       alt="Post 3"
-                      className="w-14 h-14 sm:w-14 sm:h-14 lg:w-16 lg:h-16 object-cover rounded-xl"
+                      className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 object-cover rounded-xl"
                     />
                     <div>
-                      <p className="text-xs sm:text-sm lg:text-sm font-medium bg-clip-text text-transparent bg-gradient-to-r from-[#F05A8E] to-[#ED1C24]">
+                      <p className="text-xs sm:text-sm font-medium bg-clip-text text-transparent bg-gradient-to-r from-[#F05A8E] to-[#ED1C24]">
                         26th September, 2024
                       </p>
                       <p
-                        className="text-black font-medium text-xl sm:text-sm lg:text-xl"
+                        className="text-black font-medium text-[4.6vw] sm:text-sm lg:text-base 2xl:text-[1vw] "
                         style={{ fontFamily: "Raleway" }}
                       >
                         Quisque a sem risus Suspendisse risus.
@@ -264,9 +236,10 @@ const Blog = () => {
                 </ul>
               </div>
 
+              {/* Tags */}
               <div>
                 <h3
-                  className="text-base sm:text-lg lg:text-lg font-medium mb-2"
+                  className="text-base sm:text-lg lg:text-[1.7vw] font-medium mb-2"
                   style={{ fontFamily: "Raleway" }}
                 >
                   Tags
@@ -291,9 +264,10 @@ const Blog = () => {
                 </div>
               </div>
 
+              {/* Instagram */}
               <div className="p-1">
                 <h2
-                  className="font-medium text-base sm:text-lg lg:text-lg mb-4"
+                  className="font-medium text-base sm:text-lg lg:text-[1.7vw] mb-4"
                   style={{ fontFamily: "Raleway" }}
                 >
                   Instagram
@@ -345,8 +319,9 @@ const Blog = () => {
               </div>
             </div>
 
+            {/* Sidebar Image */}
             <div className="hidden lg:block">
-              <div className="relative w-full aspect-[5/9]">
+              <div className="relative w-full aspect-[7/9]">
                 <img
                   src={Blog1}
                   alt="Blog Sidebar Image"
@@ -354,183 +329,48 @@ const Blog = () => {
                 />
               </div>
             </div>
-          </div> */}
-          <div className="w-full lg:w-1/3 xl:w-1/4 space-y-6 p-0 sm:p-2 lg:p-3">
-  <div className="bg-white rounded-2xl shadow-md p-4 sm:p-5 lg:p-6 space-y-6 sm:space-y-8">
-    {/* Search Bar */}
-    <div className="relative w-full">
-      <span className="absolute inset-y-0 right-2 top-1/2 -translate-y-1/2 bg-gradient-to-r from-[#F05A8E] to-[#ED1C24] rounded-full p-1">
-        <IoSearchSharp color="white" size={16} />
-      </span>
-      <input
-        type="text"
-        placeholder="Search keyword..."
-        className="w-full bg-[#FFF4EE] border border-gray-300 rounded-full p-2 pr-10 text-sm sm:text-base"
-      />
-    </div>
-
-    {/* Recent Posts */}
-    <div>
-      <h3
-        className="text-base sm:text-lg lg:text-lg font-medium mb-2"
-        style={{ fontFamily: "Raleway" }}
-      >
-        Recent Posts
-      </h3>
-      <ul className="space-y-4 text-sm text-gray-700">
-        <li className="flex items-start gap-3">
-          <img
-            src={garden}
-            alt="Post 1"
-            className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 object-cover rounded-xl"
-          />
-          <div>
-            <p className="text-xs sm:text-sm font-medium bg-clip-text text-transparent bg-gradient-to-r from-[#F05A8E] to-[#ED1C24]">
-              26th September, 2024
-            </p>
-            <p
-              className="text-black font-medium text-[4.6vw] sm:text-sm lg:text-base 2xl:text-[1vw]  "
-              style={{ fontFamily: "Raleway" }}
-            >
-              Quisque a sem risus Suspendisse risus.
-            </p>
           </div>
-        </li>
-        <li className="flex items-start gap-3">
-          <img
-            src={shadow}
-            alt="Post 2"
-            className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 object-cover rounded-xl"
-          />
-          <div>
-            <p className="text-xs sm:text-sm font-medium bg-clip-text text-transparent bg-gradient-to-r from-[#F05A8E] to-[#ED1C24]">
-              26th September, 2024
-            </p>
-            <p
-              className="text-black font-medium text-[4.6vw] sm:text-sm lg:text-base 2xl:text-[1vw] "
-              style={{ fontFamily: "Raleway" }}
-            >
-              Quisque a sem risus Suspendisse risus.
-            </p>
-          </div>
-        </li>
-        <li className="flex items-start gap-3">
-          <img
-            src={gold}
-            alt="Post 3"
-            className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 object-cover rounded-xl"
-          />
-          <div>
-            <p className="text-xs sm:text-sm font-medium bg-clip-text text-transparent bg-gradient-to-r from-[#F05A8E] to-[#ED1C24]">
-              26th September, 2024
-            </p>
-            <p
-              className="text-black font-medium text-[4.6vw] sm:text-sm lg:text-base 2xl:text-[1vw] "
-              style={{ fontFamily: "Raleway" }}
-            >
-              Quisque a sem risus Suspendisse risus.
-            </p>
-          </div>
-        </li>
-      </ul>
-    </div>
-
-    {/* Tags */}
-    <div>
-      <h3
-        className="text-base sm:text-lg lg:text-lg font-medium mb-2"
-        style={{ fontFamily: "Raleway" }}
-      >
-        Tags
-      </h3>
-      <div className="flex flex-wrap gap-2">
-        {[
-          "Connection",
-          "Match Made",
-          "Love",
-          "Soulmate search",
-          "Perfect Pairing",
-          "Romance",
-          "Date Your way",
-        ].map((tag) => (
-          <span
-            key={tag}
-            className="bg-white text-[#EF3B59] font-medium border border-[#ED1C2426]/[0.15] px-2 py-1 rounded-full text-xs sm:text-sm"
-          >
-            {tag}
-          </span>
-        ))}
-      </div>
-    </div>
-
-    {/* Instagram */}
-    <div className="p-1">
-      <h2
-        className="font-medium text-base sm:text-lg lg:text-lg mb-4"
-        style={{ fontFamily: "Raleway" }}
-      >
-        Instagram
-      </h2>
-      <div className="grid grid-cols-3 gap-2 sm:gap-3">
-        <div className="relative w-full aspect-square">
-          <img
-            src={Couple13}
-            alt="Instagram 1"
-            className="w-full h-full rounded-xl border-2 border-[#ED1C2426]/[0.15] object-cover"
-          />
-        </div>
-        <div className="relative w-full aspect-square">
-          <img
-            src={pandal}
-            alt="Instagram 2"
-            className="w-full h-full rounded-xl border-2 border-[#ED1C2426]/[0.15] object-cover"
-          />
-        </div>
-        <div className="relative w-full aspect-square">
-          <img
-            src={Couple2}
-            alt="Instagram 3"
-            className="w-full h-full rounded-xl border-2 border-[#ED1C2426]/[0.15] object-cover"
-          />
-        </div>
-        <div className="relative w-full aspect-square">
-          <img
-            src={Couple14}
-            alt="Instagram 4"
-            className="w-full h-full rounded-xl border-2 border-[#ED1C2426]/[0.15] object-cover"
-          />
-        </div>
-        <div className="relative w-full aspect-square">
-          <img
-            src={Christian}
-            alt="Instagram 5"
-            className="w-full h-full rounded-xl border-2 border-[#ED1C2426]/[0.15] object-cover"
-          />
-        </div>
-        <div className="relative w-full aspect-square">
-          <img
-            src={Couple9}
-            alt="Instagram 6"
-            className="w-full h-full rounded-xl border-2 border-[#ED1C2426]/[0.15] object-cover"
-          />
         </div>
       </div>
-    </div>
-  </div>
 
-  {/* Sidebar Image */}
-  <div className="hidden lg:block">
-    <div className="relative w-full aspect-[5/9]">
-      <img
-        src={Blog1}
-        alt="Blog Sidebar Image"
-        className="w-full h-full object-cover rounded-2xl"
-      />
-    </div>
-  </div>
-</div>
-        </div>
-      </div>
+      {/* Pagination Dots */}
+      <div className="flex justify-center pb-30 w-[100%] gap-2 ">
+              <button
+                className="w-8 h-8 bg-gradient-to-r from-[#F05A8E] to-[#ED1C24] rounded-full text-white text-sm"
+                style={{ fontFamily: "Raleway" }}
+                aria-label="Page 1"
+              >
+                1
+              </button>
+              <button
+                className="w-8 h-8 bg-white rounded-full border border-gray-300 text-sm"
+                style={{ fontFamily: "Raleway" }}
+                aria-label="Page 2"
+              >
+                2
+              </button>
+              <button
+                className="w-8 h-8 bg-white rounded-full border border-gray-300 text-sm"
+                style={{ fontFamily: "Raleway" }}
+                aria-label="Page 3"
+              >
+                3
+              </button>
+              <button
+                className="w-8 h-8 bg-white rounded-full border border-gray-300 text-sm"
+                style={{ fontFamily: "Raleway" }}
+                aria-label="Page 4"
+              >
+                4
+              </button>
+              <button
+                className="w-8 h-8 bg-white rounded-full border border-gray-300 text-sm"
+                style={{ fontFamily: "Raleway" }}
+                aria-label="Page 5"
+              >
+                5
+              </button>
+            </div>
 
       <Footer />
     </div>

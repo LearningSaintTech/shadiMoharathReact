@@ -9,10 +9,11 @@ import JAINN from "../../assets/images/JAINN.svg";
 import Goyola from "../../assets/images/Goyola.svg";
 import Lucknow from "../../assets/images/Lucknow.svg";
 import Bhopal from "../../assets/images/Bhopal.svg";
+import Guptaji from "../../assets/images/Guptaji.svg";
 
 // Couples Data
 const couples = [
-  { name: "Vishwas Patel", city: "Delhi", img: Patel },
+  { name: "Ramesh Gupta", city: "Delhi", img: Guptaji },
   { name: "Nandan Raikwar", city: "Varanasi", img: Nadani },
   { name: "Rahul Choudhary", city: "Mumbai", img: Chaudhary },
   { name: "Hillery Moses", city: "Hyderabad", img: Mouse },
@@ -123,9 +124,12 @@ const TrustedCouples = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-[1vw] px-[3vw] mb-8">
         <div className="flex flex-col sm:justify-start sm:items-start justify-center items-center bg-white px-[4vw] py-[3vw] rounded-3xl border border-[#ED1C2426]">
           <h2
-            className=" text-[9vw]sm:text-[7vw] leading-tight font-medium text-black"
+            className="text-2x1 font-medium lg:text-[49px] leading-none  "
             style={{ fontFamily: "Raleway" }}
+
           >
+
+
             Trusted By{" "}
             <span
               className="bg-gradient-to-r from-[#F05A8E] to-[#ED1C24] bg-clip-text text-transparent font-medium inline-flex flex-col"
@@ -137,7 +141,7 @@ const TrustedCouples = () => {
             </span>{" "}
           </h2>
           <span
-            className=" text-[3vw] sm:text-[4vw] leading-none font-medium"
+            className=" text-2x1 font-medium lg:text-[49px] leading-none"
             style={{ fontFamily: "Raleway" }}
           >
             Couples

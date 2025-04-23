@@ -34,7 +34,9 @@ const AppDownloadBanner = () => {
     />
     <div className="leading-tight text-left">
       <p className="text-[2.5vw] sm:text-[1.2vw] md:text-[1vw] lg:text-[0.75vw]">Download on the</p>
-      <p className="text-[3.5vw] sm:text-[1.8vw] md:text-[1.5vw] lg:text-[1.25vw] font-semibold">App Store</p>
+      <p classNa
+      
+      me="text-[3.5vw] sm:text-[1.8vw] md:text-[1.5vw] lg:text-[1.25vw] font-semibold">App Store</p>
     </div>
   </a>
 

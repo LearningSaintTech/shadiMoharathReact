@@ -19,7 +19,7 @@ import Couple9 from "../assets/images/Couple 9.svg";
 import Couple13 from "../assets/images/Couple-13.svg";
 import Couple14 from "../assets/images/Couple-14.svg";
 import blog from "../assets/images/Blog1.svg";
-import Pinktick from "../assets/images/Pink tick.svg";
+
 import Correct from "../assets/images/Correct.svg";
 import pandal from "../assets/images/Pandal.svg";
 import Christian from "../assets/images/Christian.svg";

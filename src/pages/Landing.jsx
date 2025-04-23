@@ -33,7 +33,7 @@ export default function Landing(){
     
     <Stats/>
     
-    {/* <Together/> */}
+    <Together/>
     
     <Wedding/>
     <Plan/>

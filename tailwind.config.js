@@ -6,8 +6,7 @@ module.exports = {
     extend: {
       fontFamily: {
         rosarivo: ["Rosarivo", "serif"],
-         
-         ramaraja: ['Ramaraja', 'serif'], 
+        ramaraja: ["Ramaraja", "serif"],
       },
     },
   },
