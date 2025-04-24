@@ -1,5 +1,7 @@
 import React from "react";
 import bgVideo from "../../assets/images/video.mp4";
+import { Link } from "react-router-dom";
+
 
 const HeroSection = () => {
   return (
@@ -42,12 +44,14 @@ const HeroSection = () => {
             placeholder="Search here..."
             className=" pr-[9vw] pl-[1vw] py-[0.5vw] rounded-full text-gray-400 bg-white outline-none text-sm sm:text-base placeholder-gray-400"
           />
+          <Link to="/Authentication">
           <button
             type="submit"
             className="px-[2.5vw] py-[0.5vw]   bg-gradient-to-r from-[#F05A8E] to-[#ED1C24] text-white rounded-full text-center text-sm sm:text-base transition"
           >
             Login
           </button>
+          </Link>
         </form>
       </div>
     </div>

@@ -40,9 +40,13 @@ const Footer = () => {
               placeholder="enter Your email address"
               className="border-b border-gray-400 py-2 w-full md:w-full focus:outline-none"
             />
-            <button className="bg-gradient-to-r from-[#F05A8E] to-[#ED1C24]  text-white px-6 py-2 rounded-full whitespace-nowrap">
+             <button
+            type="submit"
+             className="bg-gradient-to-r from-[#F05A8E] to-[#ED1C24]  text-white px-6 py-2 rounded-full whitespace-nowrap  hover:scale-105 transition-transform"
+            >
               Register Now
-            </button>
+            </button> 
+            
           </div>
 
           {/* Social Icons */}

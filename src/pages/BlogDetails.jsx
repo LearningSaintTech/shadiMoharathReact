@@ -19,6 +19,7 @@ import Couple9 from "../assets/images/Couple 9.svg";
 import Couple13 from "../assets/images/Couple-13.svg";
 import Couple14 from "../assets/images/Couple-14.svg";
 import blog from "../assets/images/Blog1.svg";
+import { FaCheckCircle } from "react-icons/fa";
 
 import Correct from "../assets/images/Correct.svg";
 import pandal from "../assets/images/Pandal.svg";
@@ -27,6 +28,7 @@ import Blog1 from "../assets/images/Blog1.svg";
 import garden from "../assets/images/garden.svg";
 import shadow from "../assets/images/Shadow.svg";
 import gold from "../assets/images/gold.svg";
+import bgd from "../assets/images/bgd.svg";
 
 function App() {
   return (
@@ -34,22 +36,21 @@ function App() {
       <Navbar />
 
       {/* Hero Section */}
-      <div className="relative w-full h-[50vw] md:h-[21.875vw]">
+      <div className="relative w-full">
         <img
           src={Engagement}
           alt="Engagement"
-          className="w-full h-auto object-cover"
+          className="w-full h-[50vh] sm:h-[30vh] md:h-[35vh] lg:h-[40vh] xl:h-[45vh] object-cover"
         />
-        <div className="absolute top-1/2 left-[4vw] md:left-[7.5vw] transform -translate-y-1/2 text-white">
+        <div className="absolute top-1/2 left-4 sm:left-6 md:left-8 lg:left-10 xl:left-[4%] transform -translate-y-1/2 text-white px-4 sm:px-6">
           <h1
-            className="text-[5vw] md:text-[6vw]"
+            className="text-3xl sm:text-3xl md:text-4xl lg:text-[7vw] xl:text-[6.25vw]"
             style={{ fontFamily: "Rosarivo, serif" }}
           >
             Blog Details
           </h1>
-          <p className="text-[3vw] md:text-[1.2vw]  font-normal leading-snug font-poppins">
-          Most Trusted and premium Matrimony Service in the World.
-
+          <p className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl mt-2 font-normal leading-tight py-2 sm:py-3 font-poppins">
+            Most Trusted and premium Matrimony Service in the World.
           </p>
         </div>
       </div>
@@ -62,7 +63,7 @@ function App() {
           className="absolute inset-0 w-full h-full object-cover z-0"
         />
 
-        <div className="flex flex-col md:flex-row w-full  mx-auto p-9  z-10">
+        <div className="flex flex-col md:flex-row w-full  mx-auto sm:p-2 md:p-14 z-10 gap-7">
           {/* Left Column - Blog Content */}
           <div className="w-full md:w-3/4 pr-0 md:pr-8">
             <div className="mb-8">
@@ -71,22 +72,22 @@ function App() {
                 <img
                   src={tworing}
                   alt="Suspension Ring"
-                  className="w-full h-auto object-cover rounded-t-lg"
+                  className="w-full h-auto object-cover rounded-2xl"
                 />
-                <div className="absolute bottom-3 left-6 bg-[#00000066]/[0.7] text-white text-[0.8vw] font-medium px-2 py-1 rounded-full  font-poppins">
+                <div className="absolute bottom-7 left-8 bg-[#000000]/[0.4] text-white text-[0.8vw] font-medium px-2 py-1 rounded-full  font-poppins">
                   Aug 12, 2024
                 </div>
               </div>
 
               {/* Title and Description */}
               <h2
-                className="sm:text-[1.2vw] font-medium mt-3 text-black"
+                className=" text-[4.5vw] sm:text-[1.8vw] font-medium mt-7 text-black"
                 style={{ fontFamily: "Raleway" }}
               >
                 Quisque A Sem Risus. Suspendisse Risus Augue, Rhoncus In Gravida
                 Vel, Interdum Ac Enim.
               </h2>
-              <p className="text-gray-600 text-[0.833vw] mt-2 font-poppins gap-8">
+              <p className="text-gray-600  text-[3.5vw] sm:text-lg mt-2 font-poppins gap-8">
                 Quisque a sem risus. Suspendisse risus augue, rhoncus in gravida
                 vel, interdum ac enim. Fusce sed sagittis massa. Etiam velit mi,
                 luctus et semper eget, tempus a dolor. Vivamus ipsum metus,
@@ -99,7 +100,7 @@ function App() {
                 Etiam eu maximus mauris, in dignissim dui. Donec id ultricies
                 justo.
               </p>
-              <p className="text-gray-600 text-[0.833vw] mt-6 font-poppins gap-8">
+              <p className="text-gray-600  text-[3.5vw] sm:text-lg mt-6 font-poppins gap-8">
                 {" "}
                 Nunc sit amet mi finibus ex sagittis porttitor in porta sem. In
                 pretium eros ac orci vulputate placerat. Donec quis condimentum
@@ -114,84 +115,104 @@ function App() {
               </p>
 
               {/* Bullet Points */}
-              <div className="mt-4  flex flex-row p-4 gap-2 rounded-lg">
+              <div className="mt-4 flex flex-col sm:flex-row gap-4 sm:gap-2 rounded-lg w-full">
+                {/* Image */}
                 <img
                   src={coat}
                   alt="Coat"
-                  className="w-[450px] h-[325px] mb-2"
+                  className="w-full sm:w-5/12 h-auto rounded-xl"
                 />
-                <ul className="space-y-2">
-                  <li
-                    className="flex items-start font-medium"
-                    style={{ fontFamily: "Raleway" }}
-                  >
-                    <h1 className="px-5">Nullam sodales laoreet sapien a vehicula</h1>
-                  </li>
-                  {/* <div className="w-4 h-4 mt-1 mr-2 bg-pink-500 rounded-full"></div> */}
-                  <li className="flex item-start">
-                    <img src={Correct} className="px-5 " />
 
-                    <span className="text-[0.68vw] font-poppins">
+                {/* Text Content */}
+                <ul className="w-full sm:w-7/12 flex flex-col justify-start py-4 sm:py-5 px-4 sm:px-0">
+                  {/* Title */}
+                  <li className="mb-4">
+                    <h1
+                      className="text-[3vw] sm:text-xs md:text-[1.094vw] font-medium"
+                      style={{ fontFamily: "Raleway" }}
+                    >
+                      Nullam Sodales Laoreet Sapien A Vehicula:
+                    </h1>
+                  </li>
+
+                  {/* Bullet Items */}
+                  <li className="flex items-center mb-3">
+                    <div className="mr-2 mt-1">
+                      <FaCheckCircle className="text-[5vw] sm:text-[1vw] text-red-500 flex items-center " />
+                    </div>
+
+                    <span className="text-[4vw] sm:text-xs md:text-[0.8vw] font-poppins font-normal items-center">
                       Cras facilisis augue hendrerit neque ultrices, tempor
                       mollis neque gravida.
                     </span>
                   </li>
-                  <li className="flex items-start">
-                    {/* <div className="w-4 h-4 mt-1 mr-2 bg-pink-500 rounded-full"></div> */}
-                    <img src={Correct} className="px-5" />
+                  <li className="flex items-center mb-3">
+                    <div className="mr-2 mt-1">
+                      <FaCheckCircle className="text-[5vw] sm:text-[1vw] text-red-500 flex items-center " />
+                    </div>
 
-                    <span className="text-[0.68vw] font-poppins">
-                      Integer sit amet quam sapien. Proin nec aliquam turaus
-                      nunc.
+                    <span className="text-[4vw] sm:text-xs md:text-[0.8vw] font-poppins font-normal items-center">
+                      Cras facilisis augue hendrerit neque ultrices, tempor
+                      mollis neque gravida.
                     </span>
                   </li>
-                  <li className="flex items-start ">
-                    {/* <div className="w-4 h-4 mt-1 mr-2 bg-pink-500 rounded-full"></div> */}
-                    <img src={Correct} className="px-5" />
+                  <li className="flex items-center mb-3">
+                    <div className="mr-2 mt-1">
+                      <FaCheckCircle className="text-[5vw] sm:text-[1vw] text-red-500 flex items-center " />
+                    </div>
 
-                    <span className="text-[0.68vw] font-poppins">
-                      Fusce vitae nunc justo. Fusce eget est justo. Pellentesque
-                      tempus ante eget
+                    <span className="text-[4vw] sm:text-xs md:text-[0.8vw] font-poppins font-normal items-center">
+                      Cras facilisis augue hendrerit neque ultrices, tempor
+                      mollis neque gravida.
                     </span>
                   </li>
-                  <li className="flex items-start">
-                    <img src={Correct} className="px-5" />
-                    <span className="text-[0.68vw] font-poppins">
-                      Aliquam venenatis interdum est ac sollicitudin.
-                      Suspendisse ut
-                    </span>
-                  </li>
-                  <li className="flex items-start">
-                    {/* <div className="w-4 h-4 mt-1 mr-2 bg-pink-500 rounded-full"></div> */}
-                    <img src={Correct} className="px-5" />
+                  <li className="flex items-center mb-3">
+                    <div className="mr-2 mt-1">
+                      <FaCheckCircle className="text-[5vw] sm:text-[1vw] text-red-500 flex items-center " />
+                    </div>
 
-                    <span className="text-[0.68vw] font-poppins">
-                      Fringilla sapien. Phasellus nec justo ac erat tempus
-                      mattis.
+                    <span className="text-[4vw] sm:text-xs md:text-[0.8vw] font-poppins font-normal items-center">
+                      Cras facilisis augue hendrerit neque ultrices, tempor
+                      mollis neque gravida.
                     </span>
                   </li>
-                  <li className="flex items-start">
-                    {/* <div className="w-4 h-4 mt-1 mr-2 bg-pink-500 rounded-full"></div> */}
-                    <img src={Correct} className="px-5" />
+                  <li className="flex items-center mb-3">
+                    <div className="mr-2 mt-1">
+                      <FaCheckCircle className="text-[5vw] sm:text-[1vw] text-red-500 flex items-center " />
+                    </div>
 
-                    <span className="text-[0.68vw] font-poppins">
-                      Proin nec aliquam turpis, ac faucibus nunc. Fusce vitae
-                      nunc justo
+                    <span className="text-[4vw] sm:text-xs md:text-[0.8vw] font-poppins font-normal items-center">
+                      Cras facilisis augue hendrerit neque ultrices, tempor
+                      mollis neque gravida.
                     </span>
                   </li>
+                  <li className="flex items-center mb-3">
+                    <div className="mr-2 mt-1">
+                      <FaCheckCircle className="text-[5vw] sm:text-[1vw] text-red-500 flex items-center " />
+                    </div>
+
+                    <span className="text-[4vw] sm:text-xs md:text-[0.8vw] font-poppins font-normal items-center">
+                      Cras facilisis augue hendrerit neque ultrices, tempor
+                      mollis neque gravida.
+                    </span>
+                  </li>
+
+                 
+
+                  {/* Add more <li> as needed */}
                 </ul>
               </div>
 
               {/* Quote */}
-              <div className=" mt-6 bg-white p-6  rounded-lg shadow-md flex items-start gap-4 max-w-full">
+              <div className=" mt-6 bg-white px-5 py-3 rounded-xl shadow-md flex  gap-4 items-center  ">
                 <img
                   src={Quotes1}
                   alt="Quote Icon"
-                  className="w-[8.4vw] h-[8.4vw]  object-cover "
+                  className=" w-[58px] h-[57px] sm:w-[8.4vw] sm:h-[8.4vw]  object-fit  "
                 />
                 <div>
                   <p
-                    className="text-[1.3vw] text-black font-medium mt-6"
+                    className=" text-[3.5vw] sm:text-[1.094vw] text-black font-medium pt-5 "
                     style={{ fontFamily: "Raleway" }}
                   >
                     “Proin Nec Aliquam Turpis, Ac Faucibus Nunc. Fusce Vitae
@@ -199,40 +220,39 @@ function App() {
                     Eget Faucibus Tempor. Aliquam Venenatis Interdum Est Ac
                     Sollicitudin. Suspendisse Ut Fringilla Sapien. Phas”
                   </p>
-                  <p className="text-[2.031vw] font-medium mt-4 text-black text-right">
+                  <p
+                    className="text-[2.031vw] font-medium  text-black text-right"
+                    style={{ fontFamily: "Raleway" }}
+                  >
                     Easton Farley,{" "}
-                    <span className="font-normal text-gray-500">
+                    <span className="font-poppins text-gray-500 text-[1vw]">
                       Los Angeles
                     </span>
                   </p>
                 </div>
               </div>
 
-              {/* Additional Content */}
-              {/* <div className="mt-6">
-                {/* <img src={couple9} alt="Collection" className="w-[460px] h-[301px] object-cover rounded-lg mb-4" />  */}
-
-              {/* Tags + Social */}
-
-              {/* </div> */}
-              <div className="flex flex-col lg:flex-row-reverse gap-6 items-start mt-6 ">
+              
+              <div className="flex flex-col lg:flex-row-reverse gap-6 items-start my-10 ">
                 {/* Image */}
-                <img
-                  src={Couple9}
-                  alt="Collection"
-                  className="w-full h-[17vw] object-cover rounded-lg"
-                />
+                <div className="w-5/12">
+                  <img
+                    src={bgd}
+                    alt="Collection"
+                    className="w-auto h-[250px] overflow-hidden   rounded-lg flex items-start"
+                  />
+                </div>
 
                 {/* Text Content */}
-                <div>
+                <div className="w-7/12 flex flex-col ">
                   <h3
-                    className="text-[1.25vw] font-medium mb-2"
+                    className="text-[1.25vw] font-medium  py-2"
                     style={{ fontFamily: "Raleway" }}
                   >
                     Tempor Tincidunt Est. Etiam Ante Ex
                   </h3>
 
-                  <p className="text-[0.833vw] text-gray-700 mb-4">
+                  <p className="text-sm text-gray-700 py-2">
                     Quisque a sem risus. Suspendisse risus augue, rhoncus in
                     gravida vel, interdum ac enim. Fusce sed sagittis massa.
                     Etiam velit mi, luctus et semper eget, tempus a dolor.
@@ -240,7 +260,7 @@ function App() {
                     consequat dolor.
                   </p>
 
-                  <p className="text-gray-600 text-[0.833vw] mt-6 font-poppins">
+                  <p className="text-gray-600 text-sm  font-poppins py-2">
                     Etiam fermentum, massa non dictum lobortis, lacus diam
                     semper dui, eu euismod odio ipsum eget nibh. Aliquam erat
                     volutpat. Aliquam ullamcorper tempor justo non cursus.
@@ -252,15 +272,15 @@ function App() {
                   </p>
                 </div>
               </div>
-              <div>
+              <div className="  flex flex-col gap-0  px-4 sm:px-0">
                 <h3
-                  className="text-[1.25vw] font-medium mb-2"
+                  className=" text-[3.5vw] sm:text-[1.25vw] font-medium   py-2"
                   style={{ fontFamily: "Raleway" }}
                 >
                   Quisque A Sem Risus. Suspendisse Risus Augue, Rhoncus In
                 </h3>
 
-                <p className="text-[0.833vw] text-gray-700 mb-4 font-poppins">
+                <p className="text-lg text-[#000000]/[0.7]  font-poppins py-2">
                   Quisque a sem risus. Suspendisse risus augue, rhoncus in
                   gravida vel, interdum ac enim. Fusce sed sagittis massa. Etiam
                   velit mi, luctus et semper eget, tempus a dolor. Vivamus ipsum
@@ -274,7 +294,7 @@ function App() {
                   ultricies justo.
                 </p>
 
-                <p className="text-gray-600 text-[0.833vw] mt-6 font-poppins">
+                <p className="text-gray-700 text-lg  font-poppins py-2">
                   Nunc sit amet mi finibus ex sagittis porttitor in porta sem.
                   In pretium eros ac orci vulputate placerat. Donec quis
                   condimentum nisl, tempor tincidunt est. Etiam ante ex, viverra
@@ -296,24 +316,24 @@ function App() {
                 >
                   Tags:
                 </span>
-                <div className=" gap-4 hidden sm:block">
+                <div className="  flex gap-2 hidden sm:flex">
                   {/* Connection Tag — white background, gradient text */}
                   <span className="bg-white rounded-full ">
-                    <span className="bg-white bg-clip-text text-transparent text-xs px-3 py-1 rounded-full font-medium bg-gradient-to-r from-[#F05A8E] to-[#ED1C24] border border-[#ED1C2426]/[0.15]">
+                    <span className="bg-white bg-clip-text text-transparent text-[0.781vw] px-3 py-1 rounded-full font-medium bg-gradient-to-r from-[#F05A8E] to-[#ED1C24] border border-[#ED1C2424]/[0.15]">
                       Connection
                     </span>
                   </span>
 
                   {/* Match Made Tag — white background, gradient text */}
                   <span className="bg-white rounded-full">
-                    <span className="bg-white bg-clip-text text-transparent text-xs px-3 py-1 rounded-full font-medium bg-gradient-to-r from-[#F05A8E] to-[#ED1C24] border border-[#ED1C2426]/[0.15]">
+                    <span className="bg-white bg-clip-text text-transparent text-[0.781vw] px-3 py-1 rounded-full font-medium bg-gradient-to-r from-[#F05A8E] to-[#ED1C24] border border-[#ED1C2424]/[0.15]">
                       Match Made
                     </span>
                   </span>
 
                   {/* Love Tag — white background, gradient text */}
                   <span className="bg-white rounded-full">
-                    <span className="bg-white bg-clip-text text-transparent text-xs px-3 py-1 rounded-full font-medium bg-gradient-to-r from-[#F05A8E] to-[#ED1C24] border border-[#ED1C2426]/[0.15]">
+                    <span className="bg-white bg-clip-text text-transparent text-[0.781vw] px-3 py-1 rounded-full font-medium bg-gradient-to-r from-[#F05A8E] to-[#ED1C24] border border-[#ED1C2424]/[0.15]">
                       Love
                     </span>
                   </span>
@@ -348,30 +368,26 @@ function App() {
             </div>
           </div>
 
-          {/* Right Column - Sidebar */}
-          {/* <div className="w-full md:w-1/4 mt-8 md:mt-0 bg-white p-4"> */}
-          {/* Recent Posts */}
+          <div className="w-full lg:w-1/3  xl:w-[24%] space-y-4 p-2 sm:p-2 lg:pt-0 lg:pb-8 lg:px-0 ">
+            <div className="bg-white rounded-2xl shadow-md p-6 sm:p-5   sm:space-y-9">
+              {/* Search Bar */}
 
-          {/* Tags */}
-          {/* <div className="mb-8">
- 
-</div> */}
-          <div className="w-full lg:w-80 space-y-6 ">
-            <div className="bg-white rounded-2xl shadow-md p-4 sm:p-6 space-y-6">
-              <div className="relative w-full">
-                <span className="absolute inset-y-0 right-2 top-1/2 -translate-y-1/2 bg-gradient-to-r from-[#F05A8E] to-[#ED1C24] rounded-full">
-                  <IoSearchSharp color="white" size={20} />
-                </span>
+              <div className="relative w-full mx-auto mt-5 rounded-full bg-[#FFF4EE] px-5 py-4 flex items-center">
                 <input
                   type="text"
-                  placeholder="Search keyword..."
-                  className="w-full bg-[#FFF4EE] border border-gray-300 rounded-full p-2 pr-10 text-sm sm:text-base"
+                  placeholder="Search Keyword"
+                  className="w-full bg-transparent focus:outline-none text-[#444] placeholder-[#444] text-sm sm:text-base"
+                  style={{ fontFamily: "Raleway" }}
                 />
+                <span className="absolute right-3 top-1/2 -translate-y-1/2 bg-gradient-to-r from-[#F05A8E] to-[#ED1C24] rounded-full w-9 h-9 flex items-center justify-center">
+                  <IoSearchSharp color="white" size={22} />
+                </span>
               </div>
 
+              {/* Recent Posts */}
               <div>
                 <h3
-                  className="text-lg font-medium mb-2"
+                  className="text-base sm:text-lg lg:text-[1.7vw] font-medium mb-2"
                   style={{ fontFamily: "Raleway" }}
                 >
                   Recent Posts
@@ -381,14 +397,14 @@ function App() {
                     <img
                       src={garden}
                       alt="Post 1"
-                      className="w-16 h-16 sm:w-20 sm:h-20 object-cover rounded-xl"
+                      className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 object-cover rounded-xl"
                     />
                     <div>
                       <p className="text-xs sm:text-sm font-medium bg-clip-text text-transparent bg-gradient-to-r from-[#F05A8E] to-[#ED1C24]">
                         26th September, 2024
                       </p>
                       <p
-                        className="text-black font-medium text-sm sm:text-base"
+                        className="text-black font-medium text-[4.6vw] sm:text-sm lg:text-base 2xl:text-[1vw]  "
                         style={{ fontFamily: "Raleway" }}
                       >
                         Quisque a sem risus Suspendisse risus.
@@ -399,14 +415,14 @@ function App() {
                     <img
                       src={shadow}
                       alt="Post 2"
-                      className="w-16 h-16 sm:w-20 sm:h-20 object-cover rounded-xl"
+                      className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 object-cover rounded-xl"
                     />
                     <div>
                       <p className="text-xs sm:text-sm font-medium bg-clip-text text-transparent bg-gradient-to-r from-[#F05A8E] to-[#ED1C24]">
                         26th September, 2024
                       </p>
                       <p
-                        className="text-black font-medium text-sm sm:text-base"
+                        className="text-black font-medium text-[4.6vw] sm:text-sm lg:text-base 2xl:text-[1vw] "
                         style={{ fontFamily: "Raleway" }}
                       >
                         Quisque a sem risus Suspendisse risus.
@@ -417,14 +433,14 @@ function App() {
                     <img
                       src={gold}
                       alt="Post 3"
-                      className="w-16 h-16 sm:w-20 sm:h-20 object-cover rounded-xl"
+                      className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 object-cover rounded-xl"
                     />
                     <div>
                       <p className="text-xs sm:text-sm font-medium bg-clip-text text-transparent bg-gradient-to-r from-[#F05A8E] to-[#ED1C24]">
                         26th September, 2024
                       </p>
                       <p
-                        className="text-black font-medium text-sm sm:text-base"
+                        className="text-black font-medium text-[4.6vw] sm:text-sm lg:text-base 2xl:text-[1vw] "
                         style={{ fontFamily: "Raleway" }}
                       >
                         Quisque a sem risus Suspendisse risus.
@@ -434,14 +450,15 @@ function App() {
                 </ul>
               </div>
 
+              {/* Tags */}
               <div>
                 <h3
-                  className="text-lg font-medium mb-2"
+                  className="text-base sm:text-lg lg:text-[1.7vw] font-medium mb-2"
                   style={{ fontFamily: "Raleway" }}
                 >
                   Tags
                 </h3>
-                {/* <div className="flex flex-wrap gap-1">
+                <div className="flex flex-wrap gap-2">
                   {[
                     "Connection",
                     "Match Made",
@@ -453,42 +470,23 @@ function App() {
                   ].map((tag) => (
                     <span
                       key={tag}
-                      className="bg-white  font-medium border border-[#ED1C2426]/[0.15] px-2 py-1 rounded-full text-xs sm:text-[0.781vw] font-poppins"
+                      className="bg-white text-[#EF3B59] font-medium border border-[#ED1C2426]/[0.15] px-2 py-1 rounded-full text-xs sm:text-sm"
                     >
                       {tag}
-                    </span>
-                  ))}
-                </div> */}
-                <div className="flex flex-wrap gap-1">
-                  {[
-                    "Connection",
-                    "Match Made",
-                    "Love",
-                    "Soulmate search",
-                    "Perfect Pairing",
-                    "Romance",
-                    "Date Your way",
-                  ].map((tag) => (
-                    <span
-                      key={tag}
-                      className="bg-white font-medium border border-[#ED1C2426]/[0.15] px-2 py-1 rounded-full text-xs sm:text-[0.781vw] font-poppins"
-                    >
-                      <span className="bg-gradient-to-r from-[#F05A8E] to-[#ED1C24] bg-clip-text text-transparent">
-                        {tag}
-                      </span>
                     </span>
                   ))}
                 </div>
               </div>
 
-              <div className="p-2">
+              {/* Instagram */}
+              <div className="p-1">
                 <h2
-                  className="font-medium text-lg mb-4"
+                  className="font-medium text-base sm:text-lg lg:text-[1.7vw] mb-4"
                   style={{ fontFamily: "Raleway" }}
                 >
                   Instagram
                 </h2>
-                <div className="grid grid-cols-3 gap-2 sm:gap-2">
+                <div className="grid grid-cols-3 gap-2 sm:gap-3">
                   <div className="relative w-full aspect-square">
                     <img
                       src={Couple13}
@@ -500,10 +498,10 @@ function App() {
                     <img
                       src={pandal}
                       alt="Instagram 2"
-                      className="w-full h-auto rounded-xl border-2 border-[#ED1C2426]/[0.15] object-cover"
+                      className="w-full h-full rounded-xl border-2 border-[#ED1C2426]/[0.15] object-cover"
                     />
                   </div>
-                  <div className="relative w-full aspect-square ">
+                  <div className="relative w-full aspect-square">
                     <img
                       src={Couple2}
                       alt="Instagram 3"
@@ -535,8 +533,9 @@ function App() {
               </div>
             </div>
 
-            <div className="hidden lg:block">
-              <div className="relative w-full aspect-w-16 aspect-h-9">
+            {/* Sidebar Image */}
+            <div className="hidden lg:block  ">
+              <div className="relative w-full aspect-[7/9] mt-10">
                 <img
                   src={Blog1}
                   alt="Blog Sidebar Image"

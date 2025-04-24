@@ -36,10 +36,10 @@ const Authentication = () => {
 
       {/* Form Section */}
 
-      <div className="  sm:mx-auto my-[7.813vw] bg-white flex flex-col    gap-7  max-w-full  sm:max-w-[35.885vw] px-[19px] sm:px-[3.125vw] py-[4.375vw]">
+      <div className="  sm:mx-auto my-[7.813vw] bg-white flex flex-col rounded-lg   gap-7  max-w-full  sm:max-w-[35.885vw] px-[19px] sm:px-[4vw] py-[4.375vw]">
         <div className="flex flex-col  gap-5">
-          <h1 className=" text-[7vw] sm:text-5xl text-center">Sign In To Account</h1>
-          <p className="  text-[3vw] sm:text-xs  lg:text-[10px] text-center">
+          <h1 className=" text-[7vw] sm:text-4xl text-center  font-medium" style={{fontFamily:"Raleway"}}>Sign In To Account</h1>
+          <p className="  text-[3vw] sm:text-xs  lg:text-[10px] font-normal text-center font-poppins">
             Experience the joy of life and create happiness together with Shadi
             Muharat
           </p>

@@ -28,11 +28,11 @@ const Blog = () => {
         <img
           src={Engagement}
           alt="Engagement"
-          className="w-full h-[20vh] sm:h-[30vh] md:h-[35vh] lg:h-[40vh] xl:h-[45vh] object-cover"
+          className="w-full h-[50vh] sm:h-[30vh] md:h-[35vh] lg:h-[40vh] xl:h-[45vh] object-cover"
         />
         <div className="absolute top-1/2 left-4 sm:left-6 md:left-8 lg:left-10 xl:left-[4%] transform -translate-y-1/2 text-white px-4 sm:px-6">
           <h1
-            className="text-2xl sm:text-3xl md:text-4xl lg:text-[7vw] xl:text-[6.25vw]"
+            className="text-xl sm:text-3xl md:text-4xl lg:text-[7vw] xl:text-[6.25vw]"
             style={{ fontFamily: "Rosarivo, serif" }}
           >
             Blog

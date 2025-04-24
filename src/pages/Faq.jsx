@@ -25,21 +25,21 @@ const Faq = () => {
           alt="Engagement"
           className="w-full h-auto object-cover"
         />
-        <div className="absolute top-1/2 left-[5vw] transform -translate-y-1/2 text-white">
+         <div className="absolute top-1/2 left-[4vw] transform -translate-y-1/2 text-white">
           <h1
-            className="text-[6.25vw] md:text-[3.5vw] "
-            style={{ fontVariant: "Rosarivo" }}
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-[6vw] font-serif px-7"
+            style={{ fontFamily: "Rosarivo, serif" }}
           >
             frequently asked questions
           </h1>
-          <p className="text-[3.5vw] md:text-lg mt-2 font-poppins leading-snug">
-            Now Find your life partner Easy and fast.
+          <p className="text-[1.5vw] mt-[0.8vw] font-poppins leading-snug px-7">
+            Now find your life partner easy and fast.
           </p>
         </div>
       </div>
 
       {/* FAQ Section */}
-      <div className="flex flex-col items-center px-[5vw] md:px-[3.125vw] py-[10vw] md:py-[5vw] w-full">
+      <div className=" relative flex flex-col items-center px-[5vw] md:px-[3.125vw] py-[10vw] md:py-[5vw] w-full">
         <img
           src={Background}
           alt="Background"
@@ -51,7 +51,7 @@ const Faq = () => {
             {/* Left: Questions */}
             <div className="p-[5vw] md:p-[2.5vw]  justify-center md:justify-start overflow-y-auto">
             {/* <div className="p-[5vw] md:p-[2.5vw] flex flex-col items-center text-center md:items-start md:text-left justify-center md:justify-start overflow-y-auto"> */}
-            <h2 className="text-[7vw] md:text-[2vw] font-medium mb-[4vw] md:mb-[2vw] text-center md:text-left">
+            <h2 className="text-[7vw] md:text-[2vw] font-medium mb-[4vw] md:mb-[2vw] text-center md:text-left" style={{fontFamily:"Raleway"}}>
              FAQ ?
 
 
@@ -63,17 +63,17 @@ const Faq = () => {
               <div className="border-b py-[3vw] md:py-[1.2vw]">
                 <button
                   onClick={() => setOpen(open === "q1" ? "" : "q1")}
-                  className={`w-full text-left font-Raleway font-medium text-[4vw] md:text-[1vw] flex justify-between items-center ${
-                    open === "q1" ? "text-[#ED1C24]" : "text-black"
+                  className={`w-full text-left  font-medium text-[4vw] md:text-[1vw] flex justify-between items-center ${
+                    open === "q1" ? "text-[#ED1C24]" : "text-black" 
                   }`}
                 >
-                  <span>How Does This App Work?</span>
-                  <span className="text-[5vw] md:text-[1.5vw]">
+                  <span >How Does This App Work?</span>
+                  <span className="text-[5vw] md:text-[1.5vw]" style={{fontFamily:"Raleway"}}>
                     {open === "q1" ? "−" : "+"}
                   </span>
                 </button>
                 {open === "q1" && (
-                  <p className="text-[3.8vw] md:text-[0.95vw] text-gray-600 mt-[2vw] md:mt-[0.5vw]">
+                  <p className="text-[3.8vw] md:text-[0.95vw] text-gray-600 mt-[2vw] md:mt-[0.5vw]" style={{fontFamily:"Raleway"}}>
                     It is a long established fact that a reader will be
                     distracted by the readable content of a page when looking at
                     its layout.
@@ -88,12 +88,12 @@ const Faq = () => {
                   className="w-full text-left font-Raleway font-medium text-[4vw] md:text-[1vw] flex justify-between items-center text-transparent bg-clip-text bg-gradient-to-r from-[#F05A8E] to-[#ED1C24]"
                 >
                   <span>How Do I Create A Profile?</span>
-                  <span className="text-[5vw] md:text-[1.5vw]">
+                  <span className="text-[5vw] md:text-[1.5vw]"style={{fontFamily:"Raleway"}}>
                     {open === "q2" ? "−" : "+"}
                   </span>
                 </button>
                 {open === "q2" && (
-                  <p className="text-[3.8vw] md:text-[0.95vw] text-gray-600 mt-[2vw] md:mt-[0.5vw]">
+                  <p className="text-[3.8vw] md:text-[0.95vw] text-gray-600 mt-[2vw] md:mt-[0.5vw]"style={{fontFamily:"Raleway"}}>
                     The point of using Lorem Ipsum is that it has a more-or-less
                     normal distribution of letters.
                   </p>
@@ -109,12 +109,12 @@ const Faq = () => {
                   }`}
                 >
                   <span>How Does Your Messaging System Work?</span>
-                  <span className="text-[5vw] md:text-[1.5vw]">
+                  <span className="text-[5vw] md:text-[1.5vw]"style={{fontFamily:"Raleway"}}>
                     {open === "q3" ? "−" : "+"}
                   </span>
                 </button>
                 {open === "q3" && (
-                  <p className="text-[3.8vw] md:text-[0.95vw] text-gray-600 mt-[2vw] md:mt-[0.5vw]">
+                  <p className="text-[3.8vw] md:text-[0.95vw] text-gray-600 mt-[2vw] md:mt-[0.5vw]"style={{fontFamily:"Raleway"}}>
                     Users can communicate securely through our platform. Chat
                     features ensure safe and seamless interactions.
                   </p>
@@ -130,12 +130,12 @@ const Faq = () => {
                   }`}
                 >
                   <span>Relationships Can I Find On Your Platform?</span>
-                  <span className="text-[5vw] md:text-[1.5vw]">
+                  <span className="text-[5vw] md:text-[1.5vw]"style={{fontFamily:"Raleway"}} >
                     {open === "q4" ? "−" : "+"}
                   </span>
                 </button>
                 {open === "q4" && (
-                  <p className="text-[3.8vw] md:text-[0.95vw] text-gray-600 mt-[2vw] md:mt-[0.5vw]">
+                  <p className="text-[3.8vw] md:text-[0.95vw] text-gray-600 mt-[2vw] md:mt-[0.5vw]"style={{fontFamily:"Raleway"}}>
                     Our platform supports a wide range of relationship goals,
                     from friendships to lifelong partnerships.
                   </p>

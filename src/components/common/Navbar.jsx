@@ -32,16 +32,21 @@ export default function Navbar() {
       </div>
 
       {/* 🔵 Main Navigation Bar */}
-      <div className="bg-orange-50 w-full h-[4.01vw] flex justify-between items-center px-4 sm:px-10 relative">
+      <div className="bg-orange-50 w-full h-auto py-4 flex justify-between items-center px-4 sm:px-10 relative">
         {/* Left - Logo */}
         <div className="flex items-center">
           <img src={Logo} alt="ShadiMuhrat Logo" className="h-10" />
         </div>
 
         {/* Mobile Toggle Button */}
-        <button className="md:hidden text-red-500 text-2xl" onClick={() => setMenuOpen(!menuOpen)}>
-          {menuOpen ? <FaTimes /> : <FaBars />}
-        </button>
+       {/* Mobile Toggle Button */}
+<button
+  className="md:hidden absolute right-4 top-1/2 transform -translate-y-1/2 text-black sm:text-red-500 text-2xl"
+  onClick={() => setMenuOpen(!menuOpen)}
+>
+  {menuOpen ? <FaTimes /> : <FaBars />}
+</button>
+
 
         {/* Center - Navigation Links */}
         <div className={`absolute md:static top-16 left-0 w-full md:w-auto bg-pink-100 md:bg-transparent md:flex 
