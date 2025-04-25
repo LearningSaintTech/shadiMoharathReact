@@ -1,26 +1,29 @@
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import { IoLogoFacebook } from "react-icons/io";
 import { FaLinkedin, FaInstagram, FaYoutube, FaBars, FaTimes } from "react-icons/fa";
 import Logo from "../../assets/images/Logo.svg";
-import Login from "../../assets/images/Frame 29.svg";
 import { ChevronDown } from "lucide-react";
+import Couple3 from "../../assets/images/Couple3.svg";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth < 768);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   return (
     <div className="w-full mt-12">
-      {/* 🔴 Top Red Bar - Hidden on Mobile */}
+      {/* 🔴 Top Red Bar */}
       <div className="hidden lg:flex bg-gradient-to-r from-[#F05A8E] to-[#ED1C24] text-white w-full h-full py-2 px-8 justify-between items-center text-sm">
-        {/* Left Side - FAQ & Support */}
         <div className="flex space-x-4">
           <NavLink to="/faq" className="font-[400]">FAQs</NavLink>
           <span>|</span>
           <NavLink to="/contact" className="font-[400]">Help & Support</NavLink>
         </div>
-
-        {/* Right Side - Contact & Social Media */}
         <div className="flex space-x-3 items-center">
           <span className="font-[400]">+91 986-544-3399 |</span>
           <span className="font-[400]">Shadimuharath@Gmail.com</span>
@@ -38,41 +41,24 @@ export default function Navbar() {
           <img src={Logo} alt="ShadiMuhrat Logo" className="h-10" />
         </div>
 
-        {/* Mobile Toggle Button */}
-       {/* Mobile Toggle Button */}
-<button
-  className="md:hidden absolute right-4 top-1/2 transform -translate-y-1/2 text-black sm:text-red-500 text-2xl"
-  onClick={() => setMenuOpen(!menuOpen)}
->
-  {menuOpen ? <FaTimes /> : <FaBars />}
-</button>
+        {/* Hamburger Toggle (Mobile Only) */}
+        <button
+          className="md:hidden absolute right-4 top-1/2 transform -translate-y-1/2 text-red-700 text-2xl z-50"
+          onClick={() => {
+          if (isMobile) setMenuOpen(true);
+          }
+        }
+        >
+          <FaBars />
+        </button>
 
-
-        {/* Center - Navigation Links */}
-        <div className={`absolute md:static top-16 left-0 w-full md:w-auto bg-pink-100 md:bg-transparent md:flex 
-                        flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 text-red-400 
-                        font-[600] text-center md:text-left transition-all duration-300 
-                        ${menuOpen ? "block" : "hidden md:flex"}`}>
-
-          {[
-            { to: "/", label: "Home" },
-            { to: "/about", label: "About" },
-            { to: "/gallery", label: "Gallery" },
-            { to: "/blog", label: "Blog" },
-            { to: "/pricing", label: "Pricing" },
-          ].map(({ to, label }) => (
-            <NavLink
-              key={to}
-              to={to}
-              className={({ isActive }) =>
-                isActive
-                  ? "text-[#F05A8E] border-b-2 border-[#F05A8E] pb-1"
-                  : "hover:text-[#C1645C]"
-              }
-            >
-              {label}
-            </NavLink>
-          ))}
+        {/* Desktop Nav */}
+        <div className="hidden md:flex space-x-6 text-red-400 font-[600]">
+          <NavLink to="/" className="hover:text-[#C1645C]">Home</NavLink>
+          <NavLink to="/about" className="hover:text-[#C1645C]">About</NavLink>
+          <NavLink to="/gallery" className="hover:text-[#C1645C]">Gallery</NavLink>
+          <NavLink to="/blog" className="hover:text-[#C1645C]">Blog</NavLink>
+          <NavLink to="/pricing" className="hover:text-[#C1645C]">Pricing</NavLink>
         </div>
 
         {/* Right - Login Button */}
@@ -86,6 +72,53 @@ export default function Navbar() {
           </button>
         </NavLink>
       </div>
+
+      {/* Sidebar (Mobile Drawer) */}
+      {menuOpen &&  window.innerWidth < 768 &&  (
+        <div className=" fixed top-0 left-0 w-[80vw] sm:w-[60vw] h-full bg-white shadow-xl p-6 z-50 rounded-r-3xl overflow-y-auto transition-all duration-300 flex flex-col justify-between">
+          {/* Header */}
+          <div className="flex justify-between items-center mb-6">
+            <img
+              src={Couple3}
+              alt="Profile"
+              className="w-10 h-10 rounded-full"
+            />
+            
+            <FaTimes
+              className=" text-xl cursor-pointer text-red-600 bg-clip-text"
+              onClick={() => setMenuOpen(false)}
+            />
+          </div>
+          {/* <div className="border-t border-[#F5BEBE] "></div> */}
+
+          {/* Nav Links */}
+          <ul className="space-y-4 text-[#70302B] font-medium font-Roboto mb-6">
+            <li><NavLink to="/" onClick={() => setMenuOpen(false)}>Home</NavLink></li>
+            <li><NavLink to="/about" onClick={() => setMenuOpen(false)}>About Us</NavLink></li>
+            <li><NavLink to="/gallery" onClick={() => setMenuOpen(false)}>Gallery</NavLink></li>
+            <li><NavLink to="/blog" onClick={() => setMenuOpen(false)}>Pricing</NavLink></li>
+            <li><NavLink to="/pricing" onClick={() => setMenuOpen(false)}>Blogs</NavLink></li>
+          </ul>
+
+          {/* Logo */}
+          <div className="text-center mb-6" >
+            <img src={Logo} alt="Logo" className=" h-[17vw] sm:h-12 mx-auto " />
+          </div>
+
+          {/* Login Form */}
+          
+            <button
+              type="submit"
+              className="w-full bg-gradient-to-r from-pink-400 to-red-500 text-white  px-4 py-2 rounded-full"
+            >
+              Login
+            </button>
+          
+
+          {/* Version Info */}
+          <p className="text-xs text-center mt-6 text-[#D36366]">App version 1.0.0.1</p>
+        </div>
+      )}
     </div>
   );
 }

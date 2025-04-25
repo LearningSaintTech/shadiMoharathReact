@@ -3,6 +3,7 @@ import Goa from "../../assets/images/Goa.svg";
 import Night from "../../assets/images/Night.svg";
 import Black from "../../assets/images/Black.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from 'react-router-dom'; 
 
 export default function Latest() {
   // Blog posts data
@@ -69,13 +70,14 @@ export default function Latest() {
             <p className="text-gray-600  md:text-[0.8vw] text-[4.5vw] lg:text-[0.9vw]  md:w-[23vw] ">
               {post.description}
             </p>
-            <a
-              href={post.link}
-              className="relative font-medium text-transparent bg-gradient-to-r from-[#F05A8E] to-[#ED1C24] bg-clip-text  text-[3vw] md:text-[1vw] hover:opacity-80 transition-opacity duration-200 underline-offset-2"
+            
+            <Link
+            to="/blog"
+            className="relative font-medium text-transparent bg-gradient-to-r from-[#F05A8E] to-[#ED1C24] bg-clip-text text-[3vw] md:text-[1vw] hover:opacity-80 transition-opacity duration-200 underline-offset-2"
             >
               Read More
               <span className="absolute left-0 bottom-0  w-[14.5vw] md:w-[4.9vw] h-[1.5px] bg-gradient-to-r from-[#F05A8E] to-[#ED1C24]"></span>
-            </a>
+            </Link>
           </div>
         </div>
       );

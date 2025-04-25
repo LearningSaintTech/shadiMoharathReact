@@ -58,7 +58,7 @@ const WelcomeSection = () => {
                                 />
                 <div className="flex flex-col">
                   <span className="text-[1.8vw] bg-gradient-to-r from-[#F05A8E] to-[#ED1C24] bg-clip-text text-transparent">Enquiry</span>
-                  <span className="text-base mt-1 bg-gradient-to-r from-[#F05A8E] to-[#ED1C24] bg-clip-text text-transparent">+91 966-544-3999</span>
+                  <span className="text-base mt-1  text-black">+91 966-544-3999</span>
                 </div>
               </div>
               <div className="flex items-center gap-3 text-red-500 font-medium">

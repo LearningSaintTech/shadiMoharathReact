@@ -21,9 +21,9 @@ const Authentication = () => {
           alt="Engagement"
           className="w-full h-full object-cover"
         />
-        <div className="absolute top-1/2 left-[4vw] md:left-[7.5vw] transform -translate-y-1/2 text-white">
+        <div className="absolute top-1/2   left-[10vw] sm:left-[4vw] md:left-[10.5vw] transform -translate-y-1/2 text-white">
           <h1
-            className="text-[5vw] md:text-[6vw]"
+            className="text-[11vw] md:text-[6vw]"
             style={{ fontFamily: "Rosarivo, serif" }}
           >
             Login
@@ -36,10 +36,10 @@ const Authentication = () => {
 
       {/* Form Section */}
 
-      <div className="  sm:mx-auto my-[7.813vw] bg-white flex flex-col rounded-lg   gap-7  max-w-full  sm:max-w-[35.885vw] px-[19px] sm:px-[4vw] py-[4.375vw]">
-        <div className="flex flex-col  gap-5">
-          <h1 className=" text-[7vw] sm:text-4xl text-center  font-medium" style={{fontFamily:"Raleway"}}>Sign In To Account</h1>
-          <p className="  text-[3vw] sm:text-xs  lg:text-[10px] font-normal text-center font-poppins">
+      <div className="  sm:mx-auto my-[7.813vw] bg-white flex flex-col rounded-2xl   gap-8  max-w-full  sm:max-w-[35.885vw] px-[19px] sm:px-[4vw] py-[4vw]">
+        <div className="flex flex-col  gap-3">
+          <h1 className=" text-[7vw]  md:text-[3vw] lg:text-[2.865vw] text-center  font-medium" style={{fontFamily:"Raleway"}}>Sign In To Account</h1>
+          <p className="  text-[3vw] sm:text-xs  lg:text-[12px] font-normal text-center font-poppins">
             Experience the joy of life and create happiness together with Shadi
             Muharat
           </p>
@@ -49,17 +49,17 @@ const Authentication = () => {
           <div className="">
             <input
               type="name"
-              className=" p-3 sm:p-4 border  border-[#F05A8E]/[0.15] rounded-full w-full text-[#C1645CB2]"
+              className=" p-3 sm:p-4 border  border-[#F05A8E]/[0.15] rounded-full w-full text-base lg:text-[1.1vw] text-[#C1645CB2]"
               placeholder="Your Mail here"
             />
           </div>
           <div className=" relative w-full">
             <input
               type="password"
-              className="  p-3 sm:p-4 border border-[#F05A8E]/[0.15] rounded-full w-full text-[#C1645CB2]"
+              className="  p-3 sm:p-4 border border-[#F05A8E]/[0.15] rounded-full w-full text-base lg:text-[1.1vw] text-[#C1645CB2]"
               placeholder="Password"
               />
-              <VscEye className="absolute right-5 top-1/2 transform -translate-y-1/2 text-[#C1645C] w-5 h-5 cursor-pointer" />
+              <VscEye className="absolute right-5 top-1/2 transform -translate-y-1/2 text-base lg:text-[1.1vw] text-[#C1645C] w-5 h-5 cursor-pointer" />
               
           </div>
           <div className="w-full flex flex-row sm:flex-row justify-between items-start sm:items-center mt-4 text-sm">
@@ -70,33 +70,33 @@ const Authentication = () => {
               />
               <span className="ml-2 text-gray-700">Remember Me</span>
             </label>
-            <a href="#" className="text-[#FF6B6B] hover:underline mt-2 sm:mt-0">
+            <a href="#" className="text-gray-700 hover:underline mt-2 sm:mt-0">
               Forgot Password ?
             </a>
           </div>
-          <button className="bg-gradient-to-r from-[#F05A8E] to-[#ED1C24] w-full py-3 rounded-full text-white text-base font-semibold mt-10 hover:opacity-90 shadow">
+          <button className="bg-gradient-to-r from-[#F05A8E] to-[#ED1C24] w-full py-6 rounded-full text-white text-base font-semibold mt-10 hover:opacity-90 shadow">
             Log In
           </button>
-          <div className="text-center mt-8 text-gray-500 text-[3vw] sm:text-[0.8vw]">
+          <div className="text-center mt-5 text-gray-500 text-[3vw]  md:text-[4vw] lg:text-[0.9vw]">
             Or login with
           </div>
-          <div className="flex flex-col sm:flex-row gap-3 w-full justify-center mt-7">
-            <button className="flex items-center justify-center gap-2 px-6 py-2 border border-gray-300 rounded-full shadow bg-white hover:shadow-md w-full sm:w-auto">
+          <div className="flex flex-col md:flex-col lg:flex-row gap-3 w-full justify-center mt-7">
+            <button className="flex items-center justify-center gap-2 px-6 py-2 border border-[#ED1C24]/[0.15] rounded-full shadow bg-white hover:shadow-md w-full sm:w-auto">
               <img src={Apple} alt="Apple" className="w-5 h-5" />
               <span className="text-sm font-medium">Apple</span>
             </button>
-            <button className="flex items-center justify-center gap-2 px-6 py-2 border border-gray-300 rounded-full shadow bg-white hover:shadow-md w-full sm:w-auto">
+            <button className="flex items-center justify-center gap-2 px-6 py-2 border border-[#ED1C24]/[0.15] rounded-full shadow bg-white hover:shadow-md w-full sm:w-auto">
               <img src={Google} alt="Google" className="w-5 h-5" />
               <span className="text-sm font-medium">Google</span>
             </button>
-            <button className="flex items-center justify-center gap-2 px-6 py-2 border border-gray-300 rounded-full shadow bg-white hover:shadow-md w-full sm:w-auto">
+            <button className="flex items-center justify-center gap-2 px-6 py-2 border border-[#ED1C24]/[0.15] rounded-full shadow bg-white hover:shadow-md w-full sm:w-auto">
               <img src={Facebook} alt="Facebook" className="w-5 h-5" />
               <span className="text-sm font-medium">Facebook</span>
             </button>
           </div>
-          <div className="text-center mt-10 text-sm">
-            <span className="text-gray-600">Don’t have an account ? </span>
-            <a href="#" className="text-[#FF6B6B] font-medium hover:underline">
+          <div className="text-center mt-10 text-lg sm:flex sm:items-center sm:justify-center sm:gap-2">
+            <span className="text-black font-normal">Don’t have an account ? </span>
+            <a href="#" className="bg-gradient-to-r from-[#F05A8E] to-[#ED1C24]  bg-clip-text text-transparent font-medium hover:underline">
               Create An Account
             </a>
           </div>

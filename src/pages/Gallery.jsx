@@ -27,13 +27,13 @@ const Gallery = () => {
 
       {/* Hero Section */}
 
-      <div className="relative max-w-[100vw]">
+      <div className="relative w-full h-[50vw] md:h-[21.875vw]">
         <img
           src={Engagement}
           alt="Engagement"
-          className="w-full h-auto object-cover"
+          className=" w-full h-auto object-cover"
         />
-        <div className="absolute top-1/2 left-[4vw] md:left-[7.5vw] transform -translate-y-1/2 text-white">
+        <div className="absolute  top-[10vw] md:top-1/2 left-[4vw] md:left-[7.5vw] transform -translate-y-1/2 text-white">
           <h1
             className="text-[5vw] md:text-[6vw]"
             style={{ fontFamily: "Rosarivo, serif" }}

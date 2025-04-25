@@ -36,12 +36,12 @@ const ContactSection = () => {
         {/* Left Info Column */}
         <div className="space-y-[2vw] px-[2vw]">
           <h2
-            className="text-[4vw] font-medium text-black leading-[4vw]"
+            className=": text-[4vw] font-medium text-black leading-[4vw]"
             style={{ fontFamily: "Raleway" }}
           >
             Support When You Need It Most
           </h2>
-          <p className="text-[1.1vw] text-gray-600 max-w-[40vw]">
+          <p className=" text-[2vw] sm:text-[1.1vw] text-gray-600 max-w-[40vw]">
             Integer sodales auctor nibh, ultricies auctor massa rhoncus sed.
           </p>
 
@@ -50,19 +50,19 @@ const ContactSection = () => {
             {/* Outer White Box */}
             <div className="rounded-[1.46vw] flex items-center justify-center ">
               {/* Inner Pink Box */}
-              <div className="w-[5.5vw] h-[5.5vw] rounded-[1.1vw] flex items-center justify-center">
-                <img src={Locate} alt="Locate Us" className="w-full h-full" />
+              <div className=" w-[14.5vw] h-[14.5vw] sm:w-[5.5vw] sm:h-[5.5vw] rounded-[1.1vw] flex items-center justify-center">
+                <img src={Locate} alt="Locate Us" className=" w-full h-full" />
               </div>
             </div>
             <div className="">
               <h4
-                className="text-[2vw] font-Raleway font-medium text-black"
+                className=" text-[4vw] sm:text-[2vw] font-Raleway font-medium text-black"
                 style={{ fontFamily: "Raleway" }}
               >
                 Locate Us
               </h4>
-              <p className="text-[1.3vw] text-gray-600 font-normal font-poppins">
-                2922 Michigan Ave, Santa Monica, CA 90404, United States
+              <p className=" text-[3vw] sm:text-[1.3vw] text-gray-600 font-normal font-poppins">
+                2922 Michigan Ave, Santa Monica, CA<br/> 90404, United States
               </p>
             </div>
           </div>
@@ -71,7 +71,7 @@ const ContactSection = () => {
             {/* Outer White Box */}
             <div className="rounded-[1.46vw] flex items-center justify-center ">
               {/* Inner Pink Box */}
-              <div className="w-[5.5vw] h-[5.5vw] rounded-[1.1vw] flex items-center justify-center">
+              <div className=" w-[14.5vw] h-[14.5vw] sm:w-[5.5vw] sm:h-[5.5vw] rounded-[1.1vw] flex items-center justify-center">
                 <img
                   src={email}
                   alt="Mail Us Anytime"
@@ -81,12 +81,12 @@ const ContactSection = () => {
             </div>
             <div className="">
               <h4
-                className="text-[2vw] font-Raleway font-medium text-black"
+                className=" text-[4vw] sm:text-[2vw] font-Raleway font-medium text-black"
                 style={{ fontFamily: "Raleway" }}
               >
                 Mail Us Anytime
               </h4>
-              <p className="text-[1vw] text-gray-600 font-poppins">
+              <p className=" text-[3vw] sm:text-[1vw] text-gray-600 font-poppins">
                 support@nihul.com
               </p>
             </div>
@@ -96,18 +96,18 @@ const ContactSection = () => {
             {/* Outer White Box */}
             <div className="rounded-[1.46vw] flex items-center justify-center ">
               {/* Inner Pink Box */}
-              <div className="w-[5.5vw] h-[5.5vw] rounded-[1.1vw] flex items-center justify-center">
+              <div className=" w-[14.5vw] h-[14.5vw] sm:w-[5.5vw] sm:h-[5.5vw] rounded-[1.1vw] flex items-center justify-center">
                 <img src={chit} alt="Chat With Us" className="w-full h-full" />
               </div>
             </div>
             <div className="">
               <h4
-                className="text-[2vw] font-Raleway font-medium text-black"
+                className=" text-[4vw] sm:text-[2vw] font-Raleway font-medium text-black"
                 style={{ fontFamily: "Raleway" }}
               >
                 Chat With Us
               </h4>
-              <p className="text-[1vw] text-gray-600 font-normal font-poppins">
+              <p className=" text-[3vw] sm:text-[1vw] text-gray-600 font-normal font-poppins">
                 Nam mollis tortor a quam aliquet <br/> condimentum pretium.
               </p>
             </div>
@@ -115,9 +115,9 @@ const ContactSection = () => {
         </div>
 
         {/* Contact Form */}
-        <div className="bg-white rounded-2xl shadow-xl px-[2.5vw] py-[2vw] flex flex-col w-[36.458vw]">
+        <div className="  sm:mx-auto bg-white rounded-2xl shadow-xl px-[2.5vw]  py-[6vw] sm:py-[2vw] flex flex-col  w-[94vw] sm:w-[36.458vw]">
           <h3
-            className="text-[4vw] font-medium text-black mb-[1.5vw] text-center"
+            className=" text-[7.75vw] sm:text-[4vw] font-medium text-black mb-[1.5vw] text-center"
             style={{ fontFamily: "Raleway" }}
           >
             Say, Hello!
@@ -126,35 +126,35 @@ const ContactSection = () => {
             <input
               type="text"
               placeholder="Your Name"
-              className="w-full border-b border-black focus:outline-none focus:border-[#FF6B6B] py-[0.8vw] text-[1vw] placeholder-black font-poppins"
+              className="w-full border-b border-black focus:outline-none focus:border-[#FF6B6B] py-[0.8vw]  text-[3vw] sm:text-[1vw] placeholder-black font-poppins"
             />
             <input
               type="text"
               placeholder="Mobile Number"
-              className="w-full border-b border-black focus:outline-none focus:border-[#FF6B6B] py-[0.8vw] text-[1vw] placeholder-black font-poppins"
+              className="w-full border-b border-black focus:outline-none focus:border-[#FF6B6B] py-[0.8vw] text-[3vw] sm:text-[1vw] placeholder-black font-poppins"
             />
             <input
               type="text"
               placeholder="Type of Service Required"
-              className="w-full border-b border-black focus:outline-none focus:border-[#FF6B6B] py-[0.8vw] text-[1vw] placeholder-black font-poppins"
+              className="w-full border-b border-black focus:outline-none focus:border-[#FF6B6B] py-[0.8vw] text-[3vw] sm:text-[1vw] placeholder-black font-poppins"
             />
             <input
               type="email"
               placeholder="Email Address"
-              className="w-full border-b border-black focus:outline-none focus:border-[#FF6B6B] py-[0.8vw] text-[1vw] placeholder-black font-poppins"
+              className="w-full border-b border-black focus:outline-none focus:border-[#FF6B6B] py-[0.8vw] text-[3vw] sm:text-[1vw] placeholder-black font-poppins"
             />
              {/* <p className="text-black">&nbsp;</p> */}
              
              <input
               type="email"
               placeholder=""
-              className="w-full border-b border-black focus:outline-none focus:border-[#FF6B6B] py-[0.8vw] text-[1vw] placeholder-black font-poppins"
+              className="w-full border-b border-black focus:outline-none focus:border-[#FF6B6B] py-[0.8vw] text-[3vw] sm:text-[1vw] placeholder-black font-poppins"
             />
 
             <div className="flex justify-center mt-[1vw]">
               <button
                 type="submit"
-                className="bg-gradient-to-r from-[#F05A8E] to-[#ED1C24] text-white py-[12px] px-[24px] rounded-full justify-center hover:bg-red-500 transition mt-[2vw] text-[1vw] font-poppins"
+                className="bg-gradient-to-r from-[#F05A8E] to-[#ED1C24] text-white py-[10px] sm:py-[12px]  px-[22px] sm:px-[24px] rounded-full justify-center hover:bg-red-500 transition mt-[2vw]  text-[3.5vw] sm:text-[1vw] font-poppins"
                 
               >
                 Send Message

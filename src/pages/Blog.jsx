@@ -24,24 +24,25 @@ const Blog = () => {
       <Navbar />
 
       {/* Hero Section */}
-      <div className="relative w-full">
-        <img
-          src={Engagement}
-          alt="Engagement"
-          className="w-full h-[50vh] sm:h-[30vh] md:h-[35vh] lg:h-[40vh] xl:h-[45vh] object-cover"
-        />
-        <div className="absolute top-1/2 left-4 sm:left-6 md:left-8 lg:left-10 xl:left-[4%] transform -translate-y-1/2 text-white px-4 sm:px-6">
-          <h1
-            className="text-xl sm:text-3xl md:text-4xl lg:text-[7vw] xl:text-[6.25vw]"
-            style={{ fontFamily: "Rosarivo, serif" }}
-          >
-            Blog
-          </h1>
-          <p className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl mt-2 font-normal leading-tight py-2 sm:py-3 font-poppins">
-            Most Trusted and premium Matrimony Service in the World.
-          </p>
-        </div>
-      </div>
+      
+      <div className="relative w-full h-[50vw] md:h-[21.875vw] ">
+              <img
+                src={Engagement}
+                alt="Engagement"
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute top-1/2 left-[6vw] md:left-[7.5vw] transform -translate-y-1/2 text-white">
+                <h1
+                  className="text-[11vw] md:text-[6vw]"
+                  style={{ fontFamily: "Rosarivo, serif" }}
+                >
+                  Blog
+                </h1>
+                <p className="text-[3vw] md:text-[1vw] mt-[1vw] font-light leading-snug">
+                  Now Find your life partner Easy and fast.
+                </p>
+              </div>
+            </div>
 
       {/* Main Content */}
       <div className="px-4 sm:px-6 md:px-8 lg:px-10 xl:px-30 py-6 sm:py-8 md:py-10 lg:py-12 xl:py-25">

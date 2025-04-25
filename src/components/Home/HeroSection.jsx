@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
-    <div className="relative w-full  md:h-[45.156vw] h-[55vw] overflow-hidden">
+    <div className="relative w-full   h-[159vw] md:h-[45.156vw] sm:h-[55vw] overflow-hidden">
       {/* Video Background */}
       <video
         autoPlay
@@ -20,10 +20,10 @@ const HeroSection = () => {
       <div className="absolute top-0 left-0 w-full h-full bg-black/50 z-10"></div>
 
       {/* Content */}
-      <div className="relative z-20 h-full flex flex-col justify-center items-center px-4 text-white text-center">
+      <div className="relative z-20 h-full flex flex-col justify-center items-center px-4 text-white text-center pt-[420px] pb-[134px] sm:pt-0 sm:pb-0">
         {/* Heading */}
         <h1
-          className="text-[14.25vw] md:text-[7.25vw] font-normal leading-none"
+          className="  text-[9vw] sm:text-[14.25vw] md:text-[7.25vw] font-normal leading-none"
           style={{
             fontFamily: "Rosarivo, serif",
           }}
@@ -38,16 +38,16 @@ const HeroSection = () => {
         </p>
 
         {/* Search form */}
-        <form className="mt-6  flex flex-col sm:flex-row  items-center gap-4">
+        <form className="mt-6  flex flex-col  sm:flex-row  items-center gap-4">
           <input
             type="text"
             placeholder="Search here..."
-            className=" pr-[9vw] pl-[1vw] py-[0.5vw] rounded-full text-gray-400 bg-white outline-none text-sm sm:text-base placeholder-gray-400"
+            className=" hidden sm:block pr-[9vw] pl-[1vw] py-[0.5vw] rounded-full text-gray-400 bg-white outline-none text-sm sm:text-base placeholder-transparent sm:placeholder-gray-400"
           />
           <Link to="/Authentication">
           <button
             type="submit"
-            className="px-[2.5vw] py-[0.5vw]   bg-gradient-to-r from-[#F05A8E] to-[#ED1C24] text-white rounded-full text-center text-sm sm:text-base transition"
+            className="  px-[35vw]   py-[2.5vw] sm:px-[2.5vw] sm:py-[0.5vw]   bg-gradient-to-r from-[#F05A8E] to-[#ED1C24] text-white rounded-full text-center text-sm sm:text-base transition "
           >
             Login
           </button>

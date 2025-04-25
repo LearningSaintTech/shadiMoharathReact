@@ -36,21 +36,21 @@ function App() {
       <Navbar />
 
       {/* Hero Section */}
-      <div className="relative w-full">
+      <div className="relative w-full h-[50vw] md:h-[21.875vw] ">
         <img
           src={Engagement}
           alt="Engagement"
-          className="w-full h-[50vh] sm:h-[30vh] md:h-[35vh] lg:h-[40vh] xl:h-[45vh] object-cover"
+          className="w-full h-full object-cover"
         />
-        <div className="absolute top-1/2 left-4 sm:left-6 md:left-8 lg:left-10 xl:left-[4%] transform -translate-y-1/2 text-white px-4 sm:px-6">
+        <div className="absolute top-1/2 left-[6vw] md:left-[7.5vw] transform -translate-y-1/2 text-white">
           <h1
-            className="text-3xl sm:text-3xl md:text-4xl lg:text-[7vw] xl:text-[6.25vw]"
+            className="text-[11vw] md:text-[6vw]"
             style={{ fontFamily: "Rosarivo, serif" }}
           >
             Blog Details
           </h1>
-          <p className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl mt-2 font-normal leading-tight py-2 sm:py-3 font-poppins">
-            Most Trusted and premium Matrimony Service in the World.
+          <p className="text-[3vw] md:text-[1vw] mt-[1vw] font-light leading-snug">
+            Now Find your life partner Easy and fast.
           </p>
         </div>
       </div>
@@ -197,8 +197,6 @@ function App() {
                     </span>
                   </li>
 
-                 
-
                   {/* Add more <li> as needed */}
                 </ul>
               </div>
@@ -232,27 +230,26 @@ function App() {
                 </div>
               </div>
 
-              
-              <div className="flex flex-col lg:flex-row-reverse gap-6 items-start my-10 ">
+              <div className="flex flex-col lg:flex-row-reverse lg:gap-6 items-start my-10">
                 {/* Image */}
-                <div className="w-5/12">
+                <div className="w-full lg:w-5/12">
                   <img
                     src={bgd}
                     alt="Collection"
-                    className="w-auto h-[250px] overflow-hidden   rounded-lg flex items-start"
+                    className="w-auto h-[250px] overflow-hidden rounded-lg flex items-start"
                   />
                 </div>
 
                 {/* Text Content */}
-                <div className="w-7/12 flex flex-col ">
+                <div className="w-full lg:w-7/12   flex flex-col">
                   <h3
-                    className="text-[1.25vw] font-medium  py-2"
+                    className="text-[5.25vw] sm:text-[1.25vw] font-medium text-black py-2"
                     style={{ fontFamily: "Raleway" }}
                   >
                     Tempor Tincidunt Est. Etiam Ante Ex
                   </h3>
 
-                  <p className="text-sm text-gray-700 py-2">
+                  <p className=" text-[4vw] sm:text-[1.07vw] text-gray-700 py-2">
                     Quisque a sem risus. Suspendisse risus augue, rhoncus in
                     gravida vel, interdum ac enim. Fusce sed sagittis massa.
                     Etiam velit mi, luctus et semper eget, tempus a dolor.
@@ -260,7 +257,7 @@ function App() {
                     consequat dolor.
                   </p>
 
-                  <p className="text-gray-600 text-sm  font-poppins py-2">
+                  <p className=" text-[4vw] text-gray-600 sm:text-[1.07vw] font-poppins py-2">
                     Etiam fermentum, massa non dictum lobortis, lacus diam
                     semper dui, eu euismod odio ipsum eget nibh. Aliquam erat
                     volutpat. Aliquam ullamcorper tempor justo non cursus.
@@ -272,6 +269,7 @@ function App() {
                   </p>
                 </div>
               </div>
+
               <div className="  flex flex-col gap-0  px-4 sm:px-0">
                 <h3
                   className=" text-[3.5vw] sm:text-[1.25vw] font-medium   py-2"
@@ -280,7 +278,7 @@ function App() {
                   Quisque A Sem Risus. Suspendisse Risus Augue, Rhoncus In
                 </h3>
 
-                <p className="text-lg text-[#000000]/[0.7]  font-poppins py-2">
+                <p className=" text-[3vw] sm:text-[1vw] text-[#000000]/[0.7]  font-poppins py-2">
                   Quisque a sem risus. Suspendisse risus augue, rhoncus in
                   gravida vel, interdum ac enim. Fusce sed sagittis massa. Etiam
                   velit mi, luctus et semper eget, tempus a dolor. Vivamus ipsum
@@ -294,7 +292,7 @@ function App() {
                   ultricies justo.
                 </p>
 
-                <p className="text-gray-700 text-lg  font-poppins py-2">
+                <p className="text-gray-700  text-[3vw] sm:text-[1vw]  font-poppins py-2">
                   Nunc sit amet mi finibus ex sagittis porttitor in porta sem.
                   In pretium eros ac orci vulputate placerat. Donec quis
                   condimentum nisl, tempor tincidunt est. Etiam ante ex, viverra
@@ -309,7 +307,7 @@ function App() {
               </div>
             </div>
             <div className="relative w-full  px-4 py-3 mt-4 flex justify-between items-center z-10 ">
-              <div className="flex items-center ">
+              <div className=" hidden lg:flex items-center ">
                 <span
                   className="text-sm font-medium mr-3 hidden sm:block"
                   style={{ fontFamily: "Raleway" }}
@@ -319,7 +317,7 @@ function App() {
                 <div className="  flex gap-2 hidden sm:flex">
                   {/* Connection Tag — white background, gradient text */}
                   <span className="bg-white rounded-full ">
-                    <span className="bg-white bg-clip-text text-transparent text-[0.781vw] px-3 py-1 rounded-full font-medium bg-gradient-to-r from-[#F05A8E] to-[#ED1C24] border border-[#ED1C2424]/[0.15]">
+                    <span className="bg-white bg-clip-text text-transparent text-[0.781vw]   px-3 py-1 rounded-full font-medium bg-gradient-to-r from-[#F05A8E] to-[#ED1C24] border border-[#ED1C2424]/[0.15]">
                       Connection
                     </span>
                   </span>

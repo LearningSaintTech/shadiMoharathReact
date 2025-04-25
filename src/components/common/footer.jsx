@@ -8,6 +8,10 @@ import Mastercard from "../../assets/images/Mastercard.svg";
 import apple from "../../assets/images/apple pay.svg";
 import Amex from "../../assets/images/Amex.svg";
 import skrill from "../../assets/images/Skrill.svg";
+import Pink from "../../assets/images/Pink fb.svg";
+import Yt from "../../assets/images/YT.svg";
+import Linked from "../../assets/images/linkedin.svg";
+import insta from "../../assets/images/insta.svg";
 
 const Footer = () => {
   return (
@@ -34,7 +38,7 @@ const Footer = () => {
         {/* Right */}
         <div className="md:w-1/2 space-y-6">
           {/* Email + Button */}
-          <div className="flex flex-col md:flex-row md:items-center gap-0 w-full">
+          <div className="flex flex-col md:flex-row md:items-center gap-0  gap-y-4 md:gap-4  w-full">
             <input
               type="email"
               placeholder="enter Your email address"
@@ -42,7 +46,7 @@ const Footer = () => {
             />
              <button
             type="submit"
-             className="bg-gradient-to-r from-[#F05A8E] to-[#ED1C24]  text-white px-6 py-2 rounded-full whitespace-nowrap  hover:scale-105 transition-transform"
+             className="bg-gradient-to-r from-[#F05A8E] to-[#ED1C24]   text-white px-6 py-2 rounded-full whitespace-nowrap  hover:scale-105 transition-transform"
             >
               Register Now
             </button> 
@@ -50,11 +54,11 @@ const Footer = () => {
           </div>
 
           {/* Social Icons */}
-          <div className="flex space-x-4 text-xl text-red-500 justify-center md:justify-start">
-            <IoLogoFacebook />
-            <FaYoutube />
-            <FaLinkedin />
-            <FaInstagram />
+          <div className="flex space-x-4 text-xl text-red-400 justify-center md:justify-start">
+          <img src={Pink} alt="Visa" className="h-auto" />
+          <img src={Yt} alt="Amex" className="h-[25px]" />
+          <img src={Linked} alt="Apple Pay" className="h-[25px]" />
+          <img src={insta} alt="Skrill" className="h-[25px]" />
           </div>
 
           {/* Links */}
