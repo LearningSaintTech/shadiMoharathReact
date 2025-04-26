@@ -96,8 +96,8 @@ export default function Navbar() {
             <li><NavLink to="/" onClick={() => setMenuOpen(false)}>Home</NavLink></li>
             <li><NavLink to="/about" onClick={() => setMenuOpen(false)}>About Us</NavLink></li>
             <li><NavLink to="/gallery" onClick={() => setMenuOpen(false)}>Gallery</NavLink></li>
-            <li><NavLink to="/blog" onClick={() => setMenuOpen(false)}>Pricing</NavLink></li>
-            <li><NavLink to="/pricing" onClick={() => setMenuOpen(false)}>Blogs</NavLink></li>
+            <li><NavLink to="/blog" onClick={() => setMenuOpen(false)}>Blogs</NavLink></li>
+            <li><NavLink to="/pricing" onClick={() => setMenuOpen(false)}>Pricing</NavLink></li>
           </ul>
 
           {/* Logo */}

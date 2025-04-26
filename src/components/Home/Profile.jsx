@@ -22,14 +22,17 @@ const Profile = () => {
           <span className="bg-[#E3CBBE] px-[1.2vw] py-[0.8vw]  font-semibold rounded-full text-[#C1645C]">
             Mother Tongue
           </span>
+          <span className="bg-[#E3CBBE] px-[1.2vw] py-[0.8vw]  font-semibold rounded-full text-[#C1645C]">
+            caste
+          </span>
+
           {[
             "Caste",
             "Religion",
             "City",
             "Occupation",
             "State",
-            "NRI",
-            "College",
+            
           ].map((category, index) => (
             <span
               key={index}

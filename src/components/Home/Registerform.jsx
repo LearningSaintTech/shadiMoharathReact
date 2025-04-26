@@ -48,6 +48,8 @@ export default function ShadiSection() {
             <div className="relative">
               <select className="appearance-none w-full py-4 px-5 text-base lg:text-[1.1vw] text-[#C1645C] bg-white rounded-full focus:outline-none">
                 <option>I am Looking For</option>
+                <option>Bride</option>
+                <option>Groom</option>
               </select>
               <FaAngleDown className="absolute w-4 h-4 right-6 top-1/2 -translate-y-1/2 text-[#C1645C] pointer-events-none" />
             </div>
