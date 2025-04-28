@@ -15,7 +15,7 @@ import Couple9 from "../assets/images/Couple 9.svg";
 import { IoSearchSharp } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import garden from "../assets/images/garden.svg";
-import shadow from "../assets/images/shadow.svg";
+import shadow from "../assets/images/Shadow.svg";
 import gold from "../assets/images/gold.svg";
 
 const Blog = () => {

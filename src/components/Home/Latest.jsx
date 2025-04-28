@@ -1,7 +1,7 @@
 import React from "react";
 import Goa from "../../assets/images/Goa.svg";
 import Night from "../../assets/images/Night.svg";
-import Black from "../../assets/images/Black.svg";
+import Black from "../../assets/images/black.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from 'react-router-dom'; 
 

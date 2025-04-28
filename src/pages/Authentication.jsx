@@ -4,7 +4,7 @@ import Footer from "../components/common/Footer";
 import Engagement from "../assets/images/Engagement.svg";
 import Background from "../assets/images/Background.svg";
 import Google from "../assets/images/Google.svg";
-import Facebook from "../assets/images/Facebook.svg";
+import Facebook from "../assets/images/facebook.svg";
 import Apple from "../assets/images/apple.svg";
 import { Eye } from "lucide-react"; // Optional, for password icon
 import { VscEye } from "react-icons/vsc";

@@ -6,7 +6,7 @@ import visa from "../../assets/images/visa.svg";
 import Paypal from "../../assets/images/paypal.svg";
 import Mastercard from "../../assets/images/Mastercard.svg";
 import apple from "../../assets/images/apple pay.svg";
-import Amex from "../../assets/images/Amex.svg";
+import Amex from "../../assets/images/AMEX.svg";
 import skrill from "../../assets/images/Skrill.svg";
 import Pink from "../../assets/images/Pink fb.svg";
 import Yt from "../../assets/images/YT.svg";

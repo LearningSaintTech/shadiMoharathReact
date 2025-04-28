@@ -4,7 +4,7 @@ import { ChevronRight } from "lucide-react"; // Icon for navigation
 import Strongnew from "../../assets/images/Strongnew.svg";
 import Trade from "../../assets/images/Trade.svg";
 import Lamp from "../../assets/images/Lamp.svg";
-import stairs from "../../assets/images/stairs.svg";
+import stairs from "../../assets/images/Stairs.svg";
 
 const StatsData = [
   {

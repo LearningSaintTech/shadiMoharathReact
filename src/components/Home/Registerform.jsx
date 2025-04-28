@@ -2,6 +2,8 @@ import React from "react";
 import Logo from "../../assets/images/Logo.svg";
 import rangoli from "../../assets/images/Rangoli.png";
 import { FaAngleDown } from "react-icons/fa6";
+import { Link } from "react-router-dom";
+
 
 export default function ShadiSection() {
   return (
@@ -82,12 +84,14 @@ export default function ShadiSection() {
 
 
             {/* Button */}
+            <Link to="/Forms">
             <button
               type="submit"
               className="w-full py-4 bg-gradient-to-r from-[#F05A8E] to-[#ED1C24] text-white text-base font-semibold rounded-full hover:scale-105 transition-transform"
             >
               Register For Free
             </button>
+            </Link>
           </form>
 
         </div>

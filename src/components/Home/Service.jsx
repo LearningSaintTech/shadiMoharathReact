@@ -6,7 +6,7 @@ import Nadani from "../../assets/images/Nadani.svg";
 import Chaudhary from "../../assets/images/Chaudhary.svg";
 import Mouse from "../../assets/images/Mouse.svg";
 import JAINN from "../../assets/images/JAINN.svg";
-import Goyola from "../../assets/images/Goyola.svg";
+import Goyola from "../../assets/images/GOYOLA.svg";
 import Lucknow from "../../assets/images/Lucknow.svg";
 import Bhopal from "../../assets/images/Bhopal.svg";
 import Guptaji from "../../assets/images/Guptaji.svg";

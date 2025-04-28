@@ -4,7 +4,7 @@ import Footer from "../components/common/Footer";
 import Engagement from "../assets/images/Engagement.svg";
 import Locate from "../assets/images/Locate.svg";
 import email from "../assets/images/email.svg";
-import chit from "../assets/images/chit.svg";
+import chit from "../assets/images/Chit.svg";
 
 const ContactSection = () => {
   return (

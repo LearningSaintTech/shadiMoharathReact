@@ -5,7 +5,7 @@ import Footer from "../components/common/Footer";
 import Background from "../assets/images/Background.svg";
 import Engagement from "../assets/images/Engagement.svg";
 import tworing from "../assets/images/two ring.svg";
-import coat from "../assets/images/coat.svg";
+import coat from "../assets/images/Coat.svg";
 import quotes from "../assets/images/quotes.svg";
 import Quotes1 from "../assets/images/Quotes1.svg";
 import { IoSearchSharp } from "react-icons/io5";

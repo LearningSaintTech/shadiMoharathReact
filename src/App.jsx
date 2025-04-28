@@ -8,6 +8,7 @@ import Contact from './pages/Contact';
 import Authentication from './pages/Authentication';
 import Faq from './pages/Faq';
 import Gallery from './pages/Gallery';
+import Forms from './pages/Forms';
 
 import BlogDetails from './pages/BlogDetails';
 
@@ -25,6 +26,7 @@ const App = () => {
           <Route path="/faq" element={<Faq />} /> 
           {/* <Route path="/blog" element={<Blog/>}/>  */}
           <Route path ="/blog/:id" element={<BlogDetails />} />
+          <Route path="/Forms" element={<Forms/>}/>
          
          </Routes>
          
