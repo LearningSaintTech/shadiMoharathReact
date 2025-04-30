@@ -25,7 +25,7 @@ export default function ShadiSection() {
         <img src={Logo} alt="Shadi Muharath" className="w-[40vw] h-auto mx-auto lg:mx-0 lg:w-[9.6vw] lg:h-[5.1vw]" />
         <p className="text-black opacity-60 text-sm leading-relaxed mt-4 px-2 lg:px-0 lg:text-[1.3vw] lg:leading-[1.8vw]" style={{ fontFamily: "Poppins" }}
         >
-          Join ShadiMuharath today and take the first step toward a beautiful life ahead.
+          Join ShadhiMuharath today and take the first step toward a beautiful life ahead.
           With easy-to-use features, advanced search options, and a dedicated support team,
           we are here to guide you every step of the way. Let’s create a timeless bond for a lifetime
           of love and happiness.
@@ -61,8 +61,18 @@ export default function ShadiSection() {
               <select className="appearance-none w-full py-4 px-5 text-base lg:text-[1.1vw] text-[#C1645C] bg-white rounded-full focus:outline-none">
                 <option value="">Religion</option>
                 <option value="hindu">Hindu</option>
-                <option value="muslim">Muslim</option>
+                <option value="muslim">Islam</option>
                 <option value="christian">Christian</option>
+                <option value="sikh">Sikh</option>
+                <option value="jain">Jain</option>
+                <option value="sindhi">Sindhi</option>
+                <option value="Buddha">Buddha</option>
+                <option value="christian">Parsi</option>
+
+
+
+
+
               </select>
               <FaAngleDown className="absolute w-4 h-4 right-6 top-1/2 -translate-y-1/2 text-[#C1645C] pointer-events-none" />
             </div>

@@ -29,11 +29,11 @@ const Forms = () => {
       </div>
 
       {/* Form Section */}
-      <div className="relative flex flex-col items-center justify-center overflow-hidden min-h-screen">
+      <div className="relative flex flex-col items-center justify-center overflow-hidden min-h-screen  ">
         <img
           src={Banner}
           alt="Background"
-          className="absolute w-full h-full object-cover z-0"
+          className="absolute w-full h-full object-cover z-0 hidden sm:block"
         />
         <div className="absolute inset-0 bg-white/20 z-0" />
 

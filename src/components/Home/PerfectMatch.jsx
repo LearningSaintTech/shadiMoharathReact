@@ -1,6 +1,7 @@
 import React from "react";
 import rectangleBg from "../../assets/images/Rectanglebg.svg";
 import peopleBanner from "../../assets/images/peoplebanner.svg";
+import { Link } from "react-router-dom";
 
 const PerfectMatch = () => {
   return (
@@ -25,12 +26,16 @@ const PerfectMatch = () => {
           Lorem Ipsum is simply dummy text of the printing and typesetting industry.
         </p>
         <div className="flex lg:flex-row flex-col justify-center mb-[8vw] gap-[1.2vw]">
+          <Link to="./forms">
           <button className="bg-[#4F1617] text-white px-[2.3vw] py-[0.6vw] rounded-full lg:text-[0.9vw] text-[5vw] font-normal hover:bg-[#3e1313] transition">
             Register Now
           </button>
+          </Link>
+           <Link to="./Contact"> 
           <button className="border border-[#4F1617] text-[#4F1617] px-[2.3vw] py-[0.6vw] rounded-full lg:text-[0.9vw] text-[5vw] font-medium hover:bg-[#561C1C] hover:text-white transition">
             Help & Support
           </button>
+           </Link> 
         </div>
       </div>
 

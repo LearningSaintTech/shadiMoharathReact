@@ -14,6 +14,7 @@ import People from "../../assets/images/People.svg";
 import Male from "../../assets/images/Male.svg";
 import Coup from "../../assets/images/Coup.svg";
 import User from "../../assets/images/Usercontainer.svg";
+import { Link } from "react-router-dom";
 
 const Together = () => {
   return (
@@ -127,9 +128,12 @@ const Together = () => {
           <p className="text-[3.5vw] sm:text-[1vw] text-center sm:text-start text-gray-500 mt-[2vw] sm:mt-[1vw] w-[80vw] sm:w-[30vw]">
             It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
           </p>
+          
+          <Link to="/forms">
           <button className="bg-gradient-to-r from-[#F05A8E] to-[#ED1C24] px-[10vw] sm:px-[1.6vw] rounded-[8vw] sm:rounded-[2vw] py-[2vw] sm:py-[0.6vw] text-white text-[4vw] sm:text-[1vw] mt-[4vw] sm:mt-[3vw]">
             Register Now
           </button>
+          </Link>
         </div>
 
         {/* Grid Images - Hidden on mobile */}

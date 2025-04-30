@@ -26,11 +26,11 @@ export default function Navbar() {
         </div>
         <div className="flex space-x-3 items-center">
           <span className="font-[400]">+91 986-544-3399 |</span>
-          <span className="font-[400]">Shadimuharath@Gmail.com</span>
-          <a href="#" className="hover:text-pink-300"><IoLogoFacebook /></a>
-          <a href="#" className="hover:text-pink-300"><FaYoutube /></a>
-          <a href="#" className="hover:text-pink-300"><FaLinkedin /></a>
-          <a href="#" className="hover:text-pink-300"><FaInstagram /></a>
+          <span className="font-[400]">Shadhimuharath@Gmail.com</span>
+          <a href="https://www.facebook.com/profile.php?id=61567493432082&mibextid=LQQJ4d" className="hover:text-pink-300"><IoLogoFacebook /></a>
+          <a href="https://youtube.com/@shadhimuharath?si=Tx5-BLzU0pKjz7D4" className="hover:text-pink-300"><FaYoutube /></a>
+          <a href="https://www.linkedin.com/in/shadhi-muharath-4a9305338" className="hover:text-pink-300"><FaLinkedin /></a>
+          <a href="https://www.instagram.com/shadi_muharath_?igsh=MWoxNmk4MzE1OG5lcg==" className="hover:text-pink-300"><FaInstagram /></a>
         </div>
       </div>
 

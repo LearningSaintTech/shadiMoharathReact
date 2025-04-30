@@ -10,6 +10,7 @@ import Goyola from "../../assets/images/GOYOLA.svg";
 import Lucknow from "../../assets/images/Lucknow.svg";
 import Bhopal from "../../assets/images/Bhopal.svg";
 import Guptaji from "../../assets/images/Guptaji.svg";
+import { Link } from "react-router-dom";
 
 // Couples Data
 const couples = [
@@ -150,9 +151,11 @@ const TrustedCouples = () => {
             Our platform helps partners build meaningful connections and lasting
             relationships.
           </p>
+          <Link to="./forms">
           <button className="bg-gradient-to-r from-[#F05A8E] to-[#ED1C24] px-[1.6vw]  hidden sm:block rounded-[2vw] py-[0.6vw] text-white hover:bg-pink-700 mt-[4vw]">
             Register Now
           </button>
+          </Link>
         </div>
 
         {/* Featured Couple */}

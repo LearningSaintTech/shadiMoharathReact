@@ -1,0 +1,1174 @@
+{
+  "states": [
+    {
+      "stateId": 1,
+      "stateName": "KERALA",
+      "castes": [
+        {
+          "casteCode": 1001,
+          "caste": "ACHARI",
+          "subCaste": "KONGU VELLALA"
+        },
+        {
+          "casteCode": 1002,
+          "caste": "ACHARI",
+          "subCaste": "VISHWAKARMA"
+        },
+        {
+          "casteCode": 1003,
+          "caste": "ACHARI",
+          "subCaste": null
+        },
+        {
+          "casteCode": 1004,
+          "caste": "ADI DRAVIDA",
+          "subCaste": "PARAYA"
+        },
+        {
+          "casteCode": 1005,
+          "caste": "AENTELUR",
+          "subCaste": "ROMAN CATHOLIC"
+        },
+        {
+          "casteCode": 1006,
+          "caste": "AMBATTAN",
+          "subCaste": null
+        },
+        {
+          "casteCode": 1007,
+          "caste": "ARAYAN",
+          "subCaste": null
+        },
+        {
+          "casteCode": 1008,
+          "caste": "ARAYAN",
+          "subCaste": null
+        },
+        {
+          "casteCode": 1009,
+          "caste": "BARBAR",
+          "subCaste": null
+        },
+        {
+          "casteCode": 1010,
+          "caste": "BRAHMAN",
+          "subCaste": "BHATT"
+        },
+        {
+          "casteCode": 1011,
+          "caste": "BRAHMAN",
+          "subCaste": "IYER"
+        },
+        {
+          "casteCode": 1012,
+          "caste": "BRAHMAN",
+          "subCaste": null
+        },
+        {
+          "casteCode": 1013,
+          "caste": "CATHOLIC",
+          "subCaste": "LATIN CATHOLIC"
+        },
+        {
+          "casteCode": 1014,
+          "caste": "CATHOLIC",
+          "subCaste": "PULAYA"
+        },
+        {
+          "casteCode": 1015,
+          "caste": "CATHOLIC",
+          "subCaste": "ROMAN CATHOLIC"
+        },
+        {
+          "casteCode": 1016,
+          "caste": "CATHOLIC",
+          "subCaste": "SYRIAN"
+        },
+        {
+          "casteCode": 1017,
+          "caste": "CATHOLIC",
+          "subCaste": null
+        },
+        {
+          "casteCode": 1018,
+          "caste": "CHAKKILIYAN",
+          "subCaste": null
+        },
+        {
+          "casteCode": 1019,
+          "caste": "CHAKKILIYAN",
+          "subCaste": null
+        },
+        {
+          "casteCode": 1020,
+          "caste": "CHERUMAN",
+          "subCaste": "IRAYA"
+        },
+        {
+          "casteCode": 1021,
+          "caste": "CHERUMAN",
+          "subCaste": "KANAKKAN"
+        },
+        {
+          "casteCode": 1022,
+          "caste": "CHERUMAN",
+          "subCaste": null
+        },
+        {
+          "casteCode": 1023,
+          "caste": "CHETTIAR",
+          "subCaste": "CHAKKA"
+        },
+        {
+          "casteCode": 1024,
+          "caste": "CHETTIAR",
+          "subCaste": "TELUGU"
+        },
+        {
+          "casteCode": 1025,
+          "caste": "CHETTIAR",
+          "subCaste": "TELUGU CHETTIAR"
+        },
+        {
+          "casteCode": 1026,
+          "caste": "CHETTIAR",
+          "subCaste": "VANIAR"
+        },
+        {
+          "casteCode": 1027,
+          "caste": "CHETTIAR",
+          "subCaste": null
+        },
+        {
+          "casteCode": 1028,
+          "caste": "CHRISTIAN",
+          "subCaste": "CATHOLIC"
+        },
+        {
+          "casteCode": 1029,
+          "caste": "CHRISTIAN",
+          "subCaste": "CHRISTIAN"
+        },
+        {
+          "casteCode": 1030,
+          "caste": "CHRISTIAN",
+          "subCaste": "ROMAN CATHOLIC"
+        },
+        {
+          "casteCode": 1031,
+          "caste": "CHRISTIAN",
+          "subCaste": null
+        },
+        {
+          "casteCode": 1032,
+          "caste": "DHOBI",
+          "subCaste": "DEVARA AMMA"
+        },
+        {
+          "casteCode": 1033,
+          "caste": "DWEEPARA",
+          "subCaste": null
+        },
+        {
+          "casteCode": 1034,
+          "caste": "EZHAVA",
+          "subCaste": "AMMELU"
+        },
+        {
+          "casteCode": 1035,
+          "caste": "EZHAVA",
+          "subCaste": "CHETTI"
+        },
+        {
+          "casteCode": 1036,
+          "caste": "EZHAVA",
+          "subCaste": "EZHAVA"
+        },
+        {
+          "casteCode": 1037,
+          "caste": "EZHAVA",
+          "subCaste": "GHIYAIU"
+        },
+        {
+          "casteCode": 1038,
+          "caste": "EZHAVA",
+          "subCaste": "HARIJAN"
+        },
+        {
+          "casteCode": 1039,
+          "caste": "EZHAVA",
+          "subCaste": "KONGU VELLALA"
+        },
+        {
+          "casteCode": 1040,
+          "caste": "EZHAVA",
+          "subCaste": "MENON"
+        },
+        {
+          "casteCode": 1041,
+          "caste": "EZHAVA",
+          "subCaste": "PANKAR"
+        },
+        {
+          "casteCode": 1042,
+          "caste": "EZHAVA",
+          "subCaste": "PILLAI"
+        },
+        {
+          "casteCode": 1043,
+          "caste": "EZHAVA",
+          "subCaste": "THEYAHAN"
+        },
+        {
+          "casteCode": 1044,
+          "caste": "EZHAVA",
+          "subCaste": "THIYA"
+        },
+        {
+          "casteCode": 1045,
+          "caste": "EZHAVA",
+          "subCaste": "VANIKA"
+        },
+        {
+          "casteCode": 1046,
+          "caste": "EZHAVA",
+          "subCaste": "VANIYAN"
+        },
+        {
+          "casteCode": 1047,
+          "caste": "EZHAVA",
+          "subCaste": "VARRER"
+        },
+        {
+          "casteCode": 1048,
+          "caste": "EZHAVA",
+          "subCaste": "VATHI"
+        },
+        {
+          "casteCode": 1049,
+          "caste": "EZHAVA",
+          "subCaste": null
+        },
+        {
+          "casteCode": 1050,
+          "caste": "EZHUTHACHAN",
+          "subCaste": null
+        },
+        {
+          "casteCode": 1051,
+          "caste": "G.S.B.",
+          "subCaste": null
+        },
+        {
+          "casteCode": 1052,
+          "caste": "GANAK",
+          "subCaste": null
+        },
+        {
+          "casteCode": 1053,
+          "caste": "GOUNDER",
+          "subCaste": "KONGU VELLALA"
+        },
+        {
+          "casteCode": 1054,
+          "caste": "GOUNDER",
+          "subCaste": "MENON"
+        },
+        {
+          "casteCode": 1055,
+          "caste": "GOUNDER",
+          "subCaste": "PADAIYACHI"
+        },
+        {
+          "casteCode": 1056,
+          "caste": "GOUNDER",
+          "subCaste": "PILLAI"
+        },
+        {
+          "casteCode": 1057,
+          "caste": "GOUNDER",
+          "subCaste": "VANIAR"
+        },
+        {
+          "casteCode": 1058,
+          "caste": "GOUNDER",
+          "subCaste": "VELLALAR"
+        },
+        {
+          "casteCode": 1059,
+          "caste": "GOUNDER",
+          "subCaste": null
+        },
+        {
+          "casteCode": 1060,
+          "caste": "GUPTHAN",
+          "subCaste": null
+        },
+        {
+          "casteCode": 1061,
+          "caste": "HAIRUA",
+          "subCaste": "PILLAI"
+        },
+        {
+          "casteCode": 1062,
+          "caste": "HARIJAN",
+          "subCaste": "HARIJAN"
+        },
+        {
+          "casteCode": 1063,
+          "caste": "HARIJAN",
+          "subCaste": "KOLLAN"
+        },
+        {
+          "casteCode": 1064,
+          "caste": "HARIJAN",
+          "subCaste": "MANNAN"
+        },
+        {
+          "casteCode": 1065,
+          "caste": "HARIJAN",
+          "subCaste": "PARAYAN"
+        },
+        {
+          "casteCode": 1066,
+          "caste": "HARIJAN",
+          "subCaste": "PULAYA"
+        },
+        {
+          "casteCode": 1067,
+          "caste": "HINDU",
+          "subCaste": "NAIR"
+        },
+        {
+          "casteCode": 1068,
+          "caste": "HINDU",
+          "subCaste": null
+        },
+        {
+          "casteCode": 1069,
+          "caste": "IYER",
+          "subCaste": null
+        },
+        {
+          "casteCode": 1070,
+          "caste": "JACOBITE",
+          "subCaste": null
+        },
+        {
+          "casteCode": 1071,
+          "caste": "JACOBITE",
+          "subCaste": null
+        },
+        {
+          "casteCode": 1072,
+          "caste": "KALLAR",
+          "subCaste": null
+        },
+        {
+          "casteCode": 1073,
+          "caste": "KANAKKAN",
+          "subCaste": "CHERUMAN"
+        },
+        {
+          "casteCode": 1074,
+          "caste": "KANAKKAN",
+          "subCaste": "SYRIAN"
+        },
+        {
+          "casteCode": 1075,
+          "caste": "KANAKKAN",
+          "subCaste": null
+        },
+        {
+          "casteCode": 1076,
+          "caste": "KNANAYA",
+          "subCaste": "CHEDUMA"
+        },
+        {
+          "casteCode": 1077,
+          "caste": "KNANAYA",
+          "subCaste": "CHETTI"
+        },
+        {
+          "casteCode": 1078,
+          "caste": "KNANAYA",
+          "subCaste": "SYRIAN"
+        },
+        {
+          "casteCode": 1079,
+          "caste": "KNANAYA",
+          "subCaste": null
+        },
+        {
+          "casteCode": 1080,
+          "caste": "KOLLAN",
+          "subCaste": null
+        },
+        {
+          "casteCode": 1081,
+          "caste": "KOLLAN",
+          "subCaste": null
+        },
+        {
+          "casteCode": 1082,
+          "caste": "KORAVAN",
+          "subCaste": null
+        },
+        {
+          "casteCode": 1083,
+          "caste": "KUDUMBI",
+          "subCaste": null
+        },
+        {
+          "casteCode": 1084,
+          "caste": "KUMBARAN",
+          "subCaste": null
+        },
+        {
+          "casteCode": 1085,
+          "caste": "KURICHIAN",
+          "subCaste": null
+        },
+        {
+          "casteCode": 1086,
+          "caste": "KURICHIAN",
+          "subCaste": null
+        },
+        {
+          "casteCode": 1087,
+          "caste": "MANNADIYAR",
+          "subCaste": null
+        },
+        {
+          "casteCode": 1088,
+          "caste": "MANNADIYAR",
+          "subCaste": null
+        },
+        {
+          "casteCode": 1089,
+          "caste": "MANNAN",
+          "subCaste": "MANNAN"
+        },
+        {
+          "casteCode": 1090,
+          "caste": "MANNAN",
+          "subCaste": "PERUMANNAN"
+        },
+        {
+          "casteCode": 1091,
+          "caste": "MANNAN",
+          "subCaste": null
+        },
+        {
+          "casteCode": 1092,
+          "caste": "MAPPILLA",
+          "subCaste": "ASSARI"
+        },
+        {
+          "casteCode": 1093,
+          "caste": "MAPPILLA",
+          "subCaste": "MUJAHID"
+        },
+        {
+          "casteCode": 1094,
+          "caste": "MAPPILLA",
+          "subCaste": null
+        },
+        {
+          "casteCode": 1095,
+          "caste": "MAPTHAN",
+          "subCaste": null
+        },
+        {
+          "casteCode": 1096,
+          "caste": "MARAVAR",
+          "subCaste": null
+        },
+        {
+          "casteCode": 1097,
+          "caste": "MARTHOMA",
+          "subCaste": "MARTHOMA"
+        },
+        {
+          "casteCode": 1098,
+          "caste": "MARTHOMA",
+          "subCaste": "SYRIAN"
+        },
+        {
+          "casteCode": 1099,
+          "caste": "MARTHOMA",
+          "subCaste": null
+        },
+        {
+          "casteCode": 1100,
+          "caste": "MOOPAR",
+          "subCaste": null
+        },
+        {
+          "casteCode": 1101,
+          "caste": "MOOSARI",
+          "subCaste": null
+        },
+        {
+          "casteCode": 1102,
+          "caste": "MOOTHAN",
+          "subCaste": "SYRIAN KADAYAN KURUP THARAKAN"
+        },
+        {
+          "casteCode": 1103,
+          "caste": "MUDALI",
+          "subCaste": null
+        },
+        {
+          "casteCode": 1104,
+          "caste": "MUDALIYAR",
+          "subCaste": null
+        },
+        {
+          "casteCode": 1105,
+          "caste": "MUDALIYA R",
+          "subCaste": null
+        },
+        {
+          "casteCode": 1106,
+          "caste": "MUSLIM",
+          "subCaste": "JAMAMITK"
+        },
+        {
+          "casteCode": 1107,
+          "caste": "MUSLIM",
+          "subCaste": "JAMAN"
+        },
+        {
+          "casteCode": 1108,
+          "caste": "MUSLIM",
+          "subCaste": "JAMARI"
+        },
+        {
+          "casteCode": 1109,
+          "caste": "MUSLIM",
+          "subCaste": "MAPPILLA"
+        },
+        {
+          "casteCode": 1110,
+          "caste": "MUSLIM",
+          "subCaste": "MUJAHID"
+        },
+        {
+          "casteCode": 1111,
+          "caste": "MUSLIM",
+          "subCaste": "MUSLIM"
+        },
+        {
+          "casteCode": 1112,
+          "caste": "MUSLIM",
+          "subCaste": "RAWTHER"
+        },
+        {
+          "casteCode": 1113,
+          "caste": "MUSLIM",
+          "subCaste": "SUNNI"
+        },
+        {
+          "casteCode": 1114,
+          "caste": "MUSLIM",
+          "subCaste": null
+        },
+        {
+          "casteCode": 1115,
+          "caste": "MUTHUNARAYANA",
+          "subCaste": null
+        },
+        {
+          "casteCode": 1116,
+          "caste": "NADAR",
+          "subCaste": null
+        },
+        {
+          "casteCode": 1117,
+          "caste": "NAICKER",
+          "subCaste": "KANNAR"
+        },
+        {
+          "casteCode": 1118,
+          "caste": "NAICKER",
+          "subCaste": "KAVADI"
+        },
+        {
+          "casteCode": 1119,
+          "caste": "NAICKER",
+          "subCaste": "THOTTI"
+        },
+        {
+          "casteCode": 1120,
+          "caste": "NAICKER",
+          "subCaste": null
+        },
+        {
+          "casteCode": 1121,
+          "caste": "NAIK",
+          "subCaste": "PILLAI"
+        },
+        {
+          "casteCode": 1122,
+          "caste": "NAIK",
+          "subCaste": "VELUTHEDU"
+        },
+        {
+          "casteCode": 1123,
+          "caste": "NAIK",
+          "subCaste": "VILAKITHALA"
+        },
+        {
+          "casteCode": 1124,
+          "caste": "NAIR",
+          "subCaste": "BHATTATHI"
+        },
+        {
+          "casteCode": 1125,
+          "caste": "NAIR",
+          "subCaste": "BRAHMAN"
+        },
+        {
+          "casteCode": 1126,
+          "caste": "NAIR",
+          "subCaste": "CHETTI"
+        },
+        {
+          "casteCode": 1127,
+          "caste": "NAIR",
+          "subCaste": "CHETTIAR"
+        },
+        {
+          "casteCode": 1128,
+          "caste": "NAIR",
+          "subCaste": "DEVARA"
+        },
+        {
+          "casteCode": 1129,
+          "caste": "NAIR",
+          "subCaste": "GUPTHAN"
+        },
+        {
+          "casteCode": 1131,
+          "caste": "NAIR",
+          "subCaste": "IYYANGA R"
+        },
+        {
+          "casteCode": 1132,
+          "caste": "NAIR",
+          "subCaste": "KARTHA"
+        },
+        {
+          "casteCode": 1133,
+          "caste": "NAIR",
+          "subCaste": "KURUP"
+        },
+        {
+          "casteCode": 1134,
+          "caste": "NAIR",
+          "subCaste": "MARAR"
+        },
+        {
+          "casteCode": 1135,
+          "caste": "NAIR",
+          "subCaste": "MENON"
+        },
+        {
+          "casteCode": 1136,
+          "caste": "NAIR",
+          "subCaste": "NAIR"
+        },
+        {
+          "casteCode": 1137,
+          "caste": "NAIR",
+          "subCaste": "NAMBIYAR"
+        },
+        {
+          "casteCode": 1138,
+          "caste": "NAIR",
+          "subCaste": "NAMBUTHIRI KAIKOLAN"
+        },
+        {
+          "casteCode": 1139,
+          "caste": "NAIR",
+          "subCaste": "PANICKAR"
+        },
+        {
+          "casteCode": 1140,
+          "caste": "NAIR",
+          "subCaste": "PATTAR"
+        },
+        {
+          "casteCode": 1141,
+          "caste": "NAIR",
+          "subCaste": "PENTACOSTAL"
+        },
+        {
+          "casteCode": 1142,
+          "caste": "NAIR",
+          "subCaste": "PICARI"
+        },
+        {
+          "casteCode": 1143,
+          "caste": "NAIR",
+          "subCaste": "PILLAI"
+        },
+        {
+          "casteCode": 1144,
+          "caste": "NAIR",
+          "subCaste": "POTHUWAL"
+        },
+        {
+          "casteCode": 1145,
+          "caste": "NAIR",
+          "subCaste": "ROMAN CATHOLIC"
+        },
+        {
+          "casteCode": 1147,
+          "caste": "NAIR",
+          "subCaste": "SUNNI"
+        },
+        {
+          "casteCode": 1148,
+          "caste": "NAIR",
+          "subCaste": "SYRIAN"
+        },
+        {
+          "casteCode": 1149,
+          "caste": "NAIR",
+          "subCaste": "THIYA"
+        },
+        {
+          "casteCode": 1150,
+          "caste": "NAIR",
+          "subCaste": "VADIAR"
+        },
+        {
+          "casteCode": 1151,
+          "caste": "NAIR",
+          "subCaste": "VALAKATHALA"
+        },
+        {
+          "casteCode": 1152,
+          "caste": "NAIR",
+          "subCaste": "VARIAR"
+        },
+        {
+          "casteCode": 1153,
+          "caste": "NAIR",
+          "subCaste": "VILAKIKRISHNAN"
+        },
+        {
+          "casteCode": 1154,
+          "caste": "NAIR",
+          "subCaste": "VILAKIT"
+        },
+        {
+          "casteCode": 1155,
+          "caste": "NAIR",
+          "subCaste": "VILAKITHALA"
+        },
+        {
+          "casteCode": 1156,
+          "caste": "NAIR",
+          "subCaste": "VLLAKIAM"
+        },
+        {
+          "casteCode": 1157,
+          "caste": "NAIR",
+          "subCaste": null
+        },
+        {
+          "casteCode": 1158,
+          "caste": "NAMBUDHIRI",
+          "subCaste": null
+        },
+        {
+          "casteCode": 1159,
+          "caste": "NAMBUDHIRI",
+          "subCaste": "NAMER DAR"
+        },
+        {
+          "casteCode": 1160,
+          "caste": "NAMBUDHIRI",
+          "subCaste": "NAMKAR"
+        },
+        {
+          "casteCode": 1161,
+          "caste": "NOPRTHAONA",
+          "subCaste": "SYRIAN"
+        },
+        {
+          "casteCode": 1162,
+          "caste": "ODDAR",
+          "subCaste": null
+        },
+        {
+          "casteCode": 1163,
+          "caste": "ORTHODOX",
+          "subCaste": "JACOBITE"
+        },
+        {
+          "casteCode": 1164,
+          "caste": "ORTHODOX",
+          "subCaste": "ROMAN CATHOLIC"
+        },
+        {
+          "casteCode": 1165,
+          "caste": "ORTHODOX",
+          "subCaste": "SYRIAN"
+        },
+        {
+          "casteCode": 1166,
+          "caste": "PAANAN",
+          "subCaste": null
+        },
+        {
+          "casteCode": 1167,
+          "caste": "PALAYA",
+          "subCaste": "HARIJAN"
+        },
+        {
+          "casteCode": 1168,
+          "caste": "PALAYA",
+          "subCaste": "MANNON"
+        },
+        {
+          "casteCode": 1169,
+          "caste": "PALAYA",
+          "subCaste": "PATHIYAN"
+        },
+        {
+          "casteCode": 1170,
+          "caste": "PANDARAM",
+          "subCaste": "KONGU VELLALA"
+        },
+        {
+          "casteCode": 1171,
+          "caste": "PANDARAM",
+          "subCaste": null
+        },
+        {
+          "casteCode": 1172,
+          "caste": "PANDITHAR",
+          "subCaste": null
+        },
+        {
+          "casteCode": 1173,
+          "caste": "PANGARAM",
+          "subCaste": null
+        },
+        {
+          "casteCode": 1174,
+          "caste": "PANICKAR",
+          "subCaste": "NAVIDAR"
+        },
+        {
+          "casteCode": 1175,
+          "caste": "PANIYAN",
+          "subCaste": "PANIYA"
+        },
+        {
+          "casteCode": 1176,
+          "caste": "PANIYAN",
+          "subCaste": null
+        },
+        {
+          "casteCode": 1177,
+          "caste": "PARA VANNAN",
+          "subCaste": null
+        },
+        {
+          "casteCode": 1178,
+          "caste": "PARAVAN",
+          "subCaste": null
+        },
+        {
+          "casteCode": 1179,
+          "caste": "PARAVAN",
+          "subCaste": null
+        },
+        {
+          "casteCode": 1180,
+          "caste": "PENTACOSTAL",
+          "subCaste": "CPM"
+        },
+        {
+          "casteCode": 1181,
+          "caste": "PENTACOSTAL",
+          "subCaste": "LATIN CATHOLIC"
+        },
+        {
+          "casteCode": 1182,
+          "caste": "PENTACOSTAL",
+          "subCaste": "PENTACOSTAL"
+        },
+        {
+          "casteCode": 1183,
+          "caste": "PENTACOSTAL",
+          "subCaste": "ROMAN CATHOLIC"
+        },
+        {
+          "casteCode": 1184,
+          "caste": "PENTACOSTAL",
+          "subCaste": "SYRIAN"
+        },
+        {
+          "casteCode": 1186,
+          "caste": "PERKUNNA",
+          "subCaste": null
+        },
+        {
+          "casteCode": 1187,
+          "caste": "PINIYAR",
+          "subCaste": null
+        },
+        {
+          "casteCode": 1188,
+          "caste": "PISHARODI",
+          "subCaste": null
+        },
+        {
+          "casteCode": 1189,
+          "caste": "POOJARI",
+          "subCaste": null
+        },
+        {
+          "casteCode": 1190,
+          "caste": "PULAYAN",
+          "subCaste": "CHERAMAR"
+        },
+        {
+          "casteCode": 1191,
+          "caste": "PULAYAN",
+          "subCaste": "HARIJAN"
+        },
+        {
+          "casteCode": 1192,
+          "caste": "PULAYAN",
+          "subCaste": "MANNAN"
+        },
+        {
+          "casteCode": 1193,
+          "caste": "PULAYAN",
+          "subCaste": "PARAVAN"
+        },
+        {
+          "casteCode": 1194,
+          "caste": "PULAYAN",
+          "subCaste": "PATHIYAN"
+        },
+        {
+          "casteCode": 1195,
+          "caste": "PULAYAN",
+          "subCaste": "PULAYA"
+        },
+        {
+          "casteCode": 1196,
+          "caste": "PULAYAN",
+          "subCaste": "PULAYAN"
+        },
+        {
+          "casteCode": 1197,
+          "caste": "PULAYAN",
+          "subCaste": "THIYA"
+        },
+        {
+          "casteCode": 1198,
+          "caste": "PULAYAN",
+          "subCaste": "VANIKAN"
+        },
+        {
+          "casteCode": 1199,
+          "caste": "PULAYAN",
+          "subCaste": null
+        },
+        {
+          "casteCode": 1200,
+          "caste": "PUSHPAKAN",
+          "subCaste": null
+        },
+        {
+          "casteCode": 1201,
+          "caste": "RAKITHAR",
+          "subCaste": null
+        },
+        {
+          "casteCode": 1202,
+          "caste": "RANTHER",
+          "subCaste": null
+        },
+        {
+          "casteCode": 1203,
+          "caste": "ROUTHER",
+          "subCaste": null
+        },
+        {
+          "casteCode": 1204,
+          "caste": "SYRIAN",
+          "subCaste": null
+        },
+        {
+          "casteCode": 1205,
+          "caste": "SYRIAN",
+          "subCaste": null
+        },
+        {
+          "casteCode": 1206,
+          "caste": "THANDAN",
+          "subCaste": null
+        },
+        {
+          "casteCode": 1207,
+          "caste": "THARAKAN",
+          "subCaste": null
+        },
+        {
+          "casteCode": 1208,
+          "caste": "THATTAN",
+          "subCaste": "THAMAN"
+        },
+        {
+          "casteCode": 1209,
+          "caste": "THATTAN",
+          "subCaste": "THATTAN"
+        },
+        {
+          "casteCode": 1210,
+          "caste": "THEVAR",
+          "subCaste": "AKAMUDAYAR HARIJAN JACOBITE"
+        },
+        {
+          "casteCode": 1211,
+          "caste": "THEVAR",
+          "subCaste": null
+        },
+        {
+          "casteCode": 1212,
+          "caste": "THIKODI",
+          "subCaste": "CPM"
+        },
+        {
+          "casteCode": 1213,
+          "caste": "THIYA",
+          "subCaste": "NAMKER"
+        },
+        {
+          "casteCode": 1214,
+          "caste": "THIYA",
+          "subCaste": "THIYA"
+        },
+        {
+          "casteCode": 1215,
+          "caste": "THIYYA",
+          "subCaste": null
+        },
+        {
+          "casteCode": 1216,
+          "caste": "VADUKKAR",
+          "subCaste": null
+        },
+        {
+          "casteCode": 1217,
+          "caste": "VADUKKAR",
+          "subCaste": null
+        },
+        {
+          "casteCode": 1218,
+          "caste": "VALAN",
+          "subCaste": null
+        },
+        {
+          "casteCode": 1219,
+          "caste": "VANICAN",
+          "subCaste": null
+        },
+        {
+          "casteCode": 1220,
+          "caste": "VARDUKA",
+          "subCaste": null
+        },
+        {
+          "casteCode": 1221,
+          "caste": "VARRIYAR",
+          "subCaste": null
+        },
+        {
+          "casteCode": 1222,
+          "caste": "VEDUVAR",
+          "subCaste": null
+        },
+        {
+          "casteCode": 1223,
+          "caste": "VELAN",
+          "subCaste": null
+        },
+        {
+          "casteCode": 1224,
+          "caste": "YADAV",
+          "subCaste": null
+        },
+        {
+          "casteCode": 1225,
+          "caste": "YRAKITHER",
+          "subCaste": null
+        },
+        {
+          "casteCode": 1226,
+          "caste": "AKAMUDAYAR",
+          "subCaste": null
+        },
+        {
+          "casteCode": 1227,
+          "caste": "KONGU VELLALA",
+          "subCaste": null
+        },
+        {
+          "casteCode": 1228,
+          "caste": "PULAYAN",
+          "subCaste": null
+        },
+        {
+          "casteCode": 1229,
+          "caste": "VISHWAKARMA",
+          "subCaste": null
+        }
+      ]
+    },
+    {
+      "stateId": 2,
+      "stateName": "KARNATAKA",
+      "castes": [
+        {
+          "casteCode": 2001,
+          "caste": "ACHARI",
+          "subCaste": "VISHWAKARMA"
+        },
+        {
+          "casteCode": 2002,
+          "caste": "ADIDRAVIDA",
+          "subCaste": "ARAVDUR"
+        },
+        {
+          "casteCode": 2003,
+          "caste": "ADIDRAVIDA",
+          "subCaste": "CHALAVADI"
+        },
+        {
+          "casteCode": 2004,
+          "caste": "ADIDRAVIDA",
+          "subCaste": "HARIJAN"
+        },
+        {
+          "casteCode": 2005,
+          "caste": "ADIDRAVIDA",
+          "subCaste": "UPPARA"
+        },
+        {
+          "casteCode": 2006,
+          "caste": "ADIKARNATAKA",
+          "subCaste": "CHANAIAHNATHA"
+        }
+
+    }

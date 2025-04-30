@@ -12,6 +12,9 @@ import Pink from "../../assets/images/Pink fb.svg";
 import Yt from "../../assets/images/YT.svg";
 import Linked from "../../assets/images/linkedin.svg";
 import insta from "../../assets/images/insta.svg";
+import Twitter from "../../assets/images/Twitter.svg";
+import Telegram from "../../assets/images/Telegram.svg";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -44,21 +47,44 @@ const Footer = () => {
               placeholder="enter Your email address"
               className="border-b border-gray-400 py-2 w-full md:w-full focus:outline-none"
             />
+            <Link to="/forms">
              <button
             type="submit"
              className="bg-gradient-to-r from-[#F05A8E] to-[#ED1C24]   text-white px-6 py-2 rounded-full whitespace-nowrap  hover:scale-105 transition-transform"
             >
               Register Now
             </button> 
+            </Link>
             
           </div>
 
           {/* Social Icons */}
           <div className="flex space-x-4 text-xl text-red-400 justify-center md:justify-start">
-          <img src={Pink} alt="Visa" className="h-auto" />
+          <a href="https://www.facebook.com/profile.php?id=61567493432082&mibextid=LQQJ4d" target="_blank" rel="noopener noreferrer">
+          <img src={Pink} alt="Facebook" className="h-auto" />
+          </a>
+          <a href="https://youtube.com/@shadhimuharath?si=Tx5-BLzU0pKjz7D4" target="_blank" rel="noopener noreferrer">
+
           <img src={Yt} alt="Amex" className="h-[25px]" />
+          </a>
+          
+          <a href="https://www.linkedin.com/in/shadhi-muharath-4a9305338" target="_blank" rel="noopener noreferrer">
+
           <img src={Linked} alt="Apple Pay" className="h-[25px]" />
+          </a>
+          <a href="https://www.instagram.com/shadi_muharath_?igsh=MWoxNmk4MzE1OG5lcg" target="_blank" rel="noopener noreferrer">
+
           <img src={insta} alt="Skrill" className="h-[25px]" />
+          </a>
+          <a href="https://t.me/shadimuharath" target="_blank" rel="noopener noreferrer">
+
+          <img src={Telegram} alt="telegram" className="h-[25px"/>
+          </a>
+          <a href="@shadimuhar0899" target="_blank" rel="noopener noreferrer">
+
+          <img src={Twitter} alt="telegram" className="h-[25px"/>
+          </a>
+
           </div>
 
           {/* Links */}

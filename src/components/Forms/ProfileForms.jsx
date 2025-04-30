@@ -1,12 +1,58 @@
 import React, { useState } from "react";
 import { MdArrowBack, MdOutlineArrowCircleRight } from "react-icons/md";
-import { HiCamera } from "react-icons/hi";
-import { FaImage } from "react-icons/fa";
+import { RiCameraFill } from "react-icons/ri";
+import { IoImageSharp } from "react-icons/io5";
+import { IoArrowBack } from "react-icons/io5";
 import Couple4 from "../../assets/images/Couple4.svg";
+import FormArrow from "../../assets/images/Formarrow.svg";
+import { FaAngleDown } from "react-icons/fa6";
+// import Step8 from "./forms/Step8"; // Adjust path as needed
 
+
+
+const indianStates = [
+  "Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar", "Chhattisgarh",
+  "Goa", "Gujarat", "Haryana", "Himachal Pradesh", "Jharkhand",
+  "Karnataka", "Kerala", "Madhya Pradesh", "Maharashtra", "Manipur",
+  "Meghalaya", "Mizoram", "Nagaland", "Odisha", "Punjab",
+  "Rajasthan", "Sikkim", "Tamil Nadu", "Telangana", "Tripura",
+  "Uttar Pradesh", "Uttarakhand", "West Bengal"
+];
+
+// Cities List Based on State
+const citiesByState = {
+  "Andhra Pradesh": ["Visakhapatnam", "Vijayawada", "Guntur"],
+  "Arunachal Pradesh": ["Itanagar"],
+  "Assam": ["Guwahati", "Silchar"],
+  "Bihar": ["Patna", "Gaya","Motihari","Bhagalpur","Muzaffarpur","Darbhanga","Purnea","Begusarai"],
+  "Chhattisgarh": ["Raipur", "Bilaspur"],
+  "Goa": ["Panaji", "Margao"],
+  "Gujarat": ["Ahmedabad", "Surat", "Vadodara"],
+  "Haryana": ["Gurugram", "Faridabad"],
+  "Himachal Pradesh": ["Shimla", "Manali"],
+  "Jharkhand": ["Ranchi", "Jamshedpur"],
+  "Karnataka": ["Bengaluru", "Mysuru"],
+  "Kerala": ["Kochi", "Thiruvananthapuram"],
+  "Madhya Pradesh": ["Bhopal", "Indore"],
+  "Maharashtra": ["Mumbai", "Pune", "Nagpur"],
+  "Manipur": ["Imphal"],
+  "Meghalaya": ["Shillong"],
+  "Mizoram": ["Aizawl"],
+  "Nagaland": ["Kohima"],
+  "Odisha": ["Bhubaneswar", "Cuttack"],
+  "Punjab": ["Amritsar", "Ludhiana"],
+  "Rajasthan": ["Jaipur", "Udaipur"],
+  "Sikkim": ["Gangtok"],
+  "Tamil Nadu": ["Chennai", "Coimbatore"],
+  "Telangana": ["Hyderabad", "Warangal"],
+  "Tripura": ["Agartala"],
+  "Uttar Pradesh": ["Lucknow", "Kanpur", "Varanasi","Noida","Agra","Ghaziabad","Meerut","Bareilly"],
+  "Uttarakhand": ["Dehradun", "Haridwar"],
+  "West Bengal": ["Kolkata", "Siliguri"],
+};
 const ProfileForm = () => {
   const totalSteps = 8;
-  const [step, setStep] = useState(1);
+  const [step, setStep] = useState(8); // Set to 8 for testing Step 8
 
   // Step-1
   const [profileFor, setProfileFor] = useState("");
@@ -22,7 +68,11 @@ const ProfileForm = () => {
   const [country, setCountry] = useState("");
   const [stateField, setStateField] = useState("");
   const [city, setCity] = useState("");
-
+  //Step-4
+  const [fullName, setFullName] = useState("");
+  const [dob, setDob] = useState("");
+  const [email, setEmail] = useState("");
+  
   // Step-5: Additional fields
   const [maritalStatus, setMaritalStatus] = useState("");
   const [height, setHeight] = useState("");
@@ -75,61 +125,61 @@ const ProfileForm = () => {
       return alert("Please select Annual Income and Work Details");
     }
 
-    if (step < totalSteps) setStep((s1) => s1 + 1);
+    if (step < totalSteps) setStep((s) => s + 1);
     else alert("Form submitted!");
   };
 
   const back = () => {
-    if (step > 1) setStep((s1) => s1 - 1);
+    if (step > 1) setStep((s) => s - 1);
   };
 
   return (
-    <div className="relative bg-white rounded-2xl shadow-lg p-8 w-[476px] h-[630px] flex flex-col">
-      {/* Header: back + progress */}
-      <div className="flex justify-between items-center mb-4">
-        <button onClick={back} className="p-2">
-          <MdArrowBack
-            className={`text-2xl ${
-              step === 1 ? "text-gray-300 pointer-events-none" : "text-red-500"
-            }`}
-          />
-        </button>
-        <div className="w-10 h-10 relative">
-          <svg viewBox="0 0 36 36" className="w-full h-full">
-            <circle
-              cx="18"
-              cy="18"
-              r="15.9155"
-              className="stroke-gray-300"
-              strokeWidth="2"
-              fill="none"
-            />
-            <circle
-              cx="18"
-              cy="18"
-              r="15.9155"
-              className="stroke-red-500"
-              strokeDasharray={`${percentage} 100`}
-              strokeWidth="2"
-              fill="none"
-            />
-            <text
-              x="18"
-              y="20.5"
-              textAnchor="middle"
-              className="fill-gray-600 text-xs"
-            >
-              {percentage}%
-            </text>
-          </svg>
-        </div>
-      </div>
-
+    // <div classNameme="relative bg-white rounded-2xl shadow-lg p-8 w-[476px] h-[45vw] flex flex-col">
+      // <div className="flex items-center justify-center min-h-screen bg-gray-100">
+  <div className="relative bg-white rounded-2xl shadow-lg p-8 sm:p-8 flex flex-col 
+    sm:h-[600px] h-[550px] w-[316px]  sm:w-[476px]">
+      
+    {/* Your content goes here */}
+  
       {/* Content */}
-      <div className="flex-1 overflow-y-auto">
+      <div className="flex-1 ">
         {step === 1 && (
           <>
-            <h2 className="text-lg font-semibold text-[#620B00] mb-6">
+            <div className="flex justify-between items-center  mb-4">
+            <button onClick={back} className="p-2">
+                
+              </button>
+              <div className="w-10 h-10 relative">
+                <svg viewBox="0 0 36 36" className="w-full h-full">
+                  <circle
+                    cx="18"
+                    cy="18"
+                    r="15.9155"
+                    className="stroke-gray-300"
+                    strokeWidth="2"
+                    fill="none"
+                  />
+                  <circle
+                    cx="18"
+                    cy="18"
+                    r="15.9155"
+                    className="stroke-red-500"
+                    strokeDasharray={`${percentage} 100`}
+                    strokeWidth="2"
+                    fill="none"
+                  />
+                  <text
+                    x="18"
+                    y="20.5"
+                    textAnchor="middle"
+                    className="fill-gray-600 text-xs"
+                  >
+                    {percentage}%
+                  </text>
+                </svg>
+              </div>
+            </div>
+            <h2 className="text-lg font-semibold text-[#620B00] py-8">
               This Profile is for
             </h2>
             <div className="flex flex-wrap gap-[10px] mb-8">
@@ -145,7 +195,7 @@ const ProfileForm = () => {
                 <button
                   key={opt}
                   onClick={() => setProfileFor(opt)}
-                  className={`w-[130px] h-[40px] rounded-[8px] border text-sm font-medium ${
+                  className={` w-[87px] h-[27px] sm:w-[130px] sm:h-[40px] rounded-[8px] border text-sm font-medium ${
                     profileFor === opt
                       ? "bg-gradient-to-r from-[#F05A8E] to-[#ED1C24] text-white border-transparent"
                       : "border-[#F05A8E] text-[#F05A8E] bg-transparent"
@@ -164,7 +214,7 @@ const ProfileForm = () => {
                 <button
                   key={g}
                   onClick={() => setGender(g)}
-                  className={`w-[130px] h-[40px] rounded-[8px] border text-sm font-medium ${
+                  className={`w-[90px] h-[27px] sm:w-[130px] sm:h-[40px] rounded-[8px] border text-sm font-medium ${
                     gender === g
                       ? "bg-gradient-to-r from-[#F05A8E] to-[#ED1C24] text-white border-transparent"
                       : "border-[#F05A8E] text-[#F05A8E] bg-transparent"
@@ -179,13 +229,47 @@ const ProfileForm = () => {
 
         {step === 2 && (
           <>
+            <div className="flex justify-between items-center mb-4">
+              <button onClick={back} className="p-2">
+                <img src={FormArrow} alt="Back" className="w-8 h-8" />
+              </button>
+              <div className="w-10 h-10 relative">
+                <svg viewBox="0 0 36 36" className="w-full h-full">
+                  <circle
+                    cx="18"
+                    cy="18"
+                    r="15.9155"
+                    className="stroke-gray-300"
+                    strokeWidth="2"
+                    fill="none"
+                  />
+                  <circle
+                    cx="18"
+                    cy="18"
+                    r="15.9155"
+                    className="stroke-red-500"
+                    strokeDasharray={`${percentage} 100`}
+                    strokeWidth="2"
+                    fill="none"
+                  />
+                  <text
+                    x="18"
+                    y="20.5"
+                    textAnchor="middle"
+                    className="fill-gray-600 text-xs"
+                  >
+                    {percentage}%
+                  </text>
+                </svg>
+              </div>
+            </div>
             <h2 className="text-lg font-semibold text-[#620B00] mb-6">
               Your Religion
             </h2>
             <select
               value={religion}
               onChange={(e) => setReligion(e.target.value)}
-              className="w-full border-2 border-[#F05A8E] rounded-[8px] px-4 py-2 mb-4 text-sm"
+              className="w-full border-2 border-[#BBBBBB] rounded-[8px] px-4 py-2 mb-4 text-sm"
             >
               <option value="">Select Religion</option>
               {[
@@ -206,6 +290,7 @@ const ProfileForm = () => {
                 </option>
               ))}
             </select>
+            
 
             <h2 className="text-lg font-semibold text-[#620B00] mb-6">
               Community
@@ -213,7 +298,7 @@ const ProfileForm = () => {
             <select
               value={community}
               onChange={(e) => setCommunity(e.target.value)}
-              className="w-full border-2 border-[#F05A8E] rounded-[8px] px-4 py-2 mb-4 text-sm"
+              className="w-full border-2  border-[#BBBBBB] rounded-[8px] px-4 py-2 mb-4 text-sm"
             >
               <option value="">Select Community</option>
               {[
@@ -271,7 +356,7 @@ const ProfileForm = () => {
             <select
               value={subCommunity}
               onChange={(e) => setSubCommunity(e.target.value)}
-              className="w-full border-2 border-[#F05A8E] rounded-[8px] px-4 py-2 mb-4 text-sm"
+              className="w-full border-2  border-[#BBBBBB] rounded-[8px] px-4 py-2 mb-4 text-sm"
             >
               <option value="">Select Sub-Community</option>
               {[
@@ -285,49 +370,8 @@ const ProfileForm = () => {
                 "Gupta",
                 "Shah",
                 "Baidya",
-                "Chitpavan",
-                "Deshastha",
-                "Gaur",
-                "Kanyakubja",
-                "Kumain",
-                "Madhwa",
-                "Namboodiri",
-                "Niyogi",
-                "Rarhi",
-                "Rajput",
-                "Kshatriya",
-                "Jat",
-                "Jatt Sikh",
-                "Gujjar",
-                "Thakur",
-                "Rathore",
-                "Chauhan",
-                "Sisodia",
-                "Vohra",
-                "Yadav",
-                "Kurmi",
-                "Jatav",
-                "Lodha",
-                "Nayak",
-                "Kumhar",
-                "Kumbhar",
-                "Teli",
-                "Vishwakarma",
-                "Sunar",
-                "Ezhava",
-                "Nair",
-                "Goud",
-                "Reddy",
-                "Naidu",
-                "Kamma",
-                "Balija",
-                "Kapu",
-                "Mudaliar",
-                "Chettiar",
-                "Lingayat",
-                "Kuruba",
-                "Gowda",
-                "Bunt",
+                
+                
                 "Billava",
                 "Tulu",
                 "Iyer",
@@ -368,21 +412,7 @@ const ProfileForm = () => {
                 "Ho",
                 "Oraon",
                 "Ramgarhia",
-                "Jat Sikh",
-                "Khatri Sikh",
-                "Arora Sikh",
-                "Sunni",
-                "Shia",
-                "Pathan",
-                "Syed",
-                "Memon",
-                "Bohra",
-                "Khoja",
-                "Anglican",
-                "Baptist",
-                "Lutheran",
-                "Pentecostal",
-                "Punjabi",
+                
                 "Sindhi",
                 "Bengali",
                 "Marathi",
@@ -397,20 +427,55 @@ const ProfileForm = () => {
               ))}
             </select>
 
-            <label className="flex items-center text-sm mb-8">
+            <label className="flex items-center text-sm mb-4">
               <input
                 type="checkbox"
                 checked={noBar}
                 onChange={(e) => setNoBar(e.target.checked)}
                 className="mr-2"
               />
-              Caste no bar
+              Not particular about my partner's community(Caste no bar)
             </label>
           </>
         )}
 
         {step === 3 && (
           <>
+            <div className="flex justify-between items-center mb-4">
+              <button onClick={back} className="p-2">
+              <img src={FormArrow} alt="Back" className="w-8 h-8" />
+
+              </button>
+              <div className="w-10 h-10 relative">
+                <svg viewBox="0 0 36 36" className="w-full h-full">
+                  <circle
+                    cx="18"
+                    cy="18"
+                    r="15.9155"
+                    className="stroke-gray-300"
+                    strokeWidth="2"
+                    fill="none"
+                  />
+                  <circle
+                    cx="18"
+                    cy="18"
+                    r="15.9155"
+                    className="stroke-red-500"
+                    strokeDasharray={`${percentage} 100`}
+                    strokeWidth="2"
+                    fill="none"
+                  />
+                  <text
+                    x="18"
+                    y="20.5"
+                    textAnchor="middle"
+                    className="fill-gray-600 text-xs"
+                  >
+                    {percentage}%
+                  </text>
+                </svg>
+              </div>
+            </div>
             <h2 className="text-lg font-semibold text-[#620B00] mb-6">
               Country
             </h2>
@@ -419,34 +484,161 @@ const ProfileForm = () => {
               onChange={(e) => setCountry(e.target.value)}
               className="w-full border-2 border-[#F05A8E] rounded-[8px] px-4 py-2 mb-8 text-sm"
             >
+
               <option value="">Select Country</option>
               <option value="India">India</option>
               <option value="USA">USA</option>
               <option value="UK">UK</option>
             </select>
+            <h2 className="text-lg font-semibold text-[#620B00] mb-6">
+              State
+            </h2>
+            <select
+      value={stateField}
+      onChange={(e) => setStateField(e.target.value)}
+      className="w-full border-2 border-[#F05A8E] rounded-[8px] px-4 py-2 mb-4 text-sm"
+      disabled={country !== "India"} // Only enable if country is India
+    >
+      <option value="">Select State</option>
+      {indianStates.map((state) => (
+        <option key={state} value={state}>
+          {state}
+        </option>
+      ))}
+    </select>
+    <h2 className="text-lg font-semibold text-[#620B00] mb-6">
+              City
+            </h2>
+    <select
+      value={city}
+      onChange={(e) => setCity(e.target.value)}
+      className="w-full border-2 border-[#F05A8E] rounded-[8px] px-4 py-2 mb-8 text-sm"
+      disabled={!stateField} // Only enable if state is selected
+    >
+      <option value="">Select City</option>
+      {citiesByState[stateField]?.map((city) => (
+        <option key={city} value={city}>
+          {city}
+        </option>
+      ))}
+    </select>
           </>
         )}
 
-        {step === 4 && (
-          <>
-            <h2 className="text-lg font-semibold text-[#620B00] mb-6">State</h2>
-            <select
-              value={stateField}
-              onChange={(e) => setStateField(e.target.value)}
-              className="w-full border-2 border-[#F05A8E] rounded-[8px] px-4 py-2 mb-8 text-sm"
-            >
-              <option value="">Select State</option>
-              <option value="Uttar Pradesh">Uttar Pradesh</option>
-              <option value="Maharashtra">Maharashtra</option>
-              <option value="Tamil Nadu">Tamil Nadu</option>
-              <option value="Punjab">Punjab</option>
-              <option value="Karnataka">Karnataka</option>
-            </select>
-          </>
-        )}
+{step === 4 && (
+  <>
+    {/* Header with Back + Progress */}
+    <div className="flex justify-between items-center mb-4">
+      <button onClick={back} className="p-2">
+      <img src={FormArrow} alt="Back" className="w-8 h-8" />
+
+      </button>
+      <div className="w-10 h-10 relative">
+        <svg viewBox="0 0 36 36" className="w-full h-full">
+          <circle
+            cx="18"
+            cy="18"
+            r="15.9155"
+            className="stroke-gray-300"
+            strokeWidth="2"
+            fill="none"
+          />
+          <circle
+            cx="18"
+            cy="18"
+            r="15.9155"
+            className="stroke-red-500"
+            strokeDasharray={`${percentage} 100`}
+            strokeWidth="2"
+            fill="none"
+          />
+          <text
+            x="18"
+            y="20.5"
+            textAnchor="middle"
+            className="fill-gray-600 text-xs"
+          >
+            {percentage}%
+          </text>
+        </svg>
+      </div>
+    </div>
+
+    {/* Personal Details */}
+    <h2 className="text-lg font-semibold text-[#620B00] mb-4">
+      Full Name
+    </h2>
+    <input
+      type="text"
+      value={fullName}
+      onChange={(e) => setFullName(e.target.value)}
+      placeholder="Full Name"
+      className="w-full border-2 border-[#F05A8E] rounded-[8px] px-4 py-2 mb-4 text-sm"
+    />
+     <h2 className="text-lg font-semibold text-[#620B00] mb-4">
+      Date of Birth
+    </h2>
+    <input
+      type="date"
+      value={dob}
+      onChange={(e) => setDob(e.target.value)}
+      className="w-full border-2 border-[#F05A8E] rounded-[8px] px-4 py-2 mb-4 text-sm"
+    />
+     <h2 className="text-lg font-semibold text-[#620B00] mb-4">
+      Email ID  
+    </h2>
+    <input
+      type="email"
+      value={email}
+      onChange={(e) => setEmail(e.target.value)}
+      placeholder="Email ID"
+      className="w-full border-2 border-[#F05A8E] rounded-[8px] px-4 py-2 mb-8 text-sm"
+    />
+   <span className="text-[#380700] text-[12px]"> Provide email ID for verification and communication.</span> 
+
+    {/* (Optional) If you still want the State selector here */}
+    
+  </>
+)}
+
 
         {step === 5 && (
           <>
+            <div className="flex justify-between items-center mb-4">
+              <button onClick={back} className="p-2">
+              <img src={FormArrow} alt="Back" className="w-8 h-8" />
+
+              </button>
+              <div className="w-10 h-10 relative">
+                <svg viewBox="0 0 36 36" className="w-full h-full">
+                  <circle
+                    cx="18"
+                    cy="18"
+                    r="15.9155"
+                    className="stroke-gray-300"
+                    strokeWidth="2"
+                    fill="none"
+                  />
+                  <circle
+                    cx="18"
+                    cy="18"
+                    r="15.9155"
+                    className="stroke-red-500"
+                    strokeDasharray={`${percentage} 100`}
+                    strokeWidth="2"
+                    fill="none"
+                  />
+                  <text
+                    x="18"
+                    y="20.5"
+                    textAnchor="middle"
+                    className="fill-gray-600 text-xs"
+                  >
+                    {percentage}%
+                  </text>
+                </svg>
+              </div>
+            </div>
             <h2 className="text-lg font-semibold text-[#620B00] mb-6">
               Marital Status
             </h2>
@@ -494,39 +686,112 @@ const ProfileForm = () => {
           </>
         )}
 
-        {step === 6 && (
-          <>
-            <h2 className="text-lg font-semibold text-[#620B00] mb-6">
-              Highest Qualification
-            </h2>
-            <select
-              value={highestQualification}
-              onChange={(e) => setHighestQualification(e.target.value)}
-              className="w-full border-2 border-[#F05A8E] rounded-[8px] px-4 py-2 mb-8 text-sm"
-            >
-              <option value="">Select Qualification</option>
-              <option value="MBA">MBA</option>
-              <option value="B.Tech">B.Tech</option>
-              <option value="PhD">PhD</option>
-            </select>
+{step === 6 && (
+  <>
+    <div className="flex justify-between items-center mb-4">
+      <button onClick={back} className="p-2">
+      <img src={FormArrow} alt="Back" className="w-8 h-8" />
 
-            <h2 className="text-lg font-semibold text-[#620B00] mb-6">
-              College
-            </h2>
-            <select
-              value={college}
-              onChange={(e) => setCollege(e.target.value)}
-              className="w-full border-2 border-[#F05A8E] rounded-[8px] px-4 py-2 mb-8 text-sm"
-            >
-              <option value="">Select College</option>
-              <option value="IIT Delhi">IIT Delhi</option>
-              <option value="IIM Ahmedabad">IIM Ahmedabad</option>
-            </select>
-          </>
-        )}
+      </button>
+      <div className="w-10 h-10 relative">
+        <svg viewBox="0 0 36 36" className="w-full h-full">
+          <circle
+            cx="18"
+            cy="18"
+            r="15.9155"
+            className="stroke-gray-300"
+            strokeWidth="2"
+            fill="none"
+          />
+          <circle
+            cx="18"
+            cy="18"
+            r="15.9155"
+            className="stroke-red-500"
+            strokeDasharray={`${percentage} 100`}
+            strokeWidth="2"
+            fill="none"
+          />
+          <text
+            x="18"
+            y="20.5"
+            textAnchor="middle"
+            className="fill-gray-600 text-xs"
+          >
+            {percentage}%
+          </text>
+        </svg>
+      </div>
+    </div>
+
+    <h2 className="text-lg font-semibold text-[#620B00] mb-6">
+      Highest Qualification
+    </h2>
+    <select
+      value={highestQualification}
+      onChange={(e) => setHighestQualification(e.target.value)}
+      className="w-full border-2 border-[#F05A8E] rounded-[8px] px-4 py-2 mb-8 text-sm"
+    >
+      <option value="">Select Qualification</option>
+      <option value="MBA">MBA</option>
+      <option value="B.Tech">B.Tech</option>
+      <option value="PhD">PhD</option>
+    </select>
+
+    <h2 className="text-lg font-semibold text-[#620B00] mb-6">
+      College
+    </h2>
+    <select
+      value={college}
+      onChange={(e) => setCollege(e.target.value)}
+      className="w-full border-2 border-[#F05A8E] rounded-[8px] px-4 py-2 mb-8 text-sm"
+    >
+      <option value="">Select College</option>
+      <option value="IIT">IIT</option>
+      <option value="IIM">IIM</option>
+      <option value="Other">Other</option>
+    </select>
+  </>
+)}
 
         {step === 7 && (
           <>
+            <div className="flex justify-between items-center mb-4">
+              <button onClick={back} className="p-2">
+               
+                              <img src={FormArrow} alt="Back" className="w-8 h-8" />
+
+              </button>
+              <div className="w-10 h-10 relative">
+                <svg viewBox="0 0 36 36" className="w-full h-full">
+                  <circle
+                    cx="18"
+                    cy="18"
+                    r="15.9155"
+                    className="stroke-gray-300"
+                    strokeWidth="2"
+                    fill="none"
+                  />
+                  <circle
+                    cx="18"
+                    cy="18"
+                    r="15.9155"
+                    className="stroke-red-500"
+                    strokeDasharray={`${percentage} 100`}
+                    strokeWidth="2"
+                    fill="none"
+                  />
+                  <text
+                    x="18"
+                    y="20.5"
+                    textAnchor="middle"
+                    className="fill-gray-600 text-xs"
+                  >
+                    {percentage}%
+                  </text>
+                </svg>
+              </div>
+            </div>
             <h2 className="text-lg font-semibold text-[#620B00] mb-6">
               Annual Income
             </h2>
@@ -536,7 +801,15 @@ const ProfileForm = () => {
               className="w-full border-2 border-[#F05A8E] rounded-[8px] px-4 py-2 mb-8 text-sm"
             >
               <option value="">Select Income</option>
-              <option value="5-10 LPA">5-10 LPA</option>
+              <option value="5-10 LPA">Upto INR 1 Lakh</option>
+              <option value="5-10 LPA"> INR 1 Lakh to 2 Lakh</option>
+              <option value="5-10 LPA"> INR 2 Lakh to 3 Lakh</option>
+              <option value="5-10 LPA"> INR 3 Lakh to 4 Lakh</option>
+              <option value="5-10 LPA"> INR 4 Lakh to 5 Lakh</option>
+              <option value="5-10 LPA"> INR 5 Lakh to 10 Lakh</option>
+
+              <option value="5-10 LPA"> INR 15 Lakh</option>
+
               <option value="10-20 LPA">10-20 LPA</option>
             </select>
 
@@ -548,161 +821,131 @@ const ProfileForm = () => {
               onChange={(e) => setWorkDetails(e.target.value)}
               className="w-full border-2 border-[#F05A8E] rounded-[8px] px-4 py-2 mb-8 text-sm"
             >
-              <option value="">Select Work Details</option>
+              <option value="">You work with</option>
               <option value="Private Company">Private Company</option>
               <option value="Government">Government</option>
+              <option value="Government">Government/Public Sector</option>
+              <option value="Government">Buissness/Self Employed</option>
+
+              <option value="Government">Not Working</option>
+            </select>
+            <select
+              value={workDetails}
+              onChange={(e) => setWorkDetails(e.target.value)}
+              className="w-full border-2 border-[#F05A8E] rounded-[8px] px-4 py-2 mb-8 text-sm"
+            >
+              <option value="">You Work as</option>
+              <option value="Private Company">Private Company</option>
+              <option value="Government">Government/Public Sector</option>
+              <option value="Government">Buissness/Self Employed</option>
+
+              <option value="Government">Not Working</option>
+
             </select>
           </>
         )}
-
 {step === 8 && (
-  <div className="flex flex-col h-full w-full bg-white overflow-y-auto">
-    {/* Top Section with Pink Elliptical Background */}
-    <div className="relative h-[200px] w-full">
-      {/* Pink Elliptical Background */}
-      <div className="absolute inset-0 bg-gradient-to-r from-[#F05A8E] to-[#ED1C24] h-[200px] rounded-b-[70%]"></div>
+      <>
+      <div className="flex flex-col h-auto w-full min-h-screen ">
+        {/* Top Gradient Background */}
+        <div className="relative bg-gradient-to-r from-[#F05A8E] to-[#ED1C24] w-full h-[150px] rounded-b-[60%]">
+          <div>
+            {/* Header */}
+          <div className="absolute top-0 left-0 w-full flex justify-between items-center px-4 py-4">
+            <button onClick={back} className="p-2">
+              <IoArrowBack className="w-8 h-8 text-white" />
+            </button>
+            <div className="w-10 h-10 flex items-center justify-center border-2 border-white rounded-full text-xs font-bold text-white">
+              {percentage}%
+            </div>
+          </div>
+          </div>
+        </div>
 
-      {/* Profile Image */}
-      <div className="absolute inset-x-0 bottom-[-3rem] flex justify-center">
-        <div className="relative">
-          <div className="w-32 h-32 rounded-full border-4 border-white overflow-hidden shadow-md bg-gray-200 flex items-center justify-center text-gray-500">
-            {selectedImage ? (
-              <img
-                src={selectedImage}
-                alt="Profile"
-                className="w-full h-full object-cover"
-              />
-            ) : (
-              <img
-                src={Couple4}
-                alt="Profile"
-                className="w-full h-full object-cover"
-              />
-            )}
+        {/* Profile Picture Upload Section */}
+        <div className="relative flex flex-col items-center -mt-14 px-4">
+          {/* Image */}
+          <div className="relative w-24 h-24">
+            <div className="w-24 h-24 rounded-full border-2 border-[#ED1C24] overflow-hidden bg-gray-200 shadow-md flex items-center justify-center text-gray-400">
+              {selectedImage ? (
+                <img
+                  src={selectedImage}
+                  alt="Profile"
+                  className="w-full h-full object-cover"
+                />
+              ) : (
+                <span>No Image</span>
+              )}
+            </div>
           </div>
 
-          {/* Plus (+) Button */}
-          <label
-            htmlFor="file-upload"
-            className="absolute bottom-2 right-2 w-8 h-8 bg-white rounded-full shadow-md flex items-center justify-center text-[#F05A8E] text-2xl cursor-pointer"
-          >
-            +
-          </label>
-          <input
-            id="file-upload"
-            type="file"
-            accept="image/*"
-            className="hidden"
-            onChange={handleImageChange}
-          />
+          {/* Hidden Input */}
+          
+
+          {/* Instructions */}
+          <div className="flex flex-col items-center mt-6">
+            <h2 className="text-lg font-semibold text-gray-600 text-center">
+              Add photo to complete your profile
+            </h2>
+            <p className="text-xs text-gray-500 mt-1 text-center px-2">
+              PHOTO PRIVACY CONTROLS AVAILABLE IN APP SETTINGS
+            </p>
+          </div>
+
+          {/* Upload Buttons */}
+          <div className="flex gap-4 items-center justify-center mt-6">
+            <label
+              htmlFor="file-upload"
+              className="flex items-center justify-center w-12 h-12  rounded-full border border-gray-300 cursor-pointer"
+            >
+              <RiCameraFill className="text-black w-6 h-6" />
+            </label>
+            <label
+              htmlFor="file-upload"
+              className="flex items-center justify-center w-12 h-12  rounded-full border border-gray-300 cursor-pointer"
+            >
+              <IoImageSharp className="text-black w-6 h-6" />
+            </label>
+          </div>
+
+          {/* Continue Button for Step 8 */}
+          <div className="w-full mt-10 px-4 items-center justify-center py-14">
+            <button
+              onClick={next}
+              className="w-full bg-gradient-to-r from-[#F05A8E] to-[#ED1C24] text-white rounded-full flex items-center justify-center gap-2 text-sm py-3"
+            >
+              Continue
+            </button>
+          </div>
         </div>
       </div>
-    </div>
+      </>
+    )}
 
-    {/* Text Content */}
-    <div className="flex flex-col items-center mt-16 px-4">
-      <h2 className="text-lg font-semibold text-[#620B00] text-center">
-        Add photo to complete your profile
-      </h2>
-      <p className="text-xs text-gray-500 mt-1 text-center">
-        Photo Privacy Controls Available In App Setting
-      </p>
-    </div>
-
-    {/* Upload Buttons */}
-    <div className="flex gap-6 justify-center mt-8">
-      {/* Camera Upload */}
-      <label
-        htmlFor="camera-upload"
-        className="flex items-center justify-center w-14 h-14 bg-pink-50 rounded-full border-2 border-[#F05A8E] cursor-pointer"
+    {/* Continue Button for Other Steps */}
+    {step !== 8 && (
+      <button
+        onClick={next}
+        className="mt-4 w-full h-auto bg-gradient-to-r from-[#F05A8E] to-[#ED1C24] text-white rounded-[8px] flex items-center justify-center gap-2 text-sm py-3"
       >
-        <svg
-          className="h-6 w-6 text-[#F05A8E]"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M3 9a2 2 0 012-2h2l2-2h6l2 2h2a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"
-          />
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"
-          />
-        </svg>
-      </label>
-      <input
-        id="camera-upload"
-        type="file"
-        accept="image/*"
-        capture="environment"
-        className="hidden"
-        onChange={handleImageChange}
-      />
+        {step < totalSteps ? (
+          <>
+            Continue <MdOutlineArrowCircleRight />
+          </>
+        ) : (
+          "Submit"
+        )}
+      </button>
+    )}
 
-      {/* Gallery Upload */}
-      <label
-        htmlFor="gallery-upload"
-        className="flex items-center justify-center w-14 h-14 bg-pink-50 rounded-full border-2 border-[#F05A8E] cursor-pointer"
-      >
-        <svg
-          className="h-6 w-6 text-[#F05A8E]"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
-          />
-        </svg>
-      </label>
-      <input
-        id="gallery-upload"
-        type="file"
-        accept="image/*"
-        className="hidden"
-        onChange={handleImageChange}
-      />
-    </div>
-
-    {/* Submit Button */}
-    <button
-      onClick={next}
-      className="mt-auto mb-4 mx-4 h-[40px] bg-gradient-to-r from-[#F05A8E] to-[#ED1C24] text-white rounded-[8px] flex items-center justify-center gap-2 text-sm"
-    >
-      Submit
-    </button>
   </div>
-)}
-      </div>
+  </div>
+  )};  
 
-      {/* Continue Button for Steps 1-7 */}
-      {step !== 8 && (
-        <button
-          onClick={next}
-          className="mt-4 w-full h-[40px] bg-gradient-to-r from-[#F05A8E] to-[#ED1C24] text-white rounded-[8px] flex items-center justify-center gap-2 text-sm"
-        >
-          {step < totalSteps ? (
-            <>
-              Continue <MdOutlineArrowCircleRight />
-            </>
-          ) : (
-            "Submit"
-          )}
-        </button>
-      )}
-    </div>
-  );
-};
+
 
 export default ProfileForm;
+
+
+    
+ 

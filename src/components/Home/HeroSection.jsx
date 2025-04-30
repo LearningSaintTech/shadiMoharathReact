@@ -28,12 +28,12 @@ const HeroSection = () => {
             fontFamily: "Rosarivo, serif",
           }}
         >
-          Shadi Muharath
+          Shadhi Muharath
         </h1>
 
         {/* Subheading */}
         <p className=" text-[4vw] sm:text-[2.5vw] md:text-[2vw] lg:text-[1vw]  font-extralight  ">
-          Experience the joy of life and create happiness together with Shadi
+          Experience the joy of life and create happiness together with Shadhi
           Muhurat
         </p>
 
